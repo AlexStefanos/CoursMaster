@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+
+def verif_liste_triee(liste):
+    """List --> Bool
+    Vérifie si la liste est triée"""
+    trie = True
+    i = 0
+    n = len(liste)
+    while i<(n - 1) and trie :
+        if liste[i] > liste[i+1]:
+            trie = False
+        i=i+1
+    print(trie)
+    return(trie)
+
+verif_liste_triee([1,2,3])

@@ -1,0 +1,6 @@
+n=int(input("Donnez le premier entier : "))
+n=a
+while (a!=0):
+    a=int(input("Donnez l'entier suivant : "))
+    s=s+a
+    

@@ -1,0 +1,3 @@
+hauteur=int(input("Entrez un entier :"))
+for i in range (1,hauteur+1):
+    print("*"*i)

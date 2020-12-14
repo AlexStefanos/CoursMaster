@@ -1,0 +1,8 @@
+chaine=input("Saisissez une chaine de caractère :")
+carac=input("Saisissez un caractère :")
+chaine2=""
+i=0
+a=len(chaine)
+while i <=a-1 :
+    chaine = chaine - carac
+print(chaine)

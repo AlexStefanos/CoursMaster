@@ -1,0 +1,27 @@
+09:05:48 **** Incremental Build of configuration Debug for project TP8_Ex01 ****
+make all 
+Building file: ../TP8_Ex01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP8_Ex01.d" -MT"TP8_Ex01.o" -o "TP8_Ex01.o" "../TP8_Ex01.c"
+Finished building: ../TP8_Ex01.c
+ 
+Building target: TP8_Ex01
+Invoking: GCC C Linker
+gcc  -o "TP8_Ex01"  ./TP8_Ex01.o   
+Finished building target: TP8_Ex01
+ 
+09:05:57 **** Incremental Build of configuration Debug for project TP8_Ex01 ****
+make all 
+Building file: ../TP8_Ex01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP8_Ex01.d" -MT"TP8_Ex01.o" -o "TP8_Ex01.o" "../TP8_Ex01.c"
+Finished building: ../TP8_Ex01.c
+ 
+Building target: TP8_Ex01
+Invoking: GCC C Linker
+gcc  -o "TP8_Ex01"  ./TP8_Ex01.o   
+Finished building target: TP8_Ex01
+ 
+09:07:45 **** Incremental Build of configuration Debug for project TP8_Ex01 ****
+make all 
+make: rien à faire pour « all ».

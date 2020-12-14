@@ -1,0 +1,21 @@
+08:26:22 **** Incremental Build of configuration Debug for project TP6_Ex01 ****
+make all 
+Building file: ../TP6_Ex01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TP6_Ex01.d" -MT"TP6_Ex01.o" -o "TP6_Ex01.o" "../TP6_Ex01.c"
+../TP6_Ex01.c: In function ‘strcapitalize’:
+../TP6_Ex01.c:13:21: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘!=’ token
+   13 |  for(int i=0,str[i] != '\0',i++)
+      |                     ^~
+../TP6_Ex01.c:18:1: error: expected expression before ‘}’ token
+   18 | }
+      | ^
+../TP6_Ex01.c:18:1: error: expected expression before ‘}’ token
+../TP6_Ex01.c:18:1: warning: control reaches end of non-void function [-Wreturn-type]
+   18 | }
+      | ^
+make: *** [subdir.mk:20 : TP6_Ex01.o] Erreur 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+08:26:23 Build Failed. 4 errors, 1 warnings. (took 613ms)
+

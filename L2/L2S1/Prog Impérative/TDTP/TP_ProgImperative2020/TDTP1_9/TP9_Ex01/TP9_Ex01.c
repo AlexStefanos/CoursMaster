@@ -16,9 +16,9 @@ typedef	char Nom[MAXCAR];
 typedef	struct	adresse
 {
 	unsigned int	num;
-	Nom				Rue;
+	Nom             Rue;
 	unsigned int 	code;
-	Nom				Localite;
+	Nom	        Localite;
 }Adresse;
 
 typedef	enum
@@ -27,7 +27,8 @@ typedef	enum
 	masculin
 }Sexe;
 
-typedef	enum{
+typedef	enum
+{
 	libere,
 	exempte,
 	reforme,
@@ -36,20 +37,39 @@ typedef	enum{
 
 typedef	union{
 	Sit_Milit	sitMil;
-	Nom	nomJF;
+	Nom	        nomJF;
 }Complement;
 
 typedef	struct	personne{
-	Nom 	nom;
+	Nom 	        nom;
 	Nom		prenom;
-	Adresse	ad;
-	Sexe	sex;
+	Adresse	        ad;
+	Sexe	        sex;
 	Complement	comp;
 }Employe;
 
 typedef	Employe	societe[MAXEMPLOYE];
 
+void    SaisieFiche(Employe *emp)
+{
+    char buffer;
+
+    printf("Saisissez le nom de l'employé(e) : ");
+    scanf("%s", emp->nom);
+    scanf("%c", &buffer);
+    printf("Saisissez le prénom de l'employé(e) : ");
+    scanf("%s", emp->prenom);
+    scanf("%c", &buffer);
+    printf("Saisissez le numéro de l'employé(e) : ");
+    scanf("%u", &emp->ad.num);
+    scanf("%c", &buffer);
+    printf("Saisissez le Sexe de l'employé(e) : (Veuillez saisir feminin ou masculin)");
+    while (scanf("%s", &emp->sex) != feminin)
+        scanf("%s", &emp->sex);
+}
+
 int	main()
 {
-
+    Employe *emp;
+    SaisieFiche(emp);
 }

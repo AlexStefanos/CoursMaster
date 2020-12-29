@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int ft_moyenne(int nb, int *tab)
 {
     int i;
@@ -63,29 +62,21 @@ int main()
     int moy,plus,moins;
     char buffer;
     int i;
-    FILE *fich = fopen("noote.txt", "w");
-    if (fich == NULL)
-    {
-        printf("CA MARCHE PAS\n");
-        return (0);
-    }
+
     i = 0;
     printf("Veuillez choisir le nombre de notes : ");
     scanf("%d", &nb);
     scanf("%c", &buffer);
-    fprintf(fich,"%d\n", nb);
     tab = calloc(nb, sizeof(int));
     while (i != (nb))
     {
         scanf("%d", &tmp);
         scanf("%c", &buffer);
         tab[i] = tmp;
-        fprintf(fich,"%d    ", tab[i]);
         i++;
     }
     moy = ft_moyenne(nb,tab);
     plus = ft_plus(nb,tab);
     moins = ft_moins(nb,tab);
     printf("%d %d %d\n", moy,plus,moins);
-    fclose(fich);
 }

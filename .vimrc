@@ -9,4 +9,5 @@ set number
 set background=dark
 set wildmenu
 set incsearch
+set mouse=a
 autocmd BufWritePre *.[ch] :%s/\s\+$//e

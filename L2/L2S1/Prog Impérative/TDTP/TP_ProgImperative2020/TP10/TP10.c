@@ -67,7 +67,7 @@ int main()
     if (fich == NULL)
     {
         printf("CA MARCHE PAS\n");
-        return (0);
+        return (1);
     }
     i = 0;
     printf("Veuillez choisir le nombre de notes : ");
@@ -88,4 +88,5 @@ int main()
     moins = ft_moins(nb,tab);
     printf("%d %d %d\n", moy,plus,moins);
     fclose(fich);
+    return (0);
 }

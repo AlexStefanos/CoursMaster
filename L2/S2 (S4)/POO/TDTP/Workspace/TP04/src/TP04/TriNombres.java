@@ -1,7 +1,7 @@
 package TP04;
 
 public class TriNombres {
-	private int tab[];
+	private int[] tab;
 	
 	public TriNombres(int tab[]) {
 		this.tab = tab;

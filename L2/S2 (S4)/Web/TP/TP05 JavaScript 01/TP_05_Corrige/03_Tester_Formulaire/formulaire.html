@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulaire</title>
+		<link rel="stylesheet" type="text/css" href="formulaire.css">
+		<script src="formulaire.js"></script>
+	</head>
+	<body>
+		<form name="monFormulaire" method="post" action="formulaire.php">
+			<fieldset>
+				<legend>Informations personnelles</legend>
+				<table>
+					<tr>
+						<td><label for="nom">Nom :</label></td>
+						<td><input type="text" id="nom" name="nom" maxlength="30" placeholder="Ex. Descartes" required autofocus></td>
+					</tr>
+					<tr>
+						<td><label for="prenom">Prénom :</label></td>
+						<td><input type="text" id="prenom" name="prenom" maxlength="30" placeholder="Ex. René" required></td>
+					</tr>
+					<tr>
+						<td><label for="civilite">Civilité :</label></td>
+						<td>
+							<select id="civilite" name="civilite">
+								<option value="M" selected>M.</option>
+								<option value="Mme">Mme</option>
+								<option value="Mlle">Mlle</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="email">Adresse e-mail :</label></td>
+						<td><input type="email" id="email" name="email" maxlength="30" placeholder="Ex. rene.descartes@paris5.com" required></td>
+					</tr>
+					<tr>
+						<td><label for="mot_de_passe">Mot de passe :</label></td>
+						<td><input type="password" id="mot_de_passe" name="mot_de_passe" maxlength="30" required></td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Niveau et compétence</legend>
+				<table>
+					<tr>
+						<td><label>Votre niveau en HTML :</label></td>
+						<td>
+							<input type="radio" id="niveau_nul" name="niveau" value="nul" checked>
+							<label for="niveau_nul">Nul</label>
+							<br>
+							<input type="radio" id="niveau_moyen" name="niveau" value="moyen">
+							<label for="niveau_moyen">Moyen</label>
+							<br>
+							<input type="radio" id="niveau_bon" name="niveau" value="bon">
+							<label for="niveau_bon">Bon</label>
+							<br>
+							<input type="radio" id="niveau_tbon" name="niveau" value="tbon">
+							<label for="niveau_tbon">Très bon</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Vous avez des compétences en :</label></td>
+						<td>
+							<input type="checkbox" id="comp_c" name="comp_c">
+							<label for="comp_c">C</label>
+							<br>
+							<input type="checkbox" id="comp_cpp" name="comp_cpp">
+							<label for="comp_cpp">C++</label>
+							<br>
+							<input type="checkbox" id="comp_java" name="comp_java">
+							<label for="comp_java">Java</label>
+							<br>
+							<input type="checkbox" id="comp_caml" name="comp_caml">
+							<label for="comp_caml">Caml</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="autre_competence">Autres compétences :</label></td>
+						<td><textarea id="autre_competence" name="autre_competence" rows="10" cols="40"></textarea></td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Divers</legend>
+				<table>
+					<tr>
+						<td><label for="couleur">Couleur préférée :</label></td>
+						<td><input type="color" id="couleur" name="couleur"></td>
+					</tr>
+					<tr>
+						<td><label for="cv">Joindre votre CV au formulaire :</label></td>
+						<td><input type="file" id="cv" name="cv"></td>
+					</tr>
+					<tr>
+						<td><label for="file_type">Type de fichier :</label></td>
+						<td>
+							<input type="text" name="file_type" id="file_type" list="type_list" value="PDF">
+							<datalist id="type_list">
+								<option>DOC</option>
+								<option>DOCX</option>
+								<option>ODT</option>
+								<option>PDF</option>
+								<option>RTF</option>
+								<option>TXT</option>
+							</datalist>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<table>
+				<tr>
+					<td><input type="reset" value="Remettre à zéro"></td>
+					<td>
+						<input type="submit" value="Soumettre">
+						<input type="button" value="Tester" onClick="tester_formulaire();">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

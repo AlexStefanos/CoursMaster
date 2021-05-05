@@ -1,0 +1,27 @@
+body
+{
+	width: 600px;
+	margin: auto;
+	overflow: scroll;
+}
+
+h1
+{
+	text-align: center;
+}
+
+h2
+{
+	cursor: pointer;
+	border-bottom: solid 1px black;
+}
+
+p
+{
+	text-align: justify;
+}
+
+h2 span
+{
+	float: right;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Pendu - Saisie d'un mot</title>
+		<meta charset="utf-8">
+		<style>
+div
+{
+	font-family: verdana;
+	text-align: center;
+	margin: 10px auto;
+	border: solid 3px black;
+	width: 400px;
+	box-shadow: 5px 5px 5px black;
+}
+
+label, input
+{
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>PENDU</h1>
+			<form method="post" action="pendu.php">
+				<label for="word">Saisir un mot</label>
+				<input type="text" name="word" id="word" maxlength="20" autofocus required>
+				<input type="submit" value="Soumettre">
+			</form>
+		</div>
+	</body>
+</html>

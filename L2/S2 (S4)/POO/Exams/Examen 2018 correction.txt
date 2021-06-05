@@ -1,0 +1,128 @@
+Correction Examen POO
+
+Exercice 1  /noté sur 5, 0.5 par question
+1) Vrai
+2) Vrai 
+3) Vrai 
+4) Faux, méthode de classe : déclarée static donc on ne peut pas la modifié
+5) Faux
+6) Vrai 
+7) Faux, pas au plus mais au moins
+8) Faux, dans tous les cas s'est exécuté 
+9) Faux, une classe peut implémenter plusieurs interfaces
+10) Vrai, List est une interface
+
+Exercice 2 
+1) /noté sur 1
+le code ne compile pas 
+public class B extends A{
+	public B(){
+		System.out.println("Dans le constructeur de la classe B : ");
+	}
+}
+
+commentaire : on a pas appelé le constructeur de la classe A, donc automatiquement java appelle le constructeur sans paramètre de la classe A
+comme il y en a déjà un dans A, java va chercher le constructeur mais il n'y en a pas du coup le code ne compilera pas
+pour corriger : on appelle super(valeur); dans le consctructeur de la classe B
+		on crée un nouveau consctructeur sans paramètre dans la classe A
+
+2) /noté sur 2
+tableau.add(tab[i])
+tableau -> Double (objet)
+tab -> double (pas objet)
+problème de typage 
+correction : tableau.add(new Double(tab[i]));
+a partir de la version de java 5 s'est fait automatiquement
+
+3) /noté sur 1.5
+tableau[i]=st.nextToken();
+tableau -> int
+nextToken() -> renvoie une chaine de caractère : String
+--> Problème de typage 
+correction : pour convertir une chaine en entier : Integer
+	     tableau[i]= Integer.parseInt(st.nextToken());
+	
+4) /noté sur 1.5
+on ne fait pas de comparaison de deux chaines de caractère avec un egal
+on utilise .equals()
+
+Exercice 3
+1)/noté sur 3,5
+
+public class Monome {
+	private double coefficient;
+	private int exposant;
+
+	public Monome(double coefficient, int exposant){   //noté sur 0.5
+		this.coefficient = coefficient;
+		this.exposant = exposant;
+	}
+
+	public String toString(){ 	//noté sur 2
+		String ret="";
+		if(exposant ==0){
+			ret= String.valuOf(coefficient);
+		}
+		else if(exposant ==1){
+			ret=coefficient + "X";
+		}
+		else {
+			ret=coefficient +"X**" +exposant;
+		}
+		return ret;
+	}
+
+	public double valeurMonome(double v){ 		//noté sur 1
+		return coefficient * Math.pow(v, exposant);
+	}
+}
+
+
+2) /noté sur 5,5
+
+public class Polynome extends ArrayList<Monome>{ 	//noté sur 1 pour polynome derive de ArrayList
+	private String nom;
+
+	public Polynome(String nom){ 		//noté sur 0.5
+		super();
+		this.nom=nom;
+	}
+
+	public void ecrirePolynome() { 		//noté sur 2
+		StringBuffer sb = new StringBuffer();
+		Iterator<Monome> it = super.iterator();
+		System.out.println("Le polynome nommé" +nom +" : ");
+		while(it.hasNext()){
+			sb.append(it.next().toString() +" + ");
+		}
+		sb.substring(0,sb.length());
+		System.out.println(sb.toString());
+	}
+
+	public double valeurPolynome(double v) { 		//noté sur 2
+		double valeur=0;
+		if(super.isEmpty()){		//l'utilisation de super n'est pas indispensable
+			System.out.println("Polynome vide");
+		}
+		else {
+			Iterator<Monome> it = super.iterator();
+			while(it.hasNext()){
+				valeur += it.next().valeurMonome(v);
+			}
+		}
+		return valeur;
+	}
+}
+
+	
+	
+
+
+
+
+
+
+
+
+
+

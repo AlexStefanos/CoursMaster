@@ -1,6 +1,8 @@
 package up.mi.jgm.td01;
 
 import java.util.Scanner;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom; 
 
 public class UtilMath {
 	public static void main(String[] args) {
@@ -22,8 +24,16 @@ public class UtilMath {
 		System.out.println("Moyenne MaxExam : " + moyenneMax(12, 16));
 		double[] tab6 = {40, 10, 26, 0};
 		System.out.println("Groupe Etudiant : " + grpMoyenne(tab6));
-		interfaceTextuelle();
-		interfaceTextuelle2();
+		/*interfaceTextuelle();
+		interfaceTextuelle2();*/
+		NbPremier_1a(15);
+		NbPremier_1b(23);
+		NbPremier_1c(36);
+		System.out.println("NbPremier_1 : " + NbPremier_1(7));
+		System.out.println("NbPremier_2 : " + NbPremier_2(41));
+		System.out.println("NbPremier_3a : " + NbPremier_3a(360, 7));
+		//System.out.println("NbPremier_3b : " + NbPremier_3b(360));
+		JeuNombreSecret(22);
 }
 	
 	public static int somme3(int a, int b, int c) {
@@ -226,22 +236,158 @@ public class UtilMath {
 	
 	public static void interfaceTextuelle2() {
 		double a,b,c;
+		int i = 1;
+		int j = 0; 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez indiquer un nombre d'étudiant :");
 		a = sc.nextInt();
 		double[] tab = new double[(int) (2*a)];
 		while(a > 0) {
-			int i = 1;
-			int j = 0;
-			System.out.println("Veuillez indiquer sa note de contrôle continu de l'étudiant n°" + i);
+			System.out.println("Veuillez indiquer sa note de contrôle continu de l'étudiant n°" + (j+1));
 			b = sc.nextDouble();
-			System.out.println("Veuillez indiquer sa note d'examen de l'étudiant n°" + i);
+			System.out.println("Veuillez indiquer sa note d'examen de l'étudiant n°" + (j+1));
 			c = sc.nextDouble();
 			i++;
 			tab[j++] = b;
 			tab[j] = c;
 			a--;
 		}
-		grpMoyenne(tab);
+		System.out.println("Moyenne : " + grpMoyenne(tab));
+	}
+	
+	public static void NbPremier_1a(int n) {
+		boolean prem = true;
+		for (int k = 2; k < n; k++) {
+			if (n % k == 0)
+				prem = false;
+		}
+		if (prem == true)
+			System.out.println("NbPremier_1a : n est premier");
+		else
+			System.out.println("NbPremier_1a : n n'est pas premier");
+	}
+	
+	public static void NbPremier_1b(int n) {
+		boolean prem = true;
+		if (n % 2 == 0)
+			prem = false;
+		for (int k = 3; k < n; k += 2) {
+			if (n % k == 0)
+				prem = false;
+		}
+		if (prem == true)
+			System.out.println("NbPremier_1b : n est premier");
+		else
+			System.out.println("NbPremier_1b : n n'est pas premier");
+	}
+	
+	public static void NbPremier_1c(int n) {
+		boolean prem = true;
+		if (n % 2 == 0)
+			prem = false;
+		for (int k = 3; k < Math.sqrt(n); k += 2) {
+			if (n % k == 0)
+				prem = false;
+		}
+		if (prem == true)
+			System.out.println("NbPremier_1c : n est premier");
+		else
+			System.out.println("NbPremier_1c : n n'est pas premier");
+	}
+	
+	public static boolean NbPremier_1(int n) {
+		boolean prem = true;
+		if (n % 2 == 0 && n != 2)
+			prem = false;
+		for (int k = 3; k < Math.sqrt(n); k += 2) {
+			if (n % k == 0)
+				prem = false;
+		} 
+		return(prem);
+	}
+	
+	public static String NbPremier_2(int n) {
+		String liste = "Voici la liste des nombres premiers de 1 à n :";
+		if (NbPremier_1(2))
+			liste += (" " + 2);
+		for (int k = 3; k <= n; k += 2) {
+			if (NbPremier_1(k))
+				liste += (" " + k);
+		}
+		return(liste);
+	}
+	
+	public static int NbPremier_3a(int n, int p) {
+		int result;
+		if (NbPremier_1(p)) { 
+			for(result = 0;result < n; result++) {
+				if (n % puissance(p, result) != 0) {
+					if (result != 0)
+						result--;
+					return(result);
+				}
+			}
+			return(-1);
+		}
+		else {
+			System.out.println("p n'est pas premier.");
+			return(-1);
+		}
+	}
+	
+	public static String NbPremier_3b(int n) {
+		String liste = "Voici la décomposition en facteurs premiers d'un entier n : ";
+		int result;
+		if (NbPremier_1(2)) {
+			if (NbPremier_3a(n, 2) != - 1) 
+				liste += (" " + NbPremier_3a(n, 2));
+			else {
+				liste += ("ERREUR");
+				return (liste);
+			}
+		}
+		for(int p = 1; p < n; p++) {
+			if (NbPremier_1(p)) { 
+				for(result = 0;result < n; result++) {
+					if (n % puissance(p, result) != 0) {
+						if (result != 0)
+							result--;
+						liste += (" " + p + "^" + result);
+					}
+				}
+			}
+		}
+		return(liste);
+	}
+	
+	public static void JeuNombreSecret(int nb) {
+		Character indice;
+		int prop, max, min;
+		min = 1;
+		max = 100;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Pensez à un nombre !");
+		prop = ThreadLocalRandom.current().nextInt(min,max + 1);
+		System.out.println("Ma Proposition est " + prop);
+		while (prop != nb) {
+			System.out.println("Est-ce plus grand (+), plus petit (-), ou égal (=) à votre nombre ?");
+			indice = sc.next().charAt(0);
+			if (indice == '+') {
+				min = prop;
+				prop = ThreadLocalRandom.current().nextInt(min,max + 1);
+				System.out.println("Ma Proposition est : " + prop);
+			}
+			else if (indice == '-') {
+				max = prop;
+				prop = ThreadLocalRandom.current().nextInt(min,max + 1);
+				System.out.println("Ma Proposition est : " + prop);
+			}
+			else if (indice == '=') {
+				System.out.println("Victoire !");
+			}
+			else
+				System.out.println("ERREUR : Veuillez Réessayer");
+		}
+		System.out.println("Victoire !");
 	}
 }

@@ -112,12 +112,11 @@ int main() {
     fflush(stdin);
     scanf("%c", &c);
     tree = newNode(c);
-    do {
+    while((select != 'Q') && (select != 'q')) {
         displayMainMenu();
         printf("Choix : \n");
         scanf("%c", &select);
-        switch(select) {
-            case 'I': case 'i':
+        if((select == 'i') || (select == 'I')) {
                 printf("Insérer après quel noeud voulez-vous insérer un nouveau noeud (sachant que l'on commence à 1) :\n");
                 scanf("%d", &pos);
                 fflush(stdin);
@@ -125,49 +124,45 @@ int main() {
                 scanf("%c", &c);
                 fflush(stdin);
                 nd = newNode(c);
-                do {
+                while(exit != 1) {
                     printf("Insérer en fils gauche (veuillez appuyer sur G) :\n");
                     printf("Insérer en fils droit (veuillez appuyer sur D) :\n");
                     fflush(stdin);
                     scanf("%c", &select2);
-                    switch(select2) {
-                        case 'G': case 'g':
+                    if((select2 == 'G') || (select == 'g')) {
                             insertSonL(nd, tree, pos);
                             exit = 1;
-                            break;
-                        case 'D': case 'd':
+                    }
+                    else if((select2 == 'D') || (select2 =='d')) {
                             insertSonR(nd, tree, pos);
                             exit = 1;
-                            break;
-                        default:
-                            printf("Vous n'avez pas sélectionné un des caractères acceptés dans ce menu. Veuillez réessayer\n");
                     }
-                }while(exit != 1);
-                exit = 0;
-                break;
-            case 'S': case 's':
+                    else
+                            printf("Vous n'avez pas sélectionné un des caractères acceptés dans ce menu. Veuillez réessayer\n");
+            }
+            exit = 0;
+          }
+            else if((select == 'S') || (select == 's')) {
                 printf("Quel est le numéro de création de l'arbre à supprimer :\n");
                 scanf("%d", &pos);
                 nd = searchNode(tree, pos);
-                if(nd != tree) {
+                if(nd != tree)
                     deleteTree(nd);
-                }
                 else //pas encore compris
                     tree = NULL;
                 printf("\n");
-                break;
-            case 'A': case 'a':
+            }
+            else if((select == 'A') || (select == 'a')) {
                 printf("----------Affichage de l'arbre----------\n");
                 pathwayPrefix(tree);
                 printf("\n");
-                break;
-            case 'Q': case 'q':
+            }
+            else if((select == 'Q') || (select == 'q'))
                 printf("C'est bon c'est fini\n");
-                break;
-            default:
+            else {
                 printf("Vous n'avez pas sélectionné un des caractères acceptés dans ce menu. Veuillez réessayer\n");
             }
-    }while(select != 'q' && select != 'Q');
+    }
     free(tree);
     free(nd);
     return(EXIT_SUCCESS);

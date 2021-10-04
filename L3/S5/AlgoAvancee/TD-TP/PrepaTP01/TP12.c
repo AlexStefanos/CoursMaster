@@ -107,8 +107,8 @@ int main() {
     char c, select, select2;
     int pos, exit = 0;
     printf("Indiquer l'étiquette de la racine : \n");
-    fflush(stdin);
     scanf("%c", &c);
+    fflush(stdin);
     tree = newNode(c);
     while((select != 'Q') && (select != 'q')) {
         displayMainMenu();
@@ -156,9 +156,8 @@ int main() {
             }
             else if((select == 'Q') || (select == 'q'))
                 printf("C'est bon c'est fini\n");
-            else {
+            else
                 printf("Vous n'avez pas sélectionné un des caractères acceptés dans ce menu. Veuillez réessayer\n");
-            }
     }
     free(tree);
     free(nd);

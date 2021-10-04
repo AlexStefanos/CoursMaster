@@ -8,8 +8,6 @@ typedef struct node {
     struct node *sonL, *sonR;
 }node;
 
-//changer tous les switch en while + suite de if => voir s'il y a moins d'errerus de printf
-
 node *newNode(char c) {
     node *nw = NULL;
     static int nb;
@@ -114,7 +112,6 @@ int main() {
     tree = newNode(c);
     while((select != 'Q') && (select != 'q')) {
         displayMainMenu();
-        printf("Choix : \n");
         scanf("%c", &select);
         if((select == 'i') || (select == 'I')) {
                 printf("Insérer après quel noeud voulez-vous insérer un nouveau noeud (sachant que l'on commence à 1) :\n");

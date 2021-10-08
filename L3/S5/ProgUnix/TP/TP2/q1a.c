@@ -10,6 +10,12 @@ int main (int argc, char **argv) {
         exit(1);
     } à refaire en fonction des commandes que l'on veut exécuter. Par exemple, pour ps on veut un 3 argument*/
 
-    execl(argv[1], argv[1], NULL);
-    perror(argv[1]);
+   // execl(argv[1], argv[1], NULL);
+    //perror(argv[1]);
+    fork();
+    fork();
+    fork();
+
+    printf("Bonjour\n");
+    exit(0);
 }

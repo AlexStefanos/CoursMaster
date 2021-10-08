@@ -1,4 +1,4 @@
-package up.mi.jgm.td01;
+package up.mi.as.td01;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -383,11 +383,15 @@ public class UtilMath {
 				System.out.println("Ma Proposition est : " + prop);
 			}
 			else if (indice == '=') {
-				System.out.println("Victoire !");
+				System.out.println("J'ai trouvé !");
 			}
 			else
 				System.out.println("ERREUR : Veuillez Réessayer");
 		}
 		System.out.println("Victoire !");
+	}
+	
+	public static void fusion(int[] t, int iMin, int iMillieu, int iMax) {
+		
 	}
 }

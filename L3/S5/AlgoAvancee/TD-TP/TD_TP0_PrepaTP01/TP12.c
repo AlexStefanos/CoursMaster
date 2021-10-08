@@ -69,11 +69,34 @@ void insertSonR(node *ndInsert, node *tmp, int nbNode) {
     }
 }
 
+void pathwayPrefixL(node *nd) {
+    if(nd != NULL) {
+        for(int i = (8 - nd->nb);i > 0; i--)
+            printf("\t");
+        printf("%c(%d)\n", nd->label, nd->nb);
+        if (nd->sonL != NULL)
+            pathwayPrefixL(nd->sonL);
+    }
+}
+
+void pathwayPrefixR(node *nd) {
+    if(nd != NULL) {
+        printf("\t\t\t\t\t\t\t");
+            for(int i = (nd->nb - 1);i > 0; i--)
+                printf("\t");
+        printf("%c(%d)\n", nd->label, nd->nb);
+        if (nd->sonR != NULL)
+                pathwayPrefixR(nd->sonR);
+    }
+}
+
 void pathwayPrefix(node *nd) {
-    if (nd != NULL) {
-        printf("%c(%d)\t\n", nd->label, nd->nb);
-        pathwayPrefix(nd->sonL);
-        pathwayPrefix(nd->sonR);
+    if(nd != NULL) {
+        printf("\t\t\t\t\t\t\t%c(%d)\n", nd->label, nd->nb);
+        if (nd->sonL != NULL)
+            pathwayPrefixL(nd->sonL);
+        if (nd->sonR != NULL)
+            pathwayPrefixR(nd->sonR);
     }
 }
 
@@ -82,50 +105,66 @@ void deleteTree(node *nd) {
         deleteTree(nd->sonL);
         deleteTree(nd->sonR);
         if(nd->father != NULL) {
-            if(nd->father != NULL)
+            if(nd->father->sonL == nd)
                 nd->father->sonL = NULL;
-            else
+            else if (nd->father->sonR == nd)
                 nd->father->sonR = NULL;
         }
+        nd = NULL;
         free(nd);
         printf("L'arbre a été supprimé avec succès\n");
     }
 }
 
 void displayMainMenu() {
-    fflush(stdin);
-    printf("\n----------Menu principal----------\n");
-    printf("Insérer des noeuds (veuillez appuyer sur I):\n");
-    printf("Supprimer un noeud (veuillez appuyer sur S):\n");
-    printf("Afficher l'arbre (veuillez appuyer sur A):\n");
-    printf("Quitter (veuillez appuyer sur Q):\n");
+    printf("\n-------------------------------------------------Menu principal--------------------------------------------------\n");
+    printf("Insérer des noeuds (veuillez appuyer sur I)\n");
+    printf("Supprimer un noeud (veuillez appuyer sur S)\n");
+    printf("Afficher l'arbre (veuillez appuyer sur A)\n");
+    printf("Quitter (veuillez appuyer sur Q)\n");
+    printf("Votre choix : ");
 }
 
 int main() {
     node *tree = NULL;
     node *nd = NULL;
-    char c, select, select2;
+    char c, select, select2, buffer;
     int pos, exit = 0;
-    printf("Indiquer l'étiquette de la racine : \n");
+    printf("Indiquer l'étiquette de la racine : ");
     scanf("%c", &c);
-    fflush(stdin);
+    scanf("%c", &buffer);
+    printf("\n");
     tree = newNode(c);
     while((select != 'Q') && (select != 'q')) {
         displayMainMenu();
         scanf("%c", &select);
+        scanf("%c", &buffer);
         if((select == 'i') || (select == 'I')) {
-                printf("Insérer après quel noeud voulez-vous insérer un nouveau noeud (sachant que l'on commence à 1) :\n");
+                printf("Insérer après quel noeud voulez-vous insérer un nouveau noeud (sachant que l'on commence à 1) : ");
                 scanf("%d", &pos);
-                fflush(stdin);
-                printf("Indiquer l'étiquette du nouveau noeud : \n");
+                scanf("%c", &buffer);
+                printf("\n");
+                printf("Indiquer l'étiquette du nouveau noeud : ");
                 scanf("%c", &c);
-                fflush(stdin);
+                scanf("%c", &buffer);
+                printf("\n");
                 nd = newNode(c);
                 while(exit != 1) {
-                    printf("Insérer en fils gauche (veuillez appuyer sur G) :\n");
-                    printf("Insérer en fils droit (veuillez appuyer sur D) :\n");
-                    fflush(stdin);
+                    printf("Insérer en fils gauche (veuillez appuyer sur G)\n");
+                    printf("Insérer en fils droit (veuillez appuyer sur D)\n");
+                    printf("Votre choix : ");
                     scanf("%c", &select2);
+                    scanf("%c", &buffer);
+                    printf("\n");
+                    while(select2 != 'D' && select2 != 'd' && select2 != 'G' && select2 != 'g') {
+                            printf("Vous n'avez pas sélectionné un des caractères acceptés dans ce menu. Veuillez réessayer : \n");
+                        printf("Insérer en fils gauche (veuillez appuyer sur G)\n");
+                        printf("Insérer en fils droit (veuillez appuyer sur D)\n");
+                        printf("Votre choix : ");
+                        scanf("%c", &select2);
+                        scanf("%c", &buffer);
+                        printf("\n");
+                    }
                     if((select2 == 'G') || (select == 'g')) {
                             insertSonL(nd, tree, pos);
                             exit = 1;
@@ -135,22 +174,25 @@ int main() {
                             exit = 1;
                     }
                     else
-                            printf("Vous n'avez pas sélectionné un des caractères acceptés dans ce menu. Veuillez réessayer\n");
+                            printf("Vous n'avez pas sélectionné un des caractères acceptés dans ce menu. Veuillez réessayer : \n");
             }
             exit = 0;
           }
             else if((select == 'S') || (select == 's')) {
                 printf("Quel est le numéro de création de l'arbre à supprimer :\n");
                 scanf("%d", &pos);
+                scanf("%c", &buffer);
                 nd = searchNode(tree, pos);
-                if(nd != tree)
+                if(nd != tree) {
                     deleteTree(nd);
-                else //pas encore compris
+                    nd = NULL;
+                }
+                else
                     tree = NULL;
                 printf("\n");
             }
             else if((select == 'A') || (select == 'a')) {
-                printf("----------Affichage de l'arbre----------\n");
+                printf("-----------------------------------------------Affichage de l'arbre-----------------------------------------------\n");
                 pathwayPrefix(tree);
                 printf("\n");
             }

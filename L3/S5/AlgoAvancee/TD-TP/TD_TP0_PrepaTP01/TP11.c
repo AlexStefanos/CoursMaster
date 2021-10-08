@@ -11,17 +11,18 @@ typedef struct cell {
     struct cell *next, *prev;
 }cell;
 
-cell newCell(coord cod) {
+cell *newCell(coord cod) {
     cell *cl;
+    cell *null = NULL;
     cl = malloc(sizeof(cell));
     if (cl = NULL) {
         printf("Mauvaise gestion de l'allocation mémoire\n");
-        return(NULL);
+        return(null);
     }
     cl->next = NULL;
     cl->prev = NULL;
-    cl->coord=cod;
-    return cel;
+    cl->cod=cod;
+    return(cl);
 }
 
 void insert(int pos, cell *cl, cell *list) {
@@ -30,13 +31,13 @@ void insert(int pos, cell *cl, cell *list) {
     clSend = list;
 
     while(pos != tmp && clSend != NULL) {
-        celSend = celSend->next;
+        clSend = clSend->next;
         pos++;
     }
-    if(celSend != NULL) {
+    if(clSend != NULL) {
         cl->next = clSend->next;
         cl->prev = clSend;
-        clSend->next->prev->cl;
+        clSend->next->prev = cl;
         clSend->next = cl;
     }
     else
@@ -46,7 +47,7 @@ void insert(int pos, cell *cl, cell *list) {
 void deleteCell(int pos, cell *list) {
     int tmp = 0;
     cell *clSend;
-    celSend = list;
+    clSend = list;
 
     while(pos != tmp && clSend != NULL) {
         clSend = clSend->next;
@@ -61,4 +62,23 @@ void deleteCell(int pos, cell *list) {
     }
     else
         printf("Il n'y a rien à supprimer\n");
+}
+
+void displayCell(cell *list) {
+    if(list == NULL)
+        printf("La cellule donnée est vide\n");
+    while(list->next != NULL) {
+        printf("%p\n", list->next);
+        printf("\n");
+        printf("%p\n", list->prev);
+        printf("\n");
+    }
+}
+
+int main() {
+    coord cod;
+    cod.x = 2;
+    cod.y = 4;
+    cell *cl = NULL;
+    cl = newCell(cod);
 }

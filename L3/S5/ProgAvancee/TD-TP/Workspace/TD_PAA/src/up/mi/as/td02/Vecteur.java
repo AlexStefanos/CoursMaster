@@ -18,5 +18,19 @@ public class Vecteur {
 			return false;
 	}
 	
+	public int getVectP1X() {
+		return(p1.getX());
+	}
 	
+	public int getVectP1Y() {
+		return(p1.getY());
+	}
+	
+	public int getVectP2X() {
+		return(p2.getX());
+	}
+	
+	public int getVectP2Y() {
+		return(p2.getY());
+	}
 }

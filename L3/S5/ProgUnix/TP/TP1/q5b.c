@@ -10,10 +10,8 @@ int main(int argc, char **argv) {
         fprintf(stderr, "Usage %s nombre_de_fils duree_sommeil_fils\n", argv[0]);
         exit(EXIT_FAILURE);
     }
-
     nb_fils = atoi(argv[1]);
     dors_fils = atoi(argv[2]);
-
     for(i = 1; i <= nb_fils; i++) {
         pid = fork();
         if (pid < 0) {
@@ -25,11 +23,8 @@ int main(int argc, char **argv) {
             sleep(dors_fils);
             exit(i);
         }
-        else {
-        }
-
+        else {}
     }
-
     for(i = nb_fils; i >= 1; i--) {
         pid = wait(&code_retour);
         if (pid == -1) {
@@ -41,9 +36,8 @@ int main(int argc, char **argv) {
             printf("Le fils %d s'est terminé normalement et m'a retourné %d\n", getpid(),WEXITSTATUS(code_retour));
         else {
             printf("Le fils %d ne s'est pas terminé normalement et m'a retourné %d\n", getpid(),WEXITSTATUS(code_retour));
-            if (WIFSIGNALED(code_retour)) {
+            if (WIFSIGNALED(code_retour))
                 printf("\tIl a reçu le signal %d\n", WTERMSIG(code_retour));
-            }
         }
         printf("\t: sa valeur de retour est %d\n", code_retour);
         printf("Encore %d fils\n", i-1);

@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
 void fin_A() {
     printf("Fonction A\n");
@@ -20,7 +21,6 @@ int main(int argc, char **argv) {
      * les fonctions dont les demandes d'exécution en cas de terminaisons
      * ont été formules avec atexit
      * _exit ne fait rien de tout ça, elle met simplement fin au processus*/
-
     exit(EXIT_SUCCESS);
     //_exit(EXIT_SUCCESS);
 }

@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <sys/types.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/wait.h>
@@ -10,10 +10,8 @@ int main(int argc, char **argv) {
         fprintf(stderr, "Usage %s nombre_de_fils duree_sommeil_fils\n", argv[0]);
         exit(EXIT_FAILURE);
     }
-
     nb_fils = atoi(argv[1]);
     dors_fils = atoi(argv[2]);
-
     for(i = 1; i <= nb_fils; i++) {
         pid = fork();
         if (pid < 0) {
@@ -25,11 +23,8 @@ int main(int argc, char **argv) {
             sleep(dors_fils);
             exit(i);
         }
-        else {
-        }
-
+        else {}
     }
-
     for(i = nb_fils; i >= 1; i--) {
         pid = wait(&code_retour);
         if (pid == -1) {

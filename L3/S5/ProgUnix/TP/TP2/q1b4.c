@@ -3,13 +3,11 @@
 #include <unistd.h>
 
 int main (int argc, char **argv) {
-    //char *cde;
-
     if (argc < 2) {
         fprintf(stderr, "Usage %s commande\n", argv[0]);
-        exit(1);
+        exit(EXIT_FAILURE);
     }
-
     execvp(argv[1], &argv[1]);
     perror("Erreur execvp");
+    exit(EXIT_FAILURE);
 }

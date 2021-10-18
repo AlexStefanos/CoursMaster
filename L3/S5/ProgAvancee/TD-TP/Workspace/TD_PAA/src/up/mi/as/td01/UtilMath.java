@@ -391,7 +391,62 @@ public class UtilMath {
 		System.out.println("Victoire !");
 	}
 	
-	public static void fusion(int[] t, int iMin, int iMillieu, int iMax) {
+	/*
+	 * Prend en entrée un tableau t tel que les valeurs sont triées entre iMin
+	 * (inclus) et iMilieu (exclu) d'une part, et entre iMilieu (inclus) et iMax
+	 * (exclus) d'autre part. Modifie le tableau pour qu'il soit trié entre iMin
+	 * (inclus) et iMax (exclus)
+	 * 
+	 * @param t 		le tableau dans lequel on fusionne les données
+	 * @param iMin		l'indice de début des zones à fusionner
+	 * @param iMilieu	l'indice du pivot entre les zones à fusionner
+	 * @param iMax		l'indice de la fin des zones à fusionner
+	 */
+	public static void fusion(int[] t, int iMin, int iMilieu, int iMax) {
+		int[] tmpTab = new int[iMax - iMin];
+		int i, j, cpt;
 		
+		for(cpt = 0, i = iMin, j = iMilieu; (i < iMilieu) && (j < iMax);) {
+			if(t[i] < t[j]) {
+				tmpTab[cpt] = t[i];
+				cpt++;
+				i++;
+			}
+			else {
+				tmpTab[cpt] = t[j];
+				cpt++;
+				j++;
+			}
+		}
+		while(i < iMilieu) {
+			tmpTab[cpt] = t[i];
+			cpt++;
+			i++;
+		}
+		while(j < iMax) {
+			tmpTab[cpt] = t[j];
+			cpt++;
+			j++;
+		}
+		for(i = 0; i < tmpTab.length; i++) {
+			t[iMin + i] = tmpTab[i];
+		}
+	}
+	
+	/*
+	 * Trie un tableau d'entier par fusion etre les indices iMin (inclus) et iMax
+	 * (exclus)
+	 * 
+	 * @param t		le tableau à trier
+	 * @param iMin	l'indice du début de la zone à trier
+	 * @param iMax	l'indice de fin de la zone à trier
+	 */
+	public static void triFusion(int[] t, int iMin, int iMax) {
+		if(iMax - iMin > 1) {
+			int iMilieu = (iMin + iMax) / 2;
+			triFusion(t, iMin, iMilieu);
+			triFusion(t, iMilieu, iMax);
+			fusion(t, iMin, iMilieu, iMax);
+		}
 	}
 }

@@ -1,8 +1,8 @@
 package up.mi.as.td02;
 
 public class Point {
-	private int x;
-	private int y;
+	protected int x; //protected pour le td03
+	protected int y;
 	
 	public Point(int x, int y) {
 		this.x = x;

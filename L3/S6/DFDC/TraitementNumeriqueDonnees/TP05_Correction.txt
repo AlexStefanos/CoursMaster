@@ -1,0 +1,116 @@
+############### Papillons
+
+#### Chargement des données
+
+papillons <- read.table("D:/Learning/L3_R_2015/Data/papillons.txt",header = T)
+View(papillons)
+
+### Suppression de la première colonne qui contient les indices des lignes
+papillons = papillons[,-1]
+
+
+### PCA et CA: nécessite l'installation du package FactoMineR
+res.pca = PCA(as.matrix(papillons),ncp = 2)
+res.ca = CA(as.matrix(papillons),ncp = 2)
+
+#### CAH Ward sur Papillons
+
+D <- dist(papillons, method = "euclidean")
+# CAH - critère de Ward
+H <- hclust(D^2, method="ward.D")
+
+plot(H)
+rect.hclust(H,2)
+
+classes_ori <- cutree(H, k=2)
+
+##### CAH Ward sur res.pca
+
+papillons_pca = res.pca$ind$coord
+View(papillons_pca)
+plot(papillons_pca)
+
+D <- dist(papillons_pca, method = "euclidean")
+# CAH - critere de Ward
+H <- hclust(D^2, method="ward.D")
+
+plot(H)
+rect.hclust(H,4)
+
+classes_pca <- cutree(H, k=4)
+
+##### CAH Ward sur res.ca
+
+papillons_ca = res.ca$row$coord
+plot(papillons_ca)
+
+D <- dist(papillons_ca, method = "euclidean")
+# CAH - critere de Ward
+H <- hclust(D^2, method="ward.D")
+
+plot(H)
+rect.hclust(H,4)
+
+classes_ca <- cutree(H, k=4)
+
+
+
+##### Construction de la vraie partition
+
+papillons_classes = c(1,2,3,2,1,4,3,2,2,3,1,3,3,2,1,2,3,3,3,1,3,2,1)
+
+## Confrontation des résultats
+table(papillons_classes,classes_ori)
+table(papillons_classes,classes_pca)
+table(papillons_classes,classes_ca)
+
+
+###### CAH Ward sur la matrice de distances du Chi2
+
+# Xi.
+row_margin = rowSums(papillons)
+
+# X.j
+col_margin = colSums(papillons)
+
+# Normalisation des données papillons
+papillons_norm = sweep(papillons, 1, FUN = "/", row_margin )
+papillons_norm = sweep(papillons_norm, 2, FUN = "/", sqrt(col_margin) )
+
+
+# CAH - critere de Ward sur données normalisées
+D <- dist(papillons_norm, method = "euclidean")
+H <- hclust(D^2, method="ward.D")
+
+plot(H)
+rect.hclust(H,4)
+
+classes_norm <- cutree(H, k=4)
+
+table(papillons_classes,classes_norm)
+
+
+
+#################################################
+#################### K-means ####################
+#################################################
+
+### K-means sur données originales
+res.km = kmeans(papillons,centers= 4, iter.max = 30,nstart = 10,algorithm = "Lloyd")
+table(papillons_classes,res.km$cluster)
+
+
+### K-means après une ACP
+res.km = kmeans(papillons_pca,centers= 4, iter.max = 30,nstart = 10,algorithm = "Lloyd")
+table(papillons_classes,res.km$cluster)
+plot(papillons_pca,col =res.km$cluster,pch = 16 )
+
+### K-means après une AFC
+res.km = kmeans(papillons_ca,centers= 4, iter.max = 30,nstart = 10,algorithm = "Lloyd")
+table(papillons_classes,res.km$cluster)
+plot(papillons_ca,col =res.km$cluster,pch = 16 )
+
+
+#### K-means après une normalisation Chi2
+res.km = kmeans(papillons_norm,centers= 4, iter.max = 10,nstart = 10,algorithm = "Lloyd")
+table(papillons_classes,res.km$cluster)

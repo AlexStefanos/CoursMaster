@@ -1,0 +1,33 @@
+/* Stylesheet.css
+ * 
+ * Groupe 3, TD 2 : DUBOUX Élie, NAMOLARU Leonard, ANDRIAMIHAJA Rhidine 
+ * Projet 2020 - 2021 : Mesure du niveau du contenu d’un verre • UE Traitement des Images Numériques
+ * Licence Informatique et Applications - UFR Maths-Info - Université de Paris
+ */
+
+
+#grandTitre {
+	-fx-font-size : 50px;
+	-fx-font-weight : bold;
+}
+
+#galerieTitre {
+	-fx-font-size : 40px;	
+}
+
+
+#nomUE {
+	-fx-font-size : 20px;
+	-fx-font-weight : bold;
+}
+
+#explicationDivisionBaseImages {
+	-fx-background-color : white;
+	-fx-padding : 16px;
+	-fx-font-size : 15px;
+}
+
+#titreLesResultats{
+	-fx-font-size : 15px;
+	-fx-font-weight : bold;
+}

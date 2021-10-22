@@ -1,0 +1,17 @@
+
+Shell "avancé" avec redirection ES
+
+Exemples de commandes qui fonctionnent avec ce shell :
+
+
+ls -a -l
+mkdir "Mon nouveau dossier avec &un >nom zarbi :)"
+cp grosFichier ../autreDossier/ &
+cat fichierTexte >fich.log
+cat fichierInexistant 2>sortie.log
+gedit fichier &2>err.log
+
+
+Me contacter par mon profil si besoin d'aide ! :-)
+
+ Posté par ii05816 le 10/10/2019 à 19:36 

@@ -1,0 +1,48 @@
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int pid;
+
+#define MAX_ARG 10
+int main(int argc, char *argv[]) {
+
+	if(argc < 3) {
+		fprintf(stderr,"Usage : %s t file pgm arg1 arg2 .. argN \n");
+		exit(EXIT_FAILURE);
+	}
+
+	int i, j;
+	char *args[MAX_ARG];
+	for(i = 0 , j = 3 ; argv[j] != NULL ; i++, j++)
+		args[i] = argv[j];
+	
+	pid = fork();
+	if(pid == 0) { // CODE DU FILS 
+		dup2(1, argv[2]);
+		execvp(argv[3], args);
+	}
+
+	struct sigaction action;
+	sigemptyset(&action.sa_mask);
+	action.sa_flags = 0;
+	action.sa_handler = handler;
+
+	wait(NULL);
+	alarm( argv[1] );
+	printf("TEMPS", alarm(0));
+}
+
+void handler(int signal_number) {
+
+	if( kill(SIGSTREM, pid) < 0) 
+        {
+		kill(SIGKILL, pid);
+		printf("termin brutale");
+        }
+        else
+	{
+		printf("termine dousse");
+	}
+}

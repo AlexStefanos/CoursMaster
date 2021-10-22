@@ -1,0 +1,1 @@
+Mathématiques pour l'informatique 2019/2020 (support de cours, exercices et annales) algèbre linéaire, algèbre bilinéaire, espaces vectoriels, ensembles flous, fonctions de plusieurs variables.

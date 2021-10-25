@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -13,7 +12,7 @@ int main(int argc, char **argv) {
         fprintf(stderr, "Usage : %s fichier\n", argv[0]);
         exit(1);
     }
-/* O_RDWR ouvir pour lire et écrire ReaDingWRiting
+/* O_RDWR ouvir pour lire et écrire (= ReaDingWRiting)
  * O_CREAT création du fichier s'il n'existe pas
  * O_CREAT|O_EXCL création du fichier s'il n'existe pas mais erreur s'il existe déjà*/
     fd = open(argv[1], O_RDWR|O_CREAT|O_EXCL, 0666);

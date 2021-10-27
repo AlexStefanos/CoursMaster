@@ -14,6 +14,7 @@ int main(int argc, char **argv) {
             *bg = '\0';
     
         for(i = 0; s = strtok(cmd, " "), s != NULL, s = strtok(NULL, " "); i++) {
+            printf("s : %s\n", cmd);
             arg[i] = (char *)malloc(strlen(s) + 1);
             strcpy(arg[i], s);
         }
@@ -24,8 +25,6 @@ int main(int argc, char **argv) {
             else if(pid == 0) {
                 printf("\n");
                 execvp(arg[0], arg);
-                /*Si on est là c'est qu'il y a un problème, 
-                affichage d'un message d'erreur*/
                 perror("execvp");
             }
             else {

@@ -74,5 +74,5 @@ int main(int argc, char **argv) {
     printf("\n%d:\tPose du verrou %s effectuée\n", getpid(), mode_voulu);
     for(;;)
         sleep(10);
-    return(0);
+    return(EXIT_SUCCESS);
 }

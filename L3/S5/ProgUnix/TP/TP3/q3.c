@@ -11,7 +11,7 @@ int main(int argc, char **argv) {
     int nb_read, nb_write, fd_source, fd_destination, taille_buffer, total_copie, total_ES;
     if(argc != 4) {
         fprintf(stderr, "Usage : %s fichier_source fichier_destination taille_buffer\n", argv[0]);
-        exit(ExIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
     if(stat(argv[1], &info) != 0) {
         perror("Echec stat : ");
@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
         exit(EXIT_FAILURE);
     }
 
-    fd_destination = open(argv[2], O_WRONLY|O_CREAT|O_EXECL, 0644);
+    fd_destination = open(argv[2], O_WRONLY|O_CREAT|O_EXCL, 0644);
     if(fd_destination == -1) {
         perror(argv[2]);
         exit(EXIT_FAILURE);
@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
         exit(EXIT_FAILURE);
     }
 
-    for(nb_read = read(fd_source, buffer, taille_buffer), total_copie = 0, total_RS = 0; (nb_read != 0)&&(nb_read != -1); nb_read = read(fd_source, buffer, taille_buffer)) {
+    for(nb_read = read(fd_source, buffer, taille_buffer), total_copie = 0, total_ES = 0; (nb_read != 0)&&(nb_read != -1); nb_read = read(fd_source, buffer, taille_buffer)) {
         if(nb_read > 0)
             nb_write = write(fd_destination, buffer, nb_read);
         if(nb_write == -1) {
@@ -49,7 +49,7 @@ int main(int argc, char **argv) {
             exit(EXIT_FAILURE);
         }
         total_copie = total_copie + nb_write;
-        total_RS++;
+        total_ES++;
     }
     if(nb_read == -1) {
         perror(argv[1]);
@@ -57,6 +57,6 @@ int main(int argc, char **argv) {
     }
     printf("Copié : \t\t%d octets\n", total_copie);
     printf("Buffer : \t\t%d octets\n", taille_buffer);
-    printf("Nombre d'E/S : \t%d\n", total_RS);
+    printf("Nombre d'E/S : \t%d\n", total_ES);
     exit(EXIT_SUCCESS);
 }

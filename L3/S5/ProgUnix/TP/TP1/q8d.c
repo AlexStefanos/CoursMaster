@@ -19,8 +19,8 @@ int main(int argc, char **argv) {
     printf("FILS, mon PID est %d\n", getpid());
     printf("FILS, le processus leader de mon groupe est : %d\n\n", mon_leader);
   }
-  mon_groupe = getpgrp();
-  if() {
+  else {
+    mon_groupe = getpgrp();
     if(mon_groupe == -1) {
       perror("Erreur getpgrp père");
       exit(2);

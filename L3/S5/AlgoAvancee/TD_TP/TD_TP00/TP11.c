@@ -61,7 +61,7 @@ void deleteCell(int pl, cell *list) {
 
 void displayCell(cell *list) {
     cell *currentCell = list->next;
-    printf("Les points dans l'ordre voulue :\n");
+    printf("Les points dans l'ordre inséré :\n");
     do {
         printf("\tx = %d, y = %d\n", currentCell->pos.x, currentCell->pos.y);
 	currentCell = currentCell->next;
@@ -69,50 +69,71 @@ void displayCell(cell *list) {
     free(currentCell);
 }
 
-int main(int argc, char **argv) {
-    int pos;
-    char chosen;
-    point p;
-    point tmp = {tmp.x=-1, tmp.y=-1};
-    cell *newCe = NULL;
-    cell *list = newCell(tmp);
-    do {
-        chosen = 'a';
-        printf("\n-------------------------------------------------Menu principal--------------------------------------------------\n");
+void displayMainMenu() {
+        printf("-------------------------------------------------Menu principal--------------------------------------------------\n");
         printf("Créer une cellule (veuillez appuyer sur C)\n");
-        printf("Insérer une cellule (veuillez appuyer sur I)\n");
         printf("Supprimer une cellule (veuillez appuyer sur S)\n");
         printf("Afficher la liste (veuillez appuyer sur A)\n");
         printf("Quitter (veuillez appuyer sur Q)\n");
         printf("Votre choix : ");
-	scanf("%s", &chosen);
-	switch (chosen) {
-            case 'C' :
-	        printf("Coordonnées de la nouvelle cellule (x y) : \n");
-                printf("Exemple : \n\tSi vous voulez que x = 5 et y = 2, veuillez insérer les valeurs ainsi : 5 2\n");
-	        scanf("%d %d", &p.x, &p.y);
-	        newCe = newCell(p);
-	        break;
-	    case 'I' :
-                if (newCe == NULL) {
-		    printf("Vous devez d'abord créé une celulle !\n\n");
-		    break;
-                }
-		printf("Position de la cellule à insérer : ");
-		scanf("%d", &pos);
-		insertCell(pos, newCe, list);
-		break;
-	    case 'S' :
-		printf("Position de la Cell à supprimer : (>=1) ");
-		scanf("%d", &pos);
-		deleteCell(pos, list);
-		break;
-	    case 'A':
-		displayCell(list);
-	        break;
-	}
-    }while (chosen != 'Q');
+}
+
+
+int main() {
+    int pos, exit;
+    char c, buffer;
+    point p;
+    point tmp = {tmp.x=-1, tmp.y=-1};
+    cell *newCe = NULL;
+    cell *list = newCell(tmp);
+
+    exit = 0;
+    c = 'z';
+    while((c != 'Q') && (c != 'q')) {
+	displayMainMenu();
+        scanf("%c", &c);
+        scanf("%c", &buffer);
+	if((c == 'C') || (c == 'c')) {
+            exit = 1;
+	    printf("Coordonnées de la nouvelle cellule (x y) : \n");
+            printf("Exemple : \n\tSi vous voulez que x = 5 et y = 2, veuillez insérer les valeurs ainsi : 5 2\n");
+	    scanf("%d %d", &p.x, &p.y);
+	    newCe = newCell(p);
+            if (newCe == NULL)
+		printf("Vous devez d'abord créé une celulle !\n\n");
+	    printf("Position de la cellule à insérer (>=1) : ");
+	    scanf("%d", &pos);
+            scanf("%c", &buffer);
+            while(pos < 1) {
+                printf("Vous avez indiqué une valeur < 1. Veuillez réessayer\n");
+	        scanf("%d", &pos);
+                scanf("%c", &buffer);
+            }
+	    insertCell(pos, newCe, list);
+        }
+        else if((c == 'S') || (c == 's')) {
+	    printf("Position de la cellule à supprimer (>=1) : ");
+	    scanf("%d", &pos);
+            scanf("%c", &buffer);
+            while(pos < 1) {
+                printf("Vous avez indiqué une valeur < 1. Veuillez réessayer\n");
+	        scanf("%d", &pos);
+                scanf("%c", &buffer);
+            }
+	    deleteCell(pos, list);
+        }
+        else if((c == 'A') || (c == 'a')) {
+            if(exit == 0)
+                printf("Veuillez créer des cellules avant de les afficher\n");
+            else
+                displayCell(list);
+        }
+        else if((c == 'Q') || (c == 'q'))
+        printf("\n-------------------------------------------------THE END--------------------------------------------------\n\n");
+        else
+            printf("Vous n'avez pas séletionné un des caractères acceptés dans ce menu. Veuillez réessayer\n");
+    }
     free(newCe);
     free(list);
-    return EXIT_SUCCESS;
+    return(EXIT_SUCCESS);
 }

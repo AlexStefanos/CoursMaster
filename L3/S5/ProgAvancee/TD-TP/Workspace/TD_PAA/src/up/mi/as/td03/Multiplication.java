@@ -1,9 +1,9 @@
 package up.mi.as.td03;
 
-public class Soustraction extends Operateur {
+public class Multiplication extends Operateur {
 	private Operateur a, b;
 	
-	public Soustraction(Operateur a, Operateur b) {
+	public Multiplication(Operateur a, Operateur b) {
 		super(2);
 		this.a = a;
 		this.b = b;
@@ -11,6 +11,6 @@ public class Soustraction extends Operateur {
 	
 	@Override
 	public double evaluer() {
-		return(a.evaluer() - b.evaluer());
+		return(a.evaluer() * b.evaluer());
 	}
 }

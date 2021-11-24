@@ -1,5 +1,7 @@
 package up.mi.as.td02;
 
+import up.mi.as.td04.RepertoireSimple;
+
 public class TestRepertoire {
 	public static void main(String args[]) {
 		RepertoireSimple rep = new RepertoireSimple();

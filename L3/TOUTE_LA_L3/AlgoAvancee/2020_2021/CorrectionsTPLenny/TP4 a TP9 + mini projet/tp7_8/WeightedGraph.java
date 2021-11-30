@@ -1,17 +1,17 @@
-// Par Sylvain Lobry, pour le cours "IF05X040 Algorithmique avancée"
-// de l'Université de Paris, 11/2020
+// Par Sylvain Lobry, pour le cours "IF05X040 Algorithmique avancï¿½e"
+// de l'Universitï¿½ de Paris, 11/2020
 package tp7_8;
 
 import java.util.LinkedList;
 import java.util.ArrayList;
 
 /**
- * Une classe qui représente un graphe pondéré.
- * Un graphe pondéré (weighted graph) ou un réseau (network) est un graphe dans lequel
- * un nombre (un poids) est attribué à chaque arête. 
- * De tels poids peuvent représenter par exemple des coûts, des longueurs ou des capacités, 
- * selon le problème à résoudre. De tels graphes surviennent dans de nombreux contextes,
- * par exemple dans les problèmes du plus court chemin.
+ * Une classe qui reprï¿½sente un graphe pondï¿½rï¿½.
+ * Un graphe pondï¿½rï¿½ (weighted graph) ou un rï¿½seau (network) est un graphe dans lequel
+ * un nombre (un poids) est attribuï¿½ ï¿½ chaque arï¿½te. 
+ * De tels poids peuvent reprï¿½senter par exemple des coï¿½ts, des longueurs ou des capacitï¿½s, 
+ * selon le problï¿½me ï¿½ rï¿½soudre. De tels graphes surviennent dans de nombreux contextes,
+ * par exemple dans les problï¿½mes du plus court chemin.
  * (Source : en.wikipedia.org - CC BY-SA 3.0)
  * 
  * @author Sylvain Lobry (commentaires : Leonard NAMOLARU)
@@ -20,33 +20,33 @@ import java.util.ArrayList;
 public class WeightedGraph {
 	
 	/** 
-	 * Sous-classe qui représente une arrête.
-	 * Une arête (edge) est une liaison entre deux sommets d'un graphe. 
+	 * Sous-classe qui reprï¿½sente une arrï¿½te.
+	 * Une arï¿½te (edge) est une liaison entre deux sommets d'un graphe. 
 	 * (Source : fr.wikipedia.org - CC BY-SA 3.0)
 	 */
     static class Edge {
     	
     	/**
-    	 * Le sommet de départ de l'arête.
+    	 * Le sommet de dï¿½part de l'arï¿½te.
     	 */	
         int source;
         
     	/**
-    	 * Le sommet de destination de l'arête. 
+    	 * Le sommet de destination de l'arï¿½te. 
     	 */	
         int destination;
         
     	/**
-    	 * Le nombre (poids) qui est associé à l'arête.
+    	 * Le nombre (poids) qui est associï¿½ ï¿½ l'arï¿½te.
     	 */	        
         double weight;
         
     	/**
-    	 * Constructeur : créer une nouvelle instance de l'objet Edge
+    	 * Constructeur : crï¿½er une nouvelle instance de l'objet Edge
     	 * 
-    	 * @param source        Le sommet de départ de l'arête.
-    	 * @param destination 	Le sommet de destination de l'arête. 
-    	 * @param weight        Le nombre (poids) qui est associé à l'arête.
+    	 * @param source        Le sommet de dï¿½part de l'arï¿½te.
+    	 * @param destination 	Le sommet de destination de l'arï¿½te. 
+    	 * @param weight        Le nombre (poids) qui est associï¿½ ï¿½ l'arï¿½te.
     	 */
         public Edge(int source, int destination, double weight) {
             this.source = source;
@@ -56,54 +56,54 @@ public class WeightedGraph {
     }
     
 	/** 
-	 * Sous-classe qui représente un sommet.
-	 * Un sommet, aussi appelé nœud, est l'unité fondamentale d'un graphe. 
+	 * Sous-classe qui reprï¿½sente un sommet.
+	 * Un sommet, aussi appelï¿½ nï¿½ud, est l'unitï¿½ fondamentale d'un graphe. 
 	 * (Source : fr.wikipedia.org - CC BY-SA 3.0)
 	 */
     static class Vertex {
     	
     	/**
-    	 * Distance du nœud courant au voisin.
-    	 * Fait référence à la formule (tA + tB)/2,
-    	 * où tX est le temps nécessaire pour parcourir horizontalement ou verticalement la case X.
-    	 * Le poids d’une arrête allant d’une case A à B (connexes) 
-    	 * doit être une combinaison du temps pour parcourir une case définie dans le fichier texte.
+    	 * Distance du nï¿½ud courant au voisin.
+    	 * Fait rï¿½fï¿½rence ï¿½ la formule (tA + tB)/2,
+    	 * oï¿½ tX est le temps nï¿½cessaire pour parcourir horizontalement ou verticalement la case X.
+    	 * Le poids dï¿½une arrï¿½te allant dï¿½une case A ï¿½ B (connexes) 
+    	 * doit ï¿½tre une combinaison du temps pour parcourir une case dï¿½finie dans le fichier texte.
     	 * (Source : Consignes.pdf)
     	 */
     	double indivTime;
     	
     	/**
-    	 * Le coût du chemin que construit Dijkstra.
-    	 * Coût du chemin que construit Dijkstra une fois arrivé au sommet en question.
+    	 * Le coï¿½t du chemin que construit Dijkstra.
+    	 * Coï¿½t du chemin que construit Dijkstra une fois arrivï¿½ au sommet en question.
     	 */
     	double timeFromSource;
     	
     	/**
-    	 * Une distance estimée au nœud d’arriver.
-    	 * Estimation du coût réel (si on avait déroulé le Dijkstra jusqu’au bout)
+    	 * Une distance estimï¿½e au nï¿½ud dï¿½arriver.
+    	 * Estimation du coï¿½t rï¿½el (si on avait dï¿½roulï¿½ le Dijkstra jusquï¿½au bout)
     	 */  	
     	double heuristic;
     	
     	/**
-    	 * Le sommet précédent (le nœud parent).
+    	 * Le sommet prï¿½cï¿½dent (le nï¿½ud parent).
     	 */  	
     	Vertex prev;
     	
     	/**
-    	 * Liste des arêtes voisins.
-    	 * (Arêtes dont l'une des extrémités est ce sommet).
+    	 * Liste des arï¿½tes voisins.
+    	 * (Arï¿½tes dont l'une des extrï¿½mitï¿½s est ce sommet).
     	 */  	
     	LinkedList<Edge> adjacencylist;
     	
     	/**
-    	 * Le numéro du sommet.
+    	 * Le numï¿½ro du sommet.
     	 */
     	int num;
     	
     	/**
-    	 * Constructeur : créer une nouvelle instance de l'objet Vertex
+    	 * Constructeur : crï¿½er une nouvelle instance de l'objet Vertex
     	 * 
-    	 * @param num	Le numéro du sommet.
+    	 * @param num	Le numï¿½ro du sommet.
     	 */
     	public Vertex(int num) {
     		this.indivTime = Double.POSITIVE_INFINITY;
@@ -115,10 +115,10 @@ public class WeightedGraph {
     	}
     	
     	/**
-    	 * Une fonction qui ajoute une arête au début de la liste des arêtes voisines
-    	 * (arêtes dont l'une des extrémités est ce sommet).
+    	 * Une fonction qui ajoute une arï¿½te au dï¿½but de la liste des arï¿½tes voisines
+    	 * (arï¿½tes dont l'une des extrï¿½mitï¿½s est ce sommet).
     	 * 
-    	 * @param e	Une instance de l'objet Edge (une arête).
+    	 * @param e	Une instance de l'objet Edge (une arï¿½te).
     	 */
     	public void addNeighbor(Edge e) {
     		this.adjacencylist.addFirst(e);
@@ -126,10 +126,10 @@ public class WeightedGraph {
     }
 
 	/** 
-	 * Sous-classe qui représente un graphe.
-	 * Un graphe est une structure composée d'objets dans laquelle certaines paires d'objets sont en relation.
-	 * Les objets correspondent à des abstractions mathématiques et sont appelés sommets, 
-	 * et les relations entre sommets sont des arêtes.
+	 * Sous-classe qui reprï¿½sente un graphe.
+	 * Un graphe est une structure composï¿½e d'objets dans laquelle certaines paires d'objets sont en relation.
+	 * Les objets correspondent ï¿½ des abstractions mathï¿½matiques et sont appelï¿½s sommets, 
+	 * et les relations entre sommets sont des arï¿½tes.
 	 * (Source : fr.wikipedia.org - CC BY-SA 3.0)
 	 */
     static class Graph {
@@ -144,7 +144,7 @@ public class WeightedGraph {
         int num_v = 0;
         
     	/**
-    	 * Constructeur : créer une nouvelle instance de l'objet Graph.
+    	 * Constructeur : crï¿½er une nouvelle instance de l'objet Graph.
     	 * 
     	 */
         Graph() {
@@ -154,7 +154,7 @@ public class WeightedGraph {
     	/**
     	 * Une fonction qui ajoute un nouveau sommet au graphe.
     	 * 
-    	 * @param indivTime		Fait référence à la formule tA + tB/2.
+    	 * @param indivTime		Fait rï¿½fï¿½rence ï¿½ la formule tA + tB/2.
     	 */
         public void addVertex(double indivTime)
         {
@@ -165,11 +165,11 @@ public class WeightedGraph {
         }
         
     	/**
-    	 * Une fonction qui ajoute un nouvelle arête au graphe.
+    	 * Une fonction qui ajoute un nouvelle arï¿½te au graphe.
     	 * 
-    	 * @param source        Le sommet de départ de l'arête.
-    	 * @param destination 	Le sommet de destination de l'arête. 
-    	 * @param weight        Le nombre (poids) qui est associé à l'arête.
+    	 * @param source        Le sommet de dï¿½part de l'arï¿½te.
+    	 * @param destination 	Le sommet de destination de l'arï¿½te. 
+    	 * @param weight        Le nombre (poids) qui est associï¿½ ï¿½ l'arï¿½te.
     	 */
         public void addEgde(int source, int destination, double weight) {
             Edge edge = new Edge(source, destination, weight);
@@ -180,22 +180,22 @@ public class WeightedGraph {
     
       public static void main(String[] args) {
             //int vertices = 6; // Le nombre total de sommets dans le graphe.
-            Graph graph = new Graph(); // Appel au constructeur : création d'une nouvelle instance de l'objet Graph.
+            Graph graph = new Graph(); // Appel au constructeur : crï¿½ation d'une nouvelle instance de l'objet Graph.
             graph.addVertex(10); // Ajout du sommet 0 au graphe.
             graph.addVertex(10); // Ajout du sommet 1 au graphe.
             graph.addVertex(10); // Ajout du sommet 2 au graphe.
             graph.addVertex(10); // Ajout du sommet 3 au graphe.
             graph.addVertex(10); // Ajout du sommet 4 au graphe.
             graph.addVertex(10); // Ajout du sommet 5 au graphe.
-            graph.addEgde(0, 1, 4); // Arête entre les sommets 0 et 1. Le poids de l'arête est 4.
-            graph.addEgde(0, 2, 3); // Arête entre les sommets 0 et 2. Le poids de l'arête est 3.
-            graph.addEgde(1, 3, 2); // Arête entre les sommets 1 et 3. Le poids de l'arête est 2.
-            graph.addEgde(1, 2, 5); // Arête entre les sommets 1 et 2. Le poids de l'arête est 5.
-            graph.addEgde(2, 3, 7); // Arête entre les sommets 2 et 3. Le poids de l'arête est 7.
-            graph.addEgde(3, 4, 2); // Arête entre les sommets 3 et 4. Le poids de l'arête est 2.
-            graph.addEgde(4, 0, 4); // Arête entre les sommets 4 et 0. Le poids de l'arête est 4.
-            graph.addEgde(4, 1, 4); // Arête entre les sommets 4 et 1. Le poids de l'arête est 4.
-            graph.addEgde(4, 5, 6); // Arête entre les sommets 4 et 5. Le poids de l'arête est 6.
+            graph.addEgde(0, 1, 4); // Arï¿½te entre les sommets 0 et 1. Le poids de l'arï¿½te est 4.
+            graph.addEgde(0, 2, 3); // Arï¿½te entre les sommets 0 et 2. Le poids de l'arï¿½te est 3.
+            graph.addEgde(1, 3, 2); // Arï¿½te entre les sommets 1 et 3. Le poids de l'arï¿½te est 2.
+            graph.addEgde(1, 2, 5); // Arï¿½te entre les sommets 1 et 2. Le poids de l'arï¿½te est 5.
+            graph.addEgde(2, 3, 7); // Arï¿½te entre les sommets 2 et 3. Le poids de l'arï¿½te est 7.
+            graph.addEgde(3, 4, 2); // Arï¿½te entre les sommets 3 et 4. Le poids de l'arï¿½te est 2.
+            graph.addEgde(4, 0, 4); // Arï¿½te entre les sommets 4 et 0. Le poids de l'arï¿½te est 4.
+            graph.addEgde(4, 1, 4); // Arï¿½te entre les sommets 4 et 1. Le poids de l'arï¿½te est 4.
+            graph.addEgde(4, 5, 6); // Arï¿½te entre les sommets 4 et 5. Le poids de l'arï¿½te est 6.
             //graph.printGraph();
         }
 }

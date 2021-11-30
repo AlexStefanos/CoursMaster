@@ -1,5 +1,5 @@
-// Par Sylvain Lobry, pour le cours "IF05X040 Algorithmique avancée"
-// de l'Université de Paris, 11/2020
+// Par Sylvain Lobry, pour le cours "IF05X040 Algorithmique avancï¿½e"
+// de l'Universitï¿½ de Paris, 11/2020
 
 package tp7_8;
 
@@ -15,7 +15,7 @@ import java.util.LinkedList;
 
 import javax.swing.JFrame;
 
-import tp7_8.WeightedGraph.Graph;
+import tp7_8.WeightedGraph;
 
 
 /**
@@ -23,17 +23,17 @@ import tp7_8.WeightedGraph.Graph;
  */
 public class App {
 	
-	//Méthode principale
+	//Mï¿½thode principale
 	public static void main(String[] args) {
-		//Lecture de la carte et création du graphe
+		//Lecture de la carte et crï¿½ation du graphe
 		try {
-			  //TODO: obtenir le fichier qui décrit la carte
-		      File myObj = new File( args[0] );  // Le chemin d'accès au fichier source est obtenu à l'aide d'un argument qui est passé par le terminal
+			  //TODO: obtenir le fichier qui dï¿½crit la carte
+		      File myObj = new File( args[0] );  // Le chemin d'accï¿½s au fichier source est obtenu ï¿½ l'aide d'un argument qui est passï¿½ par le terminal
 		      Scanner myReader = new Scanner(myObj);
 		      String data = "";
 		      
-		      /* On ignore les deux premières lignes
-		       * Les deux premières lignes (lignes 0 + 1) :
+		      /* On ignore les deux premiï¿½res lignes
+		       * Les deux premiï¿½res lignes (lignes 0 + 1) :
 		       * ==Metadata==
 		       * =Size=
 		       */
@@ -64,14 +64,14 @@ public class App {
 		      data = myReader.nextLine(); // Ligne 4 : =Types=
 		      
 		      data = myReader.nextLine();
-		      // Lire les différents types de cases
+		      // Lire les diffï¿½rents types de cases
 		      while (!data.equals("==Graph=="))
 		      {
 		    	  String name = data.split("=")[0];
-		    	  int time = Integer.parseInt(data.split("=")[1]); // G=<int: Le temps nécessaire pour parcourir verticalement ou horizontalement une case de ce type>
+		    	  int time = Integer.parseInt(data.split("=")[1]); // G=<int: Le temps nï¿½cessaire pour parcourir verticalement ou horizontalement une case de ce type>
 		    	  
 		    	  data = myReader.nextLine();
-		    	  String color = data; // <string: La couleur de la case du type précédent (sont utilisables sans modificationdu code: «green», «gray», «blue» et «yellow»)>
+		    	  String color = data; // <string: La couleur de la case du type prï¿½cï¿½dent (sont utilisables sans modificationdu code: ï¿½greenï¿½, ï¿½grayï¿½, ï¿½blueï¿½ et ï¿½yellowï¿½)>
 		    	  
 		    	  groundTypes.put(name, time);
 		    	  groundColor.put(time, color);
@@ -89,7 +89,7 @@ public class App {
 		    	  }
 		      }
 		      
-		      //TODO: ajouter les arrêtes
+		      //TODO: ajouter les arrï¿½tes
 		      for (int line = 0 ; line < nlines ; line++)
 		      {
 		    	  for (int col = 0 ; col < ncols ; col++)
@@ -111,7 +111,7 @@ public class App {
 		    	  }	// for(col)
 		      } // for(line)
 		      
-		      //On obtient les noeuds de départ et d'arrivé
+		      //On obtient les noeuds de dï¿½part et d'arrivï¿½
 		      data = myReader.nextLine();
 		      data = myReader.nextLine();
 		      int startV = Integer.parseInt(data.split("=")[1].split(",")[0]) * ncols + Integer.parseInt(data.split("=")[1].split(",")[1]);
@@ -141,7 +141,7 @@ public class App {
 		     } 
 		      
 		      
-		      //Écriture du chemin dans un fichier de sortie
+		      //ï¿½criture du chemin dans un fichier de sortie
 		      try {
 			      File file = new File("out.txt");
 			      if (!file.exists()) {

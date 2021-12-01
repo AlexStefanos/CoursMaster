@@ -50,9 +50,9 @@ public class ParserRepertoire {
 		}
 		
 		RepertoireSimple repS = new RepertoireSimple();
-		for(Personne p : list) {
+		/*for(Personne p : list) {
 			repS.addPersonne(p.getPrenom(), p.getNom(), p.getTel());
-		}
+		}*/
 		return(repS);
 	}
 }

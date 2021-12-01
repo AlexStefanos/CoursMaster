@@ -26,7 +26,7 @@ public class UtilMath {
 	
 	public static long comb(int n, int p) throws IllegalArgumentException {
 		long combinaison = 0;
-		if (n >= p && p != 0) {
+		if (n >= p) {
 			combinaison = fact(n) / (fact(p)*fact(n-p));
 			return(combinaison);
 		}

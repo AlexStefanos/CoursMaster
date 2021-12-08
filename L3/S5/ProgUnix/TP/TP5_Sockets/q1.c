@@ -37,5 +37,11 @@ int main(int argc, char **argv) {
         perror("Erreur 2 machines serveurs");
         exit(1);
     }
-
+    portServeur = atoi(argv[1]);
+    sockEcoute = socket(AF_INET, SOCK_STREAM, 0);
+    if(sockEcoute < 0) {
+        perror("\nErreur création socket");
+        exit(1);
+    }
+    
 }

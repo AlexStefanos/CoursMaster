@@ -25,7 +25,7 @@ public class Main {
 					map[j][k] = entree.charAt(k);
 			}
 			    
-			Graph graph = new Graph();
+			Graphe graph = new Graphe();
 			int startV = 0, endV = 0;
 			for(int j = 0; j < n; j++) {       
 				for(int k = 0; k < m; k++) {

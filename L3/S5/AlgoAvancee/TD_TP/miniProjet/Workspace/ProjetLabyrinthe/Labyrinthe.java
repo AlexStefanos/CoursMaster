@@ -10,12 +10,12 @@ public class Labyrinthe {
 		ArrayList<Sommet> chemin = new ArrayList<Sommet>();
 		HashSet<Integer> pasVisite = new HashSet<Integer>();
 		
-		graphe.listeSommets.get(debut).timeFromSource = 0;	
+		graphe.listeSommets.get(debut).tempsSource = 0;	
 		for(Sommet sommet : graphe.listeSommets)
 			pasVisite.add(sommet.num);
 		int i = 0;
 		for(Sommet sommet : graphe.listeSommets) {
-			sommet.heuristic = 	distance(i % nbColonnes, i / nbColonnes, fin % nbColonnes, fin / nbColonnes);
+			sommet.heuristique = distance(i % nbColonnes, i / nbColonnes, fin % nbColonnes, fin / nbColonnes);
 			i++;
 		}
 			
@@ -25,22 +25,22 @@ public class Labyrinthe {
 			
 			sommetMin = 0;
 			for(Integer sommet : pasVisite) {
-				if((graphe.listeSommets.get(sommet).timeFromSource + graphe.listeSommets.get(sommet).heuristic) <= chronoHeuristique) {
+				if((graphe.listeSommets.get(sommet).tempsSource + graphe.listeSommets.get(sommet).heuristique) <= chronoHeuristique) {
 					sommetMin = sommet;
-					chronoHeuristique = graphe.listeSommets.get(sommet).timeFromSource + graphe.listeSommets.get(sommet).heuristic;
+					chronoHeuristique = graphe.listeSommets.get(sommet).tempsSource + graphe.listeSommets.get(sommet).heuristique;
 				}
 			}
 			chemin.add(graphe.listeSommets.get(sommetMin));
 			pasVisite.remove(sommetMin);
-			for(i = 0; i < graphe.listeSommets.get(sommetMin).adjacencylist.size(); i++) {
-				if(pasVisite.contains(graphe.listeSommets.get(sommetMin).adjacencylist.get(i).destination)) {
-					int pasDEssaie = graphe.listeSommets.get(sommetMin).adjacencylist.get(i).destination;
+			for(i = 0; i < graphe.listeSommets.get(sommetMin).listeAdjacence.size(); i++) {
+				if(pasVisite.contains(graphe.listeSommets.get(sommetMin).listeAdjacence.get(i).destination)) {
+					int pasDEssaie = graphe.listeSommets.get(sommetMin).listeAdjacence.get(i).destination;
 					boolean deplacementPossible = deplacement(pasDEssaie, graphe.listeSommets, nbSommets);
 																	
 					if(deplacementPossible) {
-						if(((graphe.listeSommets.get(sommetMin).timeFromSource + graphe.listeSommets.get(sommetMin).adjacencylist.get(i).weight)  < (graphe.listeSommets.get(pasDEssaie).timeFromSource))) {
-							graphe.listeSommets.get(pasDEssaie).timeFromSource = (graphe.listeSommets.get(sommetMin).timeFromSource + graphe.listeSommets.get(sommetMin).adjacencylist.get(i).weight );
-							graphe.listeSommets.get(pasDEssaie).prev =  graphe.listeSommets.get(sommetMin);
+						if(((graphe.listeSommets.get(sommetMin).tempsSource + graphe.listeSommets.get(sommetMin).listeAdjacence.get(i).poids)  < (graphe.listeSommets.get(pasDEssaie).tempsSource))) {
+							graphe.listeSommets.get(pasDEssaie).tempsSource = (graphe.listeSommets.get(sommetMin).tempsSource + graphe.listeSommets.get(sommetMin).listeAdjacence.get(i).poids);
+							graphe.listeSommets.get(pasDEssaie).precedent =  graphe.listeSommets.get(sommetMin);
 						}
 					}
 				}
@@ -57,7 +57,7 @@ public class Labyrinthe {
 		return((Math.sqrt(xFinal + yFinal)));
 	}
 		
-	public static ArrayList<Character> directionMouvementPourChaqueTour(Graphe graph, int debut, int fin, int nbColonnes, int nbSommets){
+	public static ArrayList<Character> directionMouvementPourChaque(Graphe graph, int debut, int fin, int nbColonnes, int nbSommets){
 		ArrayList<Sommet> chemin = AStar(graph, debut, fin, nbColonnes, nbSommets);
 		ArrayList<Character> directions = new ArrayList<Character>();
 			
@@ -77,7 +77,7 @@ public class Labyrinthe {
 		return(directions);
 	}
 
-	public static boolean pasDispoAutour(int sommet, ArrayList<Sommet> listeSommets, int nbLignes, int nbColonnes) {		  
+	public static boolean pasDispoAu(int sommet, ArrayList<Sommet> listeSommets, int nbLignes, int nbColonnes) {		  
 		if(listeSommets.get(sommet).j != 0) {
 			if (listeSommets.get(sommet - 1).etiquette == '.')
 				listeSommets.get(sommet - 1).etiquette = 'A';
@@ -108,7 +108,7 @@ public class Labyrinthe {
 		return(false);
 	}
 	
-	public static boolean win_move(int debut, ArrayList<Sommet> listeSommets, int nbLignes, int nbColonnes) {
+	public static boolean mouvVictoire(int debut, ArrayList<Sommet> listeSommets, int nbLignes, int nbColonnes) {
 		boolean left, right, top, bottom; 
 		
 		left = listeSommets.get(debut).j != 0 && ( listeSommets.get(debut - 1).etiquette == 'S');
@@ -118,7 +118,7 @@ public class Labyrinthe {
 		return(top || left || right || bottom);
 	}
 	
-	public static boolean move_prisoner(char directionMouvementPossiblePourCeTour, ArrayList<Sommet> listeSommets, int nbLignes, int nbColonnes, int fin) {
+	public static boolean mouvPrisonnier(char directionMouvementPossiblePourCe, ArrayList<Sommet> listeSommets, int nbLignes, int nbColonnes, int fin) {
 		int debut = 0;
 		
 		for(int i = 0; i < listeSommets.size(); i++) {
@@ -126,42 +126,42 @@ public class Labyrinthe {
 				debut = i;
 		}
 		
-		boolean win = win_move(debut, listeSommets, nbLignes, nbColonnes); 	  
-		if(win)
+		boolean victoire = mouvVictoire(debut, listeSommets, nbLignes, nbColonnes); 	  
+		if(victoire)
 			return(true);
 		else {
 			listeSommets.get(debut).etiquette = 'L';	    
-			if (directionMouvementPossiblePourCeTour == 'B')
+			if (directionMouvementPossiblePourCe == 'B')
 				listeSommets.get(debut + nbColonnes).etiquette = 'D';
-			else if (directionMouvementPossiblePourCeTour == 'T')
+			else if (directionMouvementPossiblePourCe == 'T')
 				listeSommets.get(debut - nbColonnes).etiquette = 'D';
-			else if (directionMouvementPossiblePourCeTour == 'L')
+			else if (directionMouvementPossiblePourCe == 'L')
 				listeSommets.get(debut - 1).etiquette = 'D';
-			else if (directionMouvementPossiblePourCeTour == 'R')
+			else if (directionMouvementPossiblePourCe == 'R')
 				listeSommets.get(debut + 1).etiquette = 'D';
 			}
 		return(false);
 		}
 			
-	public static char run_instance(Graphe graphe, int debut, int fin, int nbLignes, int nbColonnes) {
-		int turn;
-		ArrayList<Character> directions = directionMouvementPourChaqueTour(graphe, debut, fin, nbColonnes, nbLignes * nbColonnes); 
+	public static char lancementInstance(Graphe graphe, int debut, int fin, int nbLignes, int nbColonnes) {
+		int tour;
+		ArrayList<Character> directions = directionMouvementPourChaque(graphe, debut, fin, nbColonnes, nbLignes * nbColonnes); 
 		
-		turn = 0;
-		while(turn < directions.size()) {
+		tour = 0;
+		while(tour < directions.size()) {
 			for(int i = 0; i < graphe.listeSommets.size(); i++) {
 				if( graphe.listeSommets.get(i).etiquette == 'A' )
 					graphe.listeSommets.get(i).etiquette = 'F';
 			    }
 			for(int i = 0; i < graphe.listeSommets.size(); i++) {
 				if(graphe.listeSommets.get(i).etiquette == 'F' ) {
-					if(pasDispoAutour(i, graphe.listeSommets, nbLignes, nbColonnes) )
+					if(pasDispoAu(i, graphe.listeSommets, nbLignes, nbColonnes) )
 						return('N');
 					}
 			}
-			if(move_prisoner( directions.get(turn), graphe.listeSommets, nbLignes, nbColonnes, fin))
+			if(mouvPrisonnier(directions.get(tour), graphe.listeSommets, nbLignes, nbColonnes, fin))
 				return('Y');
-			turn++;
+			tour++;
 		}
 		return('N');
 	}

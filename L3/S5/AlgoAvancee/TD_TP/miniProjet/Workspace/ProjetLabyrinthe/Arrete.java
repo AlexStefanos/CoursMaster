@@ -1,10 +1,10 @@
 public class Arrete {
 	int source, destination;     
-	double weight;
+	double poids;
     
-	public Arrete(int source, int destination, double weight) {
+	public Arrete(int source, int destination, double poids) {
 		this.source = source;
         this.destination = destination;
-        this.weight = weight;
+        this.poids = poids;
     }
 }

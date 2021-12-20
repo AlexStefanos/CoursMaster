@@ -19,7 +19,7 @@ class UtilMathTest {
 		assertThrows(IllegalArgumentException.class, () -> UtilMath.fact(-100));
 		assertThrows(IllegalArgumentException.class, () -> UtilMath.fact(-999));
 	}
-	
+
 	@Test
 	public void combTest() {
 		assertEquals(10, UtilMath.comb(5, 2));
@@ -27,6 +27,7 @@ class UtilMathTest {
 		assertEquals(1, UtilMath.comb(15, 0));
 	}
 	
+	@Test
 	public void combExceptionTest() {
 		assertThrows(IllegalArgumentException.class, () -> UtilMath.comb(-2,3));
 		assertThrows(IllegalArgumentException.class, () -> UtilMath.comb(3,-1));

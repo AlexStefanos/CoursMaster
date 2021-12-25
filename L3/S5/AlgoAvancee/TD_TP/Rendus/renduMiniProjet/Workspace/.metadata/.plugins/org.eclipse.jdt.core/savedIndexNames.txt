@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/home/alexandre/Cours/L3/S5/AlgoAvancee/TD_TP/Rendus/renduMiniProjet/Workspace/.metadata/.plugins/org.eclipse.jdt.core
-1865797976.index
-229061628.index
-3107398592.index

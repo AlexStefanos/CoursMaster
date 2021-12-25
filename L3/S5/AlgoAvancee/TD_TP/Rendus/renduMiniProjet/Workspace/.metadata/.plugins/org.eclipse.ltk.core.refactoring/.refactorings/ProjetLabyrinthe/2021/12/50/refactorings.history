@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;labyrinthe&apos; to &apos;Labyrinthe&apos;&#x0A;- Original project: &apos;vraiCode&apos;&#x0A;- Original element: &apos;labyrinthe&apos;&#x0A;- Renamed element: &apos;Labyrinthe&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;labyrinthe&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/&lt;{labyrinthe.java[labyrinthe" matchStrategy="1" name="Labyrinthe" qualified="false" references="true" similarDeclarations="false" stamp="1639487467228" textual="false" version="1.0"/>
+</session>

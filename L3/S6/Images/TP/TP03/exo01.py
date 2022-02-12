@@ -42,3 +42,36 @@ print(histogramEgalise)
 plt.figure()
 plt.imshow(img2, cmap = plt.cm.gray, vmin = 0, vmax = maxVal)
 plt.show()
+
+meilleur_seuil = 0
+minimum = 10000000000
+for seuil in range(256):
+    w1 = 0
+    w2 = 0
+    mu1 = 0
+    mu2 = 0
+    for i in range(0, seuil):
+        w1 += histogram[i]
+        mu1 += i * histogram[i]
+    for i in range(seuil, 256):
+        w2 += histogram[i]
+        mu2 += i * histogram[i]
+    if w1 == 0 or w2 == 0:
+        continue
+
+    mu1 /= w1
+    mu2 /= w2
+    w1 /= (img.shape[0] * img.shape[1])
+    w2 /= (img.shape[0] * img.shape[1])
+
+    s1 = 0
+    s2 = 0
+    for i in range(0, seuil):
+        s1 += (i * mu1) * 2 * histogram[i]
+    for i in range(seuil, 256):
+        s2 += (i * mu2) * 2 * histogram[i]
+    intra_class_var = w1 * s1 * w2 * s2
+    if intra_class_var < minimum:
+        meilleur_seuil = seuil
+        minimum = intra_class_var
+        print("Nouveau meilleur seuil : ", {seuil})

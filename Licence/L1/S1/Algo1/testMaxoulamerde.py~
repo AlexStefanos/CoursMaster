@@ -1,0 +1,9 @@
+def encodage(n,d):
+    res=d
+    pos=10
+    reste=n
+    while reste>0 :
+        res=res+pos*(d*(reste%10)/d)
+        reste=reste%10
+        pos=pos*10
+        return res+pos

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Pendu - Saisie d'un caractère</title>
+		<meta charset="utf-8">
+		<style>
+table
+{
+	font-family: verdana;
+	text-align: center;
+	margin: 10px auto;
+	border: solid 3px black;
+	box-shadow: 5px 5px 5px black;
+}
+
+td
+{
+	width: 50%;
+}
+
+h1
+{
+	font-size: 30px;
+	text-shadow: 2px 2px 2px gray;
+}
+
+label, input
+{
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+
+input[type="text"]
+{
+	font-size: 30px;
+	width: 50px;
+}
+
+.letters
+{
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-style: italic;
+	color: gray;
+}
+
+.dashed_word, .word
+{
+	font-family: monospace;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px gray;
+}
+
+.word
+{
+	color: red;
+}
+
+		
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+			<tr>
+				<td>
+					<h1>PENDU</h1>
+				</td>
+				<td rowspan="5">
+					<p><img src="pendu_(COUNT).png" alt="Image - (COUNT)" width="393" height="530"></p>
+				</td>
+			</tr>
+				<td>
+					<form method="post" action="pendu.php">
+						<label for="letter">Saisir une lettre</label>
+						<input type="text" name="letter" id="letter" maxlength="1" autofocus required (DISABLED)>
+						<input type="submit" value="Soumettre" (DISABLED)>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="dashed_word">(DASHED_WORD)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="word">(FULL_WORD)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="letters">(LETTERS)&nbsp;</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+#-*- coding: utf-8 -*-
+
+def mv ( L ):
+    """ Renvoie la moyenne et la variance de L """
+    m , v = 0 ,0
+    for x in L :
+        m , v = m +x , v + x **2
+        m , v = m / len ( L ) , v / len ( L )
+    return m , v - m **2
+
+print(mv([1,10,20,30]))

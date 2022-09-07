@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+
+from donnees import *
+import random
+
+def recup_lettres():
+    alphab=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    tapez=input("Tapez une lettre : ")
+    while tapez not in alphab :
+        tapez=input("Tapez une lettre : ")
+    return tapez
+
+recup_lettres()
+
+def choix_mot_alea():
+    mot=random.choice(liste_mots)
+    return mot
+
+motc=choix_mot_alea()
+print(motc)
+
+def affichage(motc):
+    for i in range (
+    
+
+    
+    

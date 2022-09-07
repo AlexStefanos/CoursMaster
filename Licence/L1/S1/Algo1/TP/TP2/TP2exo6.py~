@@ -1,0 +1,7 @@
+dividende=int(input("Donnez un entier : "))
+diviseur=int(input("Donnez un entier : "))
+quotient=a//b
+reste=a%b
+print("On fait la division euclidienne de ",dividende+"par ",diviseur)
+print("Le quotient de la division est ",quotient)
+print("Le reste de la division est ",reste)

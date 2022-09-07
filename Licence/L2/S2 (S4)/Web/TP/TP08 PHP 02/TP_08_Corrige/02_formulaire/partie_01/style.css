@@ -1,0 +1,78 @@
+h1
+{
+	font-family: verdana;
+	text-align: center;
+}
+
+table
+{
+	width: 100%;
+}
+
+td
+{
+	width: 50%;
+}
+
+td:nth-child(1)
+{
+	text-align: right;
+}
+
+form
+{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+label[for^="niveau"], label[for^="comp"]
+{
+	font-weight: normal;
+}
+
+legend
+{
+	font-size: large;
+	font-weight: bold;
+}
+
+fieldset
+{
+	width: 750px;
+	margin: auto;
+	font-family: verdana;
+	background-color: #fff0f0;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	box-shadow: #505050 3px 3px 8px;
+}
+
+label
+{
+	font-weight: bold;
+}
+
+label:hover
+{
+	color: red;
+}
+
+p
+{
+	margin-top: 30px;
+	text-align: center;
+	font-family: verdana;
+	font-weight: bold;
+}
+
+a
+{
+	color: red;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;	
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Télécharger un fichier (upload).</title>
+	</head>
+	<style>
+		label:hover
+		{
+			color: red;
+		}
+	</style>
+	<body>
+		<form method="post" action="upload.php" enctype="multipart/form-data">
+			<label for="file">Choisir un fichier :</label>
+			<input type="hidden" name="MAX_FILE_SIZE" value="1048576">
+ 			<input type="file" id="file" name="file">
+			<br>
+			<input type="submit" value="Envoyer le fichier">
+		</form>
+	</body>
+</html>

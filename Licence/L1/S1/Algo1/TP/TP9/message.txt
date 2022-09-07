@@ -1,0 +1,65 @@
+1) Présentation des différentes entreprises (stats selon le secteur d’activité, primaire/secondaire/tertiaire par ex)
+
+
+Dans un premier temps, je vais vous présenter les entreprises dont nous avons choisi de parler les GAFAM : Google, Amazon, Facebook, Apple, Microsoft ; Tencent Holdings et Alibaba Group
+
+    • Google
+        ◦ Créer le 4 septembre 1998 par Larry Page et Sergey Brin à Menlo Park en Californie
+        ◦ Comme il l’explique dans les registres du site en 2004 : « Avait au départ pour mission d’organiser l’information à l’échelle mondiale et de la rendre universellement accessible et utile »
+        ◦ Devenue l’une des premières entreprises mondiales début 2008
+        ◦ Google est bien plus qu’un moteur de recherche, Google propose de nombreux logiciels et services gratuitement comme Gmail ou Maps par exemple. 
+        ◦ Avec un effectif de 85 050 personnes au début de 2018, Google fait partie des GAFAM avec Amazon, Facebook, et Apple
+        ◦ En 2014, Google atteint la seconde position en valorisation au classement Best Global Brands d’Interbrand
+        ◦ En 2019, Google est la 3e entreprises la plus valorisées au monde avec une estimation à 309,527 Milliards de $
+      
+    •  Amazon
+        ◦ Créer le 5 Juillet 1994 par Jeff Bezos à Seattle
+        ◦ La première activité d’Amazon était la vente à distance de livres, BD, etc. Puis la société s’est diversifié dans la vente de tout autre produits. 
+        ◦ Comme Google, Amazon s’est diversifiée avec Amazon Video, Amazon Music, le rachat de la plateforme de streaming Twitch, etc
+        ◦ Avec un effectif de 647 600 au début de 2018, Amazon fait aussi partie des GAFAM, c’est d’ailleurs l’entreprise ayant le plus grand effectif parmi les GAFAM
+        ◦ Jeff Bezos est devenu l’homme le plus riche au monde
+        ◦ En 2017, Amazon est la 4e entreprise la plus valorisée au monde pour la 1er fois
+        ◦ En 2019, Amazon est la 1er entreprise la plus valorisée au monde avec une estimation à 315 505 Milliards de $
+      
+    • Facebook
+        ◦ Créer le 4 février 2004 à l’université d’Harvard par Mark Zuckerberg, Eduardo Saverin, Andrew McCollum, Dustin Moskovitz et Chris Hughes
+        ◦ Initialement, The Facebook avait pour but d’être le site regroupant les profils et les photos des élèves d’Harvard. Il s’est ouvert aux autres universités en 2006 et puis au mode entier la même année
+        ◦ Facebook est le 3e site le plus visité au monde après Google et Youtube
+        ◦ 2,1 milliards d’inscrits
+        ◦ Comme les 2 premières entreprises présentées, Facebook essaye de se diversifié avec par exemple Facebook Gaming mais l’a beaucoup moins fait que les autres entreprises des GAFAM
+        ◦ En 2017, Facebook est la 5e entreprise la plus valorisée du monde pour la 1er fois
+        ◦ En 2019, Facebook est la 6e entreprise la plus valorisée du monde avec une estimation à 158 868 Milliards de $
+      
+    • Apple
+        ◦ Créer le 1er avril 1976 par Steve Jobs, Steve Wozniak et Ronald Wayne à Cupertino en Californie
+        ◦ Le premier produit d’Apple est l’iMac en 1998
+        ◦ Avec un effectif de 137 000 au début de 2018, Apple est probablement la marque d’informatique la plus connue au monde
+        ◦ En 2014, c’est la première entreprise mondiale en valorisation au Best Global Brands d’Interbrand
+        ◦ Apple est connue pour avoir démocratisés ses différences innovations : les souris pour les Mac, les smartphones avec l’iPhone, les montres connectées avec les Apple Watch, etc
+        ◦ En Octobre 2010, Apple devient la 3e entreprise la plus valorisée du monde pour la 1ere fois
+        ◦ De Mars 2013 à 2018, Apple est l’entreprise la plus valorisée au monde
+        ◦ En 2019, Apple est la 2e entreprise la plus valorisée au monde avec une estimation de 309 527 Milliards de $
+          
+    • Microsoft :
+        ◦ Créer le 26 Novembre 1976 par Bill Gates et Paul Allen à Albuquerque 
+        ◦ Le première activité de la société était de démocratiser la vente de l’interpréteur de langage informatique BASIC adapté par les deux créateurs de Microsoft entre autres
+        ◦ Avec un effectif de 131 300 en 2018, Microsoft est le grand rival d’Apple
+        ◦ Microsoft est devenue célèbre au grand publique avec les systèmes d’exploitation Windows, dont le dernier en date Windows 10 est lancé en Juillet 2019
+        ◦ Microsoft a aussi développé les suites Microsoft Office, les différentes consoles Xbox, etc
+        ◦ Depuis 10 ans, Microsoft talonne Apple dans les classements des entreprises les plus valorisées au monde
+        ◦ En 2019, Microsoft est la 4e entreprise la plus valorisée au monde avec une estimation de 251,244 Milliards de $
+      
+    • Tencent :
+        ◦ Créer en 1998 par Ma Huateng et Zhang Zhidong à Tencent Tower, Shenzhen
+        ◦ Au départ, Tencent Holdings créer un service de messagerie instantanée nommée Tencent QQ WeChat
+        ◦ Depuis, Tencent s’est énormément diversifiée avec QQ Live un service de streaming, ou le rachat de plusieurs entreprises de jeux vidéos comme Riot Games ou Supercell
+        ◦ Tencent contrôle pratiquement toutes les utilisations d’internet des chinois
+        ◦ Avec un effectif de 44 796 en 2018, Tencent Holdings est l’entreprise la plus valorisée en Chine
+        ◦ En 2019, Tencent est la 8e entreprise la plus valorisée au monde avec une estimation de 130 862 Milliards de $
+
+    • Alibaba Group :
+        ◦ Créer en 1999 par Jack Ma et Peng Lei à Hangzhou
+        ◦ Alibaba est un commerce public destiné à faciliter les échanges entre entreprises
+        ◦ Puis Alibaba Group s’est diversifié avec Alibaba Pictures, Alibaba Cloud ou encore Youku qui est un site d’hébergement de vidéo en Chine
+        ◦ Avec un effectif de 101 958 en fin de 2018, Alibaba Group est la 2e la plus valorisée en Chine depuis 2016
+        ◦ En 2019, Alibaba est la 7e entreprise la plus valorisée du monde, pour la première année devant Tencent, avec une estimation de 131 246 Milliards de $

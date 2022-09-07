@@ -1,0 +1,27 @@
+body
+{
+	text-align: center;
+}
+
+table
+{
+	margin: auto;
+}
+
+input[type="number"]
+{
+	width: 130px;
+	text-align: center;
+}
+
+input[name^="prix"], input[name="total"]
+{
+	width: 100px;
+	text-align: center;
+}
+
+#total_label
+{
+	font-weight: bold;
+	text-align: right;
+}

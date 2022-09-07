@@ -1,0 +1,4 @@
+Java : langage de programmation oriente objet
+Universite : institution d’enseignement superieur et de recherche
+Etudiant : personne engagee dans un cursus universitaire
+Examen : evaluation qui permet de determiner si un etudiant a le niveau requis

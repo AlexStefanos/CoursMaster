@@ -1,0 +1,6 @@
+chaine=input("Saisissez une chaine de caractère :")
+carac=input("Saisissez un caractère :")
+liste=[]
+i=0
+for carac in chaine :
+    liste.append(i)

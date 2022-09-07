@@ -1,0 +1,9 @@
+#-*- coding: utf-8 -*-
+
+def recup_lettres():
+    """
+    """
+    carac = input("Entrez des mots")
+    return carac
+
+recup_lettres()

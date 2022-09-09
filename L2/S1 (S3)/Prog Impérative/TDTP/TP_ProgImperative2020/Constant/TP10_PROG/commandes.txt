@@ -1,7 +1,0 @@
-compiler sous unix:
-cd TP10_PROG/
-gcc main.c fichier.c tableau.c -o NomExecutable
-./NomExecutable NomFichier
-
-//NomFichier à saisir par l'utilisateur dans le terminal
-//pas la peine de compiler les fichier se terminant par .h

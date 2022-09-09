@@ -1,7 +1,0 @@
-chaine=str(input("Saisissez une chaîne de caractère :"))
-ch=""
-i=len(chaine)
-while i != 0 :
-    ch=ch + chaine[i]
-    i--
-print(ch)

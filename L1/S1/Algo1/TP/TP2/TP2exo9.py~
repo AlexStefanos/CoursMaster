@@ -1,2 +1,0 @@
-a=int(input("Donnez un premier entier"))
-b=int(input("Donnez un second entier"))

@@ -6,22 +6,22 @@ from operator import add
 import time
 
 print("Partie 1 : Question 1 :")
-# n = int(input("Entrez un entier :"))
-# l1 = [random() for i in range(n)]
-# l2 = [random() for i in range(n)]
+n = int(input("Entrez un entier :"))
+l1 = [random() for i in range(n)]
+l2 = [random() for i in range(n)]
 
-# start = time.perf_counter()
-# l3 = map(add, l1, l2)
-# end = time.perf_counter()
-# print(end - start)
+start = time.perf_counter()
+l3 = map(add, l1, l2)
+end = time.perf_counter()
+print(end - start)
 
-# A1 = np.array(l1)
-# A2 = np.array(l2)
+A1 = np.array(l1)
+A2 = np.array(l2)
 
-# start = time.perf_counter()
-# A3 = time.perf_counter()
-# end = time.perf_counter()
-# print(end - start)
+start = time.perf_counter()
+A3 = time.perf_counter()
+end = time.perf_counter()
+print(end - start)
 print()
 
 print("Question 2 :")
@@ -29,16 +29,16 @@ x = np.array([0, 1, 2, 3])
 v = np.array([1, 3, 2, 4])
 print(v)
 print(type(v))
-# fig = plt.figure()
-# plt.plot(x, v, 'rv--', label = 'v(x)')
-# plt.legend(loc = 'lower right')
-# plt.xlabel('x')
-# plt.ylabel('v')
-# plt.title('Mon titre')
-# plt.xlim([-1, 4])
-# plt.ylim([0, 5])
-#plt.show()
-#fig.savefig('toto.png')
+fig = plt.figure()
+plt.plot(x, v, 'rv--', label = 'v(x)')
+plt.legend(loc = 'lower right')
+plt.xlabel('x')
+plt.ylabel('v')
+plt.title('Mon titre')
+plt.xlim([-1, 4])
+plt.ylim([0, 5])
+plt.show()
+fig.savefig('toto.png')
 print()
 
 print("Question 3 :")
@@ -74,7 +74,7 @@ print(nb)
 loiNormal = np.random.randn(3, 3)
 print(loiNormal)
 hist = plt.hist(loiNormal, 40)
-# plt.show()
+plt.show()
 print()
 
 print("Question 7 :")
@@ -104,20 +104,37 @@ print(M)
 print()
 
 print("Question 11 :")
-print()
+M = np.ones((7, 5, 3))
+print(M)
+np.save("file.npy", M)
+b = np.load("file.npy")
+print(b)
 print()
 
 print("Partie 2 : Question 1:")
-A = np.array([np.zeros(4), np.zeros(4)])
-A[2][1] = 1
+A = np.zeros((2, 4))
+A[1][2] = 1
 print(A)
 print(A.shape)
 print(A.ndim)
-B = np.array([np.zeros(2), np.zeros(2), np.zeros(2)])
-B[2, 2] = 1
+B = np.zeros((3, 2))
+B[1][1] = 1
 print(B)
 print(B.shape)
 print(B.ndim)
 print()
 
 print("Question 2 :")
+print(M[2])
+print(M[1])
+print(M)
+M[2] = 22
+M[1] = 22
+print(M[2])
+print(M[1])
+print(M)
+print()
+
+print("Question 3:")
+x = M[0:2:2]
+print(x)

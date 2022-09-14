@@ -92,7 +92,7 @@ print(M)
 print()
 
 print("Question 9:")
-M = np.array([[np.inf, np.inf, np.inf], [np.inf, np.inf, np.inf], [np.inf, np.inf, np.inf], [np.inf, np.inf, np.inf], [np.inf, np.inf, np.inf]])
+M = np.array([[np.inf, np.inf, np.inf, np.inf, np.inf], [np.inf, np.inf, np.inf, np.inf, np.inf], [np.inf, np.inf, np.inf, np.inf, np.inf]])
 print(M)
 print()
 
@@ -104,7 +104,7 @@ print(M)
 print()
 
 print("Question 11 :")
-M = np.ones((7, 5, 3))
+M = np.ones((7, 3, 5))
 print(M)
 np.save("file.npy", M)
 b = np.load("file.npy")
@@ -112,12 +112,12 @@ print(b)
 print()
 
 print("Partie 2 : Question 1:")
-A = np.zeros((2, 4))
+A = np.zeros((4, 2))
 A[1][2] = 1
 print(A)
 print(A.shape)
 print(A.ndim)
-B = np.zeros((3, 2))
+B = np.zeros((2, 3))
 B[1][1] = 1
 print(B)
 print(B.shape)

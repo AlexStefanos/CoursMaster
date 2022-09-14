@@ -5,6 +5,26 @@
 #include <sched.h>
 #include <fcntl.h>
 
+int gestionFamille(int nbProcessus, int somme, int compteurArgv, char **argv) {
+    int pid, nb;
+    if(nbProcessus != 0) {
+        nbProcessus--;
+        pid = fork();
+        if(pid == 0) {
+            nb = atoi(argv[compteurArgv]);
+            compteurArgv--;
+            gestionFamille(nbProcessus, somme, compteurArgv, argv);
+            exit(nbProcessus);
+        }
+    }
+    else{
+        for(int i = len(argv); i > 0; i--) {
+            wait(&i);
+            somme += nb;
+        }
+    }
+}
+
 int main(int argc, char **argv) {
     int i, nbProcessus, nb, compteurArgc, somme, pid, pid2;
 

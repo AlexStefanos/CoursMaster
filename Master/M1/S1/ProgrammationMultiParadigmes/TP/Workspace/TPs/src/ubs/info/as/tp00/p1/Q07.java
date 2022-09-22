@@ -1,4 +1,4 @@
-package ubs.info.as.tp01.exosP1;
+package ubs.info.as.tp00.p1;
 
 import java.util.Scanner;
 

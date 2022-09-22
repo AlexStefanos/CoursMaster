@@ -1,4 +1,4 @@
-package ubs.mi.as.tp01.exosP2;
+package ubs.info.as.tp00.p2;
 
 public class Q04 {
 	public void affiche100() {

@@ -1,0 +1,13 @@
+Received: from someone@example.com 
+Message-Id: <v0214040cad6a13935723@>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Thursday, 4 Jun 1998 09:43:14 -0800
+To: project-discussion@example.com
+From: Nina Marton <nina@example.com>
+Subject: Happy Birthday
+Precedence: bulk
+
+Happy Birthday!
+See you this evening,
+Nina

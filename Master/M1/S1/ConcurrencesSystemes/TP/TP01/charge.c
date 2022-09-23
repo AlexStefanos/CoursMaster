@@ -5,39 +5,52 @@
 #include <time.h>
 #include <sys/resource.h>
 
-double cpustat() {
-    long int user, nice, syst, idle1, idle2, total, total2;
-    double cpu;
-    FILE *file;
-    file = fopen("/prod/stat", "r");
-    fscanf(file, "cpu %ld %ld %ld %ld", &user, &nice, &syst, &idle1);
-    fclose(file);
-    total = user + nice + syst;
-    usleep(1000000);
-    file = fopen("/proc/stat", "r");
-    fscanf(file, "cpu %ld %ld %ld %ld", &user, &nice, &syst, &idle2);
-    fclose(file);
-    total2 = user + nice + syst;
-    cpu = (total2-total) / (double)((idle2 - idle1) + (total2 - total));
-    cpu *= 100;
-    printf("cpu = %lf \n", cpu);
+void openFile(double user, double nice, double sys, double tmp) {
+    FILE *fichier;
+
+    fichier = fopen("/proc/stat", "r");
+    fscanf(fichier, "cpu %lf %lf %lf %lf", &user, &nice, &sys, &tmp);
+    fclose(fichier);
+    sleep(1);
+}
+
+double getStats() {
+    double cpu, user, nice, sys, tmp, tmp2, idle, idle2;
+
+    openFile(user, nice, sys, tmp);
+    idle = user + nice + sys;
+    openFile(user, nice, sys, tmp);
+    idle2 = user + nice + sys;
+    cpu = (tmp2-tmp) / (tmp2 - tmp + tmp2 - idle);
+    printf("CPU = %lf \n", cpu);
     return(cpu);
 }
 
 int main(int argc, char **argv) {
     int i, nb;
     int pid[] = {};
-    double charge, demande, duree, step;
+    double charge, demande, duree, decalage;
 
     for(i = 0; i < nb; i++) {
-        charge = cpustat();
+        pid[i] = fork();
     }
-
-    if(charge <= demande*0.95 || charge >= demande*1.05) {
-        for(i = 0; i < nb; i++)kill(pid[i], 9);
-        duree += charge <= demande * 0.95 ? -step: step;
-        for(i = 0; i < nb; i++) pid[i] = codeFils(duree);
+    while(1) {
+        charge = getStats();
+        if((charge <= demande * 0.90) || (charge >= demande * 1.10)) {
+            for(i = 0; i < nb; i++) {
+                kill(pid[i], 9);
+            }
+            duree = duree + charge;
+            if(duree <= (demande * 0.90))
+                decalage = -decalage;
+            else
+                decalage = decalage;
+            for(i = 0; i < nb; i++) {
+                pid[i] = fork();
+            }
+        }
+        for(i = 0; i < nb; i++) {
+                kill(pid[i], 9);
+        }
     }
-
-    sleep(1);
 }

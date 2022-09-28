@@ -1,23 +1,17 @@
 package ubs.info.as.tp01;
 
 import java.io.IOException;
-import java.net.InetSocketAddress;
 import java.net.ServerSocket;
-import java.net.SocketAddress;
+import java.util.Date;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 public class Server {
 	ServerSocket serverSocket;
 	
 	public Server() throws IOException {
-		serverSocket = new ServerSocket();
-	}
-	
-	public void socketLocalAdress(SocketAddress address) {
-		try{
-			serverSocket.bind(address);
-		} catch(IOException e) {
-			System.err.println(e);
-		}
+		serverSocket = new ServerSocket(5555);
+		System.out.println(serverSocket.isBound());
 	}
 	
 	public void acceptClientSocket() {
@@ -36,12 +30,25 @@ public class Server {
 		}
 	}
 	
-	public static void main(String[] args) throws IOException {
-		Server server = new Server();
-		SocketAddress address = new InetSocketAddress("localhost", 2222);
+	public void readData() throws IOException {
+		FileInputStream inputStream = new FileInputStream("binData");
 		
-		server.socketLocalAdress(address);
-		server.acceptClientSocket();
+		inputStream.readAllBytes();
+		inputStream.transferTo(new FileOutputStream("binData"));
+		inputStream.close();
+	}
+	
+	public static void main(String[] args) throws Exception {
+		Server server = new Server();
+		long startTime = System.currentTimeMillis();
+		long elapsedTime = 0L;
+
+		server.readData();
+		System.out.println(server.serverSocket.getReceiveBufferSize());
+		while(elapsedTime < 2*60) {
+			server.acceptClientSocket();
+			elapsedTime = (new Date()).getTime() - startTime;
+		}
 		server.close();
 	}
 }

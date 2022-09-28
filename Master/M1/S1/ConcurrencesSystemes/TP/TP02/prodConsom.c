@@ -17,7 +17,7 @@ key_t cle;
 int semid;
 
 /*
-creéations d'un ensemble de 3 sémaphores : semid = semget(IPC_PRIVATE, 3, IPC_CREAT|0666) == -1)
+création d'un ensemble de 3 sémaphores : semid = semget(IPC_PRIVATE, 3, IPC_CREAT|0666) == -1)
 initialisaition des 3 sémaphores
 ushort init sem[3] = (1, MAX, 0)
 if(semctl(semid, 3 , sETALL? init sem == -1)
@@ -31,7 +31,10 @@ P(mutex) :
 op.sem_op et op.sem_flg toujours les mêmes valeurs dans son prog, op.semnum = PLACE ou op.semnum = MUTEX ou op.semnum = ARTICLE
 le fichier doit s'arrêter avec un CTRL+C
 
-RENDU : consommateur.c, initProdCons.c, prod-cons-fic2tab.c, producteur.c
+initProdCons.c : crée l'ensemble de sémaphores (prod et conso)
+producteur.c : dépose les objets 
+
+RENDU : consommateur.c, initProdCons.c, prod-cons-fic2tab.c, producteur.c (+ clean.c peut-être utile)
     des 2 côtés il faut faire des semget(.., 0,...) pour pas qu'il ne reproduise des semaphores mais qu'il se serve des autres
 */
 
@@ -94,20 +97,20 @@ void prod() {
     int val = 0;
 
     while(1) {
-        //P(PLACE)
+        /*P(PLACE)
         op.sem_num = PLACE;
         op.sem_op = 1;
         op.sem_flg = 0;
         semop(semid, &op, 1);
-        // P(MUTEX);
+        P(MUTEX);
         op.sem_num = MUTEX;
         op.sem_op = 1;
         op.sem_flg = 0;
         semop(semid, &op, 1);
         deposer("data", &val);
-        // V(MUTEX);
-        // V(ARTICLE);
-        val++;
+        V(MUTEX);
+        V(ARTICLE);
+        val++;*/
     }
 } 
 

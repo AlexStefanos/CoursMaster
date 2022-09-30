@@ -16,28 +16,6 @@
 key_t cle;
 int semid;
 
-/*
-création d'un ensemble de 3 sémaphores : semid = semget(IPC_PRIVATE, 3, IPC_CREAT|0666) == -1)
-initialisaition des 3 sémaphores
-ushort init sem[3] = (1, MAX, 0)
-if(semctl(semid, 3 , sETALL? init sem == -1)
-    ...
-void consommateur() {}
-destruction de l'ensemble des semaphores semctl()               + finir de supprimer les restants à la main : ipcs (afficher)         ipcrm x
-P(mutex) :
-    op.sem_num = PLACE; op.sem_op = -1; op.sem_flg = 0;
-    cr = semop(semid, &op, 1);
-    if(cr != 0) perror ("P MUTEX");
-op.sem_op et op.sem_flg toujours les mêmes valeurs dans son prog, op.semnum = PLACE ou op.semnum = MUTEX ou op.semnum = ARTICLE
-le fichier doit s'arrêter avec un CTRL+C
-
-initProdCons.c : crée l'ensemble de sémaphores (prod et conso)
-producteur.c : dépose les objets 
-
-RENDU : consommateur.c, initProdCons.c, prod-cons-fic2tab.c, producteur.c (+ clean.c peut-être utile)
-    des 2 côtés il faut faire des semget(.., 0,...) pour pas qu'il ne reproduise des semaphores mais qu'il se serve des autres
-*/
-
 int fic2tab(char *pathname, int *tab, int size) {
     int cible;
 
@@ -97,40 +75,54 @@ void prod() {
     int val = 0;
 
     while(1) {
-        /*P(PLACE)
+        struct sembuf op;
+        op.sem_num = ARTICLE;
+        op.sem_op = 1;
+        op.sem_flg = 0;
+        semop(semid, &op, 1);
         op.sem_num = PLACE;
         op.sem_op = 1;
         op.sem_flg = 0;
         semop(semid, &op, 1);
-        P(MUTEX);
         op.sem_num = MUTEX;
         op.sem_op = 1;
         op.sem_flg = 0;
         semop(semid, &op, 1);
         deposer("data", &val);
-        V(MUTEX);
-        V(ARTICLE);
-        val++;*/
+        op.sem_num = ARTICLE;
+        op.sem_op = 0;
+        op.sem_flg = 0;
+        semop(semid, &op, 1);
+        op.sem_num = MUTEX;
+        op.sem_op = 0;
+        op.sem_flg = 0;
+        semop(semid, &op, 1);
+        op.sem_num = ARTICLE;
+        op.sem_op = 0;
+        op.sem_flg = 0;
+        semop(semid, &op, 1);
+        val++;
     }
 } 
 
 int main(int argc, char **argv) {
     int pid;
-    ushort init_sem[1] = {1};
+    ushort init_sem[3] = {1};
 
     cle=ftok(argv[0], '0');
     if(cle == -1) {
         fprintf(stderr, "Erreur fotk()\n");
         exit(1);
     }
-    semid = semget(cle, 1, IPC_CREAT|IPC_EXCL|0666);
+    semid = semget(cle, 3, IPC_CREAT|IPC_EXCL|0666);
     if(semid == -1) {
         fprintf(stderr, "Erreur semget()\n");
         exit(2);
     }
-    if(semctl(semid, 1, SETALL, init_sem) == -1) {
+    if(semctl(semid, 3, SETALL, init_sem) == -1) {
         fprintf(stderr, "Erreur semctl");
         exit(3);
     }
 
+    prod();
 }

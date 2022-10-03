@@ -3,27 +3,25 @@ package ubs.info.as.tp02;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.StringTokenizer;
-import java.util.ArrayList;
+//import java.util.StringTokenizer;
 
 public class Metro {
 	
 	public static void lireMetro(String nomDeFichier_) throws IOException { //peut-être return une String
 		try(FileReader fReader = new FileReader(nomDeFichier_)) {
 			BufferedReader bReader = new BufferedReader(fReader);
-			ArrayList<String> metros = new ArrayList<String>();
-			//while((str = bR.readLine()) != null)
-			bReader.mark(0);
-			while(bReader.readLine() != null) {				
-				bReader.reset();
-				metros.add(bReader.readLine());
-				bReader.mark(0);
-//				StringTokenizer strTokenizer = new StringTokenizer(bReader.readLine(), " ");
-//				while(strTokenizer.hasMoreElements()) {
-//					metros.add(strTokenizer.nextToken());
-//				}
+			String str = new String();
+			while(bReader.ready()) {
+				str += bReader.readLine();
+				str += '\n';
 			}
-			System.out.println(metros);
+//			String result = new String();
+//			StringTokenizer strTokenizer = new StringTokenizer(str, " ");
+//			while(strTokenizer.hasMoreTokens() == true) {
+//				result += strTokenizer.nextToken();					
+//			}
+//			System.out.println(result);
+			System.out.println(str);
 		}
 	}
 	

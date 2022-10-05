@@ -9,7 +9,7 @@
 #include <sys/wait.h>
 
 key_t cle;
-int semid;
+int semid, shmid;
 int tab[10] = {0};
 
 
@@ -30,7 +30,7 @@ int tab2fic(char *pathname, int *tab, int size) {
 
 int main(int argc, char **argv) {
     int pid, conso, i = 0;
-    ushort init_sem[3] = {1};
+    ushort init_sem[3] = {1, 0, 0};
 
     tab2fic(argv[1], tab, 10);
     cle=ftok(argv[1], '0');
@@ -47,5 +47,12 @@ int main(int argc, char **argv) {
         fprintf(stderr, "Erreur semctl\n");
         exit(3);
     }
-
+    int *val;
+    if((val = (int *)shmat(shmid, NULL, 0)) == (int *)-1) {
+        exit(3);
+    }
+    for(int i = 0; i < 4; i++) {
+        val[i] = 0;
+        shmdt(val);
+    }
 }

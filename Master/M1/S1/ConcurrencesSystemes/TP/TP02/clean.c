@@ -25,9 +25,10 @@ int main(int argc, char **argv) {
         fprintf(stderr, "Erreur semget()\n");
         exit(2);
     }
+    semctl(semid, 0, IPC_RMID, 0);
     if(semctl(semid, 3, SETALL, init_sem) == -1) {
         fprintf(stderr, "Erreur semctl");
         exit(3);
     }
-    semctl(semid, 0, IPC_RMID, 0);
+    shmctl(semid, 0, IPC_RMID, 0);
 }

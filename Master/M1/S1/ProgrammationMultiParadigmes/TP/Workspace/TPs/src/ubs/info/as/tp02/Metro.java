@@ -5,8 +5,17 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 //import java.util.StringTokenizer;
 
+/**
+ * TP02 Programmation Multi-Paradigme : Classe Metro
+ * @author Alexandre Stefanos
+ *
+ */
 public class Metro {
-	
+	/**
+	 * Lecture du fichier donné
+	 * @param nomDeFichier_ : nom du fichier donné
+	 * @throws IOException
+	 */
 	public static void lireMetro(String nomDeFichier_) throws IOException { //peut-être return une String
 		try(FileReader fReader = new FileReader(nomDeFichier_)) {
 			BufferedReader bReader = new BufferedReader(fReader);
@@ -20,11 +29,14 @@ public class Metro {
 //			while(strTokenizer.hasMoreTokens() == true) {
 //				result += strTokenizer.nextToken();					
 //			}
-//			System.out.println(result);
-			System.out.println(str);
 		}
 	}
 	
+	/**
+	 * Main de la classe Metro
+	 * @param args : arguments du main
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 		lireMetro("metro.txt");
 	}

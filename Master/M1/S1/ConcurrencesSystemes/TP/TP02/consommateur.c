@@ -65,6 +65,18 @@ int main(int argc, char **argv) {
     while(1) {
         struct sembuf op;
 
+        /* on verif l'exclusion mutuelle
+        P(mutex)
+        if(var[redacteur] || var[demande_redacteur]) {
+            var[demande_lecteur]
+            ...
+            P(mutex)
+            if(var[demande_redacteur])
+                V(redacteur)
+        }
+        var[lecteur]--
+        V(mutex)
+        */
         op.sem_num = 0;
         op.sem_op = -1;
         op.sem_flg = 0;

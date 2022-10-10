@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.StringTokenizer;
 
 /**
  * TP02 Programmation Multi-Paradigme : Classe Réseau
@@ -11,21 +13,23 @@ import java.util.ArrayList;
  *
  */
 public class Reseau {
-	ArrayList<ArrayList<Station>> graph;
-	ArrayList<Station> stations;
+	HashMap<String, Station> stations;
+	static ArrayList<Station> listeVoisins;
+	HashMap<Station, ArrayList<Station>> graph;
 	
 	/**
 	 * Constructeur de la classe Reseau
 	 */
 	public Reseau() {
-		graph = new ArrayList<ArrayList<Station>>();
-		stations = new ArrayList<Station>();
+		stations = new HashMap<String, Station>();
+		listeVoisins = new ArrayList<Station>();
+		graph = new HashMap<Station, ArrayList<Station>>();
 	}
 	
 	/**
 	 * Methode permettant de creer un reseau a partir d'un nom de fichier
 	 * @param nomDeFichier_ : nom du fichier a lire
-	 * @return le reseau creer
+	 * @return le reseau cree
 	 * @throws IOException
 	 */
 	public static Reseau CreeReseauAPartirDuFichier(String nomDeFichier_) throws IOException {
@@ -34,11 +38,31 @@ public class Reseau {
 		try(FileReader fReader = new FileReader(nomDeFichier_)) {
 			BufferedReader bReader = new BufferedReader(fReader);
 			String str = new String();
+			String tmp = new String();
+			String tmp2 = new String();
+			int i = 0;
+			StringTokenizer strTokenizer;
 			while(bReader.ready()) {
-				str += bReader.readLine();
-				str += '\n';
+				str = bReader.readLine();
+				reseau.stations.put(str, new Station(str));
+				strTokenizer = new StringTokenizer(str, " 123456789");
+				while(strTokenizer.hasMoreTokens() == true) {
+					str = strTokenizer.nextToken();
+					reseau.stations.put(str, new Station(str));
+					if(i == 0)
+						tmp = strTokenizer.nextToken();
+					if(i == 2)
+						tmp2 = strTokenizer.nextToken();
+					i++;
+					if(str != tmp && str != tmp2) {
+						listeVoisins.add(new Station(tmp));
+						listeVoisins.add(new Station(tmp2));
+						reseau.graph.put(new Station(str), listeVoisins);
+						listeVoisins.clear();
+					}
+					i = 0;
+				}
 			}
-			System.out.println(str);
 		}
 		return(reseau);
 	}
@@ -52,8 +76,8 @@ public class Reseau {
 		Station s = new Station(nomDeStation_);
 		String[] voisins = new String[2];
 		
-		voisins[0] = stations.get(stations.indexOf(s) - 1).toString();
-		voisins[1] = stations.get(stations.indexOf(s) + 1).toString();
+		voisins[0] = graph.get(s).get(0).nom;
+		voisins[1] = graph.get(s).get(1).nom;
 		return(voisins);
 	}
 	
@@ -61,33 +85,41 @@ public class Reseau {
 	 * Methode permettant d'ajouter une ArrayList de stations au graphe
 	 * @param stations_ : stations ajoutees
 	 */
-	public void ajoutGraph(ArrayList<Station> s_) {
-		graph.add(s_);
+	public void ajoutGraph(Station station_, ArrayList<Station> listeVoisins_) {
+		if(graph.containsKey(station_) == false)
+			graph.put(station_, listeVoisins_);
 	}
 	
 	/**
 	 * Methode permettant d'ajouter une station a l'ArrayList de stations
 	 * @param s_ : station a ajouter
 	 */
-	public void ajoutStations(Station s_) {
-		stations.add(s_);
+	public void ajoutStations(Station station_) {
+		if(stations.containsKey(station_.nom) == false)
+			stations.put(station_.nom, station_);
+	}
+	
+	public void supprGraph(Station station_) {
+		if(graph.containsKey(station_))
+			graph.remove(station_);
+	}
+	
+	public void supprStations(Station station_) {
+		if(stations.containsKey(station_.nom))
+			stations.remove(station_.nom);
 	}
 	
 	/**
 	 * Methode permettant d'afficher un graphe
 	 */
 	public void afficheGraph() {
-		for(int i = 0; i < graph.size(); i++) {
-			System.out.println(graph.indexOf(i));
-		}
+		System.out.println(graph.keySet());
 	}
 	
 	/**
 	 * Methode permettant d'afficher l'ArrayList de stations
 	 */
 	public void afficheStations() {
-		for(int i = 0; i < stations.size(); i++) {
-			System.out.println(stations.indexOf(i));
-		}
+		System.out.println(stations.keySet());
 	}
 }

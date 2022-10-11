@@ -82,7 +82,7 @@ public class Reseau {
 	}
 	
 	/**
-	 * Methode permettant d'ajouter une ArrayList de stations au graphe
+	 * Methode permettant d'ajouter une valeur a HashMap<Station, ArrayList<Station>> graph
 	 * @param stations_ : stations ajoutees
 	 */
 	public void ajoutGraph(Station station_, ArrayList<Station> listeVoisins_) {
@@ -91,7 +91,7 @@ public class Reseau {
 	}
 	
 	/**
-	 * Methode permettant d'ajouter une station a l'ArrayList de stations
+	 * Methode permettant d'ajouter une cle a HashMap<String, Station> stations
 	 * @param s_ : station a ajouter
 	 */
 	public void ajoutStations(Station station_) {
@@ -99,25 +99,33 @@ public class Reseau {
 			stations.put(station_.nom, station_);
 	}
 	
+	/**
+	 * Methode permettant de supprimer une cle de HashMap<Station, ArrayList<Station>> graph
+	 * @param station_
+	 */
 	public void supprGraph(Station station_) {
 		if(graph.containsKey(station_))
 			graph.remove(station_);
 	}
 	
+	/**
+	 * Methode permettant de supprimer une cle de la HashMap<String, Station> stations
+	 * @param station_ : station supprimée
+	 */
 	public void supprStations(Station station_) {
 		if(stations.containsKey(station_.nom))
 			stations.remove(station_.nom);
 	}
 	
 	/**
-	 * Methode permettant d'afficher un graphe
+	 * Methode permettant d'afficher HashMap<Station, ArrayList<Station>> graph
 	 */
 	public void afficheGraph() {
 		System.out.println(graph.keySet());
 	}
 	
 	/**
-	 * Methode permettant d'afficher l'ArrayList de stations
+	 * Methode permettant d'afficher HashMap<String, Station> stations
 	 */
 	public void afficheStations() {
 		System.out.println(stations.keySet());

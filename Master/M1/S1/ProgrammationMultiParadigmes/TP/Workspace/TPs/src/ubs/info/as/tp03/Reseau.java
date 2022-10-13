@@ -5,15 +5,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.StringTokenizer;
 
 /**
- * TP02 Programmation Multi-Paradigme : Classe Réseau
+ * TP03 Programmation Multi-Paradigme : Classe Réseau
  * @author Alexandre Stefanos
  *
  */
 public class Reseau {
-	HashMap<String, Station> stations;
+	HashSet<Station> stations;
 	static ArrayList<Station> listeVoisins;
 	HashMap<Station, ArrayList<Station>> graph;
 	
@@ -21,10 +22,22 @@ public class Reseau {
 	 * Constructeur de la classe Reseau
 	 */
 	public Reseau() {
-		stations = new HashMap<String, Station>();
+		stations = new HashSet<Station>();
 		listeVoisins = new ArrayList<Station>();
 		graph = new HashMap<Station, ArrayList<Station>>();
-	}
+	}if(i == 0)
+//		tmp = str;
+//	if(i == 2)
+//		tmp2 = str;
+//	i++;
+//	if(str != tmp && str != tmp2) {
+//		listeVoisins.add(new Station(tmp));
+//		listeVoisins.add(new Station(tmp2));
+//		reseau.graph.put(new Station(str), listeVoisins);
+//		listeVoisins.clear();
+//	}
+//	if(i == 3)
+//		i = 0;
 	
 	/**
 	 * Methode permettant de creer un reseau a partir d'un nom de fichier
@@ -38,29 +51,34 @@ public class Reseau {
 		try(FileReader fReader = new FileReader(nomDeFichier_)) {
 			BufferedReader bReader = new BufferedReader(fReader);
 			String str = new String();
-			String tmp = new String();
-			String tmp2 = new String();
 			int i = 0;
 			StringTokenizer strTokenizer;
+			
 			while(bReader.ready()) {
 				str = bReader.readLine();
-				reseau.stations.put(str, new Station(str));
-				strTokenizer = new StringTokenizer(str, " 123456789");
+				strTokenizer = new StringTokenizer(str, "\"");
 				while(strTokenizer.hasMoreTokens() == true) {
-					str = strTokenizer.nextToken();
-					reseau.stations.put(str, new Station(str));
-					if(i == 0)
-						tmp = strTokenizer.nextToken();
-					if(i == 2)
-						tmp2 = strTokenizer.nextToken();
-					i++;
-					if(str != tmp && str != tmp2) {
-						listeVoisins.add(new Station(tmp));
-						listeVoisins.add(new Station(tmp2));
-						reseau.graph.put(new Station(str), listeVoisins);
-						listeVoisins.clear();
-					}
-					i = 0;
+					Ligne ligne = new Ligne(Integer.parseInt(strTokenizer.nextToken()));
+					Station depart = new Station(strTokenizer.nextToken());
+					System.out.println(strTokenizer.nextToken());
+					Station arrivee = new Station(strTokenizer.nextToken());
+					depart.ajouteLigne(ligne);
+					arrivee.ajouteLigne(ligne);
+					reseau.stations.add(depart);
+					reseau.stations.add(arrivee);
+//					if(i == 0)
+//						tmp = str;
+//					if(i == 2)
+//						tmp2 = str;
+//					i++;
+//					if(str != tmp && str != tmp2) {
+//						listeVoisins.add(new Station(tmp));
+//						listeVoisins.add(new Station(tmp2));
+//						reseau.graph.put(new Station(str), listeVoisins);
+//						listeVoisins.clear();
+//					}
+//					if(i == 3)
+//						i = 0;
 				}
 			}
 		}
@@ -95,17 +113,15 @@ public class Reseau {
 	 * @param s_ : station a ajouter
 	 */
 	public void ajoutStations(Station station_) {
-		if(stations.containsKey(station_.nom) == false)
-			stations.put(station_.nom, station_);
+		
 	}
 	
 	/**
 	 * Methode permettant de supprimer une cle de HashMap<Station, ArrayList<Station>> graph
-	 * @param station_
+	 * @param station_ a supprimer
 	 */
 	public void supprGraph(Station station_) {
-		if(graph.containsKey(station_))
-			graph.remove(station_);
+		
 	}
 	
 	/**
@@ -113,8 +129,7 @@ public class Reseau {
 	 * @param station_ : station supprimée
 	 */
 	public void supprStations(Station station_) {
-		if(stations.containsKey(station_.nom))
-			stations.remove(station_.nom);
+		
 	}
 	
 	/**
@@ -128,6 +143,20 @@ public class Reseau {
 	 * Methode permettant d'afficher HashMap<String, Station> stations
 	 */
 	public void afficheStations() {
-		System.out.println(stations.keySet());
+		
+	}
+	
+	public HashSet<Station> getStations() {
+		return(this.stations);
+	}
+	
+	public HashMap<Station, ArrayList<Station>> getGraph() {
+		return(this.graph);
+	}
+	
+	public static void main(String[] args) throws IOException {
+		Reseau r1 = new Reseau();
+		r1 = Reseau.CreeReseauAPartirDuFichier("metro.txt");
+		r1.afficheGraph();
 	}
 }

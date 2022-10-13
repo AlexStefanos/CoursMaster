@@ -6,7 +6,7 @@ import java.io.FileReader;
 //import java.util.StringTokenizer;
 
 /**
- * TP02 Programmation Multi-Paradigme : Classe Metro
+ * TP03 Programmation Multi-Paradigme : Classe Metro
  * @author Alexandre Stefanos
  *
  */

@@ -1,61 +1,52 @@
-#include<stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/sem.h>
 #include <sys/ipc.h>
-#include <sys/shm.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <sched.h>
+#include <sys/resource.h>
+#include <sys/shm.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 #define MUTEX 0
 #define NBLECTEUR 1
+#define NBREDACTEUR 2
+
+key_t cle;
+int semid, shmid;
+int *var, *start;
 
 int main ( int argc , char **argv ) {
-  key_t cle, c;
-  int semid;
-  int shmid;
-  
-  mknod("/tmp/invite",S_IFREG|0666,0);
-  if((cle=ftok("/tmp/invite",'0')) == -1 ) {
-    fprintf(stderr,"Probleme sur ftoks\n");
+  system("touch /tmp/motdj");
+  ushort init_sem[3] = {1, 1, 1};
+  if((cle = ftok("/tmp/motdj", '0')) == -1) {
+    fprintf(stderr,"Probleme ftoks\n");
     exit(1);
   }
-  printf("Initialisation  des semaphores \n");
-  if((semid=semget(cle,2,IPC_CREAT|0777))==-1) {
-    perror("semget");
-    fprintf(stderr,"Probleme sur semget\n");
+  printf("Initialisation  des semaphores\n");
+  if((semid = semget(cle, 3, IPC_CREAT|0777))==-1) {
+    fprintf(stderr,"Probleme semget\n");
     exit(2);
   }
-  printf("Creation du segment partagé \n");
-  if ((shmid=shmget(cle,1024,IPC_CREAT|0777))==-1) {
-    perror("shmget");
-    fprintf(stderr,"Probleme sur shmget\n");
-    exit(2);
+  printf("Creation du segment partagé\n");
+  if((shmid = shmget(cle, 4*sizeof(int), IPC_CREAT|0666)) == -1) {
+    fprintf(stderr,"Probleme shmget\n");
+    exit(3);
   }
-  {
-    ushort init_sem [2]={1,1};
-    if (semctl(semid,2,SETALL,init_sem)==-1) {
-      fprintf(stderr,"Probleme sur semctl SETALL\n");
-      exit(3);
-    }
+  if(*(var = (int *)shmat(shmid, NULL, 0)) == -1) {
+    fprintf(stderr, "Probleme shmat\n");
+    exit(4);
   }
-  {
-    int *val;
-    if((val=(int*)shmat(shmid,NULL,0))==(int *)-1) {
-      perror("shmat ");
-      fprintf(stderr,"Probleme sur shmat\n");
-      exit(3);
-    } 
-    printf("Initialisation  du segment partagé \n"); 
-    *val =0;
-    shmdt(val);
-    c = ftok("init", '0');
-    somye(2, IPC_CREAT|0666, 0);
-    shmget(c, SETALL, (1, 1));
-    int *NbL = shmat(shmid, 0, 0);
-    shmdet(semid);
+  start = var;
+  *var = 0;var++;
+  *var = 0;var++;
+  *var = 0;var++;
+  *var = 0;
+  if(shmdt(start) == -1) {
+    fprintf(stderr, "Probleme shmat\n");
+    exit(4);
   }
-  printf("Init mot du jour\n");
 }

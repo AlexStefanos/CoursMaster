@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 /**
- * TP02 Programmation Multi-Paradigme : Classe Station
+ * TP03 Programmation Multi-Paradigme : Classe Station
  * @author Alexandre Stefanos
  *
  */

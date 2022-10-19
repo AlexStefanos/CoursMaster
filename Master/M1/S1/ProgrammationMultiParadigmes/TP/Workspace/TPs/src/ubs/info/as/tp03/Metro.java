@@ -31,13 +31,4 @@ public class Metro {
 //			}
 		}
 	}
-	
-	/**
-	 * Main de la classe Metro
-	 * @param args : arguments du main
-	 * @throws IOException
-	 */
-	public static void main(String[] args) throws IOException {
-		lireMetro("metro.txt");
-	}
 }

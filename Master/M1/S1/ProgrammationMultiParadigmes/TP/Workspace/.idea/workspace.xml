@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4f30d31-66cb-453f-aa13-ca8d27216260" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP00/Thinking_In_Java_Bruce_Eckel_FR.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP01/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP01/Recursivite.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP01/Stefanos_Alexandre_TP01.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP01/execute.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP01/prog_td1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP02/Metro.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP02/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP02/Stefanos_Alexandre_Metro.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP02/execute.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP02/metro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP02/prog_td2_metro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP03/MetroTP03.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP03/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP03/Stefanos_Alexandre_MetroTP03.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP03/execute.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie1/TP03/prog_td3_metro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/BytesMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/Connection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ConnectionConsumer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ConnectionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ConnectionMetaData.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/DeliveryMode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/Destination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ExceptionListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/IllegalStateException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/InvalidClientIDException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/InvalidDestinationException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/InvalidSelectorException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/JMSException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/JMSSecurityException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MapMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/Message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MessageConsumer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MessageEOFException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MessageFormatException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MessageListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MessageNotReadableException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MessageNotWriteableException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/MessageProducer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ObjectMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/Queue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/QueueBrowser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/QueueConnection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/QueueConnectionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/QueueReceiver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/QueueRequestor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/QueueSender.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/QueueSession.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ResourceAllocationException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ServerSession.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/ServerSessionPool.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/Session.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/StreamMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TemporaryQueue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TemporaryTopic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TextMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/Topic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TopicConnection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TopicConnectionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TopicPublisher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TopicRequestor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TopicSession.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TopicSubscriber.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TransactionInProgressException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/TransactionRolledBackException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XAConnection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XAConnectionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XAQueueConnection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XAQueueConnectionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XAQueueSession.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XASession.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XATopicConnection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XATopicConnectionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/XATopicSession.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/javax/jms/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/packages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/javadoc-jms-1.1/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/admin.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/admin.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/dbtool.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/dbtool.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/openjms.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/openjms.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/openjms.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/setenv.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/setenv.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/shutdown.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/shutdown.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/startup.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/bin/startup.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/config/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/config/openjms.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/config/openjms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/config/openjms.xml.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/derby.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/derby.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/log/log.ctrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/log/logmirror.ctrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c10.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c101.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c111.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c121.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c130.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c141.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c150.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c161.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c171.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c180.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c191.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c1a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c1b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c1c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c1d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c1e0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c1f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c20.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c200.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c211.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c221.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c230.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c241.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c251.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c260.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c271.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c281.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c290.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c2a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c2b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c2c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c2d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c2e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c2f0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c300.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c31.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c311.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c320.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c331.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c340.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c351.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c360.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c371.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c380.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c391.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c3a0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c3b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c3c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c3d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c41.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c51.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c60.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c71.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c81.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/c90.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/ca1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/cb1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/cc0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/cd1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/ce1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/seg0/cf0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/openjmsdb/service.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_hsql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_interbase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_jds.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_mckoi.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_sapdb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_sqlserver.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_sybase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/create_sybaseanywhere.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/db/sql/drop_sqlserver.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/adminguide/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/adminguide/install.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/adminguide/running.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/changes-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/changes.rss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/config.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/connectors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/destinations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/embedded.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/factories.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/gc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/http.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/https.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/jdbc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/jndi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/reference.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/rmi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/security.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/tcp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/config/tcps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/cvs-usage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/dependencies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/build.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/codestyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/roadmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/submit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/devguide/volunteers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/downloads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/gettingstarted.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/glossary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/add.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/collapsed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/expanded.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/fix.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/icon_error_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/icon_info_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/icon_success_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/icon_warning_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/logos/maven-button-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/newwindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/none.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/openjms.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/remove.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/images/update.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/issue-tracking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/mail-lists.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/maven-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/project-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/release-notes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/style/maven-base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/style/maven-classic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/style/maven-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/style/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/team-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/connectors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/embedded.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/http.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/https.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/jars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/rmi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/tcp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/tcps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/docs/usersguide/using.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/Browser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/DurableSubscriber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/Receiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/SampleListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/Sender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/build.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/jndi.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/run.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/examples/basic/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/antlr-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/castor-0.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/commons-codec-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/commons-collections-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/commons-dbcp-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/commons-pool-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/concurrent-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/derby-10.1.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/jdbc-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/jms-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/jndi-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/jta-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/log4j-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/openjms-0.7.7-beta-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/openjms-common-0.7.7-beta-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/openjms-net-0.7.7-beta-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/openjms-tools-0.7.7-beta-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/openjms-tunnel-0.7.7-beta-1.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/oro-2.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/spice-jndikit-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/xerces-2.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms-0.7.7-beta-1/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/JMS/openjms.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partie2/TP01/jms-1_1-fr-spec.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Workspace.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-bg_glass_65_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/jquery-3.5.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script-dir/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/ubs/mi/as/tp01/HelloDate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/ubs/mi/as/tp01/class-use/HelloDate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/ubs/mi/as/tp01/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/ubs/mi/as/tp01/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/doc/ubs/mi/as/tp01/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/metro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/ATypeName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/AllTheColorsOfTheRainbow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/DataOnly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/HelloDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/Q05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/Q07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/StaticFun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p1/StaticTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p2/Q01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p2/Q02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p2/Q03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p2/Q04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p2/Q06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp00/p2/Q07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp01/Recursivite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp02/Ligne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp02/Metro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp02/Reseau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp02/Station.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/Chemin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/Graphe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/Ligne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/Metro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/Reseau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/Station.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metroTD03.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2GwRhQqODpYEQcMQUOb98v3dJGC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexandre/Cours/Master/M1/S1/ProgrammationMultiParadigmes/TP/Workspace&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4f30d31-66cb-453f-aa13-ca8d27216260" name="Changes" comment="" />
+      <created>1667297780374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667297780374</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -1,0 +1,30 @@
+  class Toto extends Thread {
+
+          public void run() {
+                   // compute primes larger than minPrime
+	    System.out.println(this + " run");
+	    System.out.println("toto sleep 10 s");
+	    try {
+		Thread.sleep(10000);
+	    } catch ( Exception  e) {
+		
+	    } ; 
+	  } 
+
+  }
+
+  public  class TestThread {
+   
+   public static void main (String[] args) {
+     Toto toto= new Toto();
+     //toto.setDaemon(true);
+     toto.start();
+     System.out.println("main CurrentThread : "+Thread.currentThread());
+     System.out.println("FIN DU main CurrentThread : "+Thread.currentThread());
+  
+   } // end of main ()
+   
+   
+ }
+
+  

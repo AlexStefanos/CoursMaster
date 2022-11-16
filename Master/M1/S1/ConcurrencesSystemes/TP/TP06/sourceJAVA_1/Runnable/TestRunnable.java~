@@ -1,0 +1,49 @@
+  class Toto implements Runnable {
+
+          public void run() {
+                   // compute primes larger than minPrime
+	    System.out.println(this+"  toto run");
+          }
+  }
+
+ class Controleur { 
+   protected Thread unThread;
+   public Controleur(Runnable r){
+     unThread = new Thread(r); 
+   }
+   public void start() {
+     unThread.start();
+   }
+   public void join() throws InterruptedException {
+     unThread.join();
+   }
+   
+ }
+
+  public  class TestRunnable {
+   
+   public static void main (String[] args) {
+     Toto toto= new Toto();
+     Controleur p = new Controleur((Runnable)toto);
+     p.start();
+     try {
+        p.join();
+     } catch ( Exception  e) {
+       
+     } // end of try-catch
+     
+     Toto toto2= new Toto();
+     Thread t = new Thread(toto2);
+     t.start();
+     try {
+        t.join();
+     } catch ( Exception  e) {};
+      
+
+  
+   } // end of main ()
+   
+   
+ }
+
+  

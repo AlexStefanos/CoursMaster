@@ -1,0 +1,2 @@
+java TestThread
+java -server TestThread

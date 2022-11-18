@@ -11,5 +11,13 @@ wait <-   |                 |
      -> synch()            -
  */
 
-public class tp07 {
+public class Barrier {
+    private final int nbThread;
+    private int nb;
+    public Barrier(int nbThread) {
+        this.nbThread = nbThread;
+    }
+    public synchronized synchr() {
+
+    }
 }

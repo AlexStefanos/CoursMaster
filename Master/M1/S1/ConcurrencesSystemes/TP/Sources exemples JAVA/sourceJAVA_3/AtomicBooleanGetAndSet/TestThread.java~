@@ -1,0 +1,59 @@
+import java.util.concurrent.atomic.*;
+
+
+ public  class TestThread extends Thread{
+
+     static int val =0;
+     static AtomicBoolean verrou;
+
+          public void run() {
+                   // compute primes larger than minPrime
+  
+	    System.out.println("CurrentThread : "+Thread.currentThread());
+
+	    while (true) {
+
+		System.out.println(this+ " verrou getAndSet ");
+		boolean lock= verrou.getAndSet(true);
+		System.out.println(this+ " verrou " +  lock);
+
+                if (! lock){
+                    // en exclusion mutuelle
+		    val ++;
+		    System.out.println(this +" val++  " + val);
+                      try {
+		    	Thread.sleep(1000);
+		      } catch ( Exception  e) {};
+		    
+                    // fin exclusion
+		    verrou.set(false);
+		    Thread.yield();
+		}  else {
+		    try { // attente active
+			Thread.sleep(1000);
+		    } catch ( Exception  e) {};
+		}
+       
+          }
+  }
+
+   
+static final int Max=5; 
+public static void main (String[] args) {
+    TestThread[] tab= new TestThread[Max];
+    verrou = new AtomicBoolean(false);
+
+    for ( int i =0; i< Max ;i++)
+	tab[i]= new TestThread();
+
+    for ( int i =0; i< Max ;i++)
+	tab[i].start();
+   verrou.set(false) ; 
+
+
+}
+     
+   
+ }
+
+  

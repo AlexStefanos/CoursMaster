@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd891058-93c6-4419-8c8d-561dee9b8d4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/d/5/d5c329d153fc06fb0898491f757d670ee5b90075" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/f/5/f5a54aa93366b29d3f3ad3660d18ed82293b5fe2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/5743241a4613be20286f22ac84fc1b99b0ee1a42" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fd891058-93c6-4419-8c8d-561dee9b8d4e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +77,7 @@
       <workItem from="1668678962037" duration="905000" />
       <workItem from="1668680003967" duration="70000" />
       <workItem from="1668761448574" duration="428000" />
+      <workItem from="1668762803171" duration="13000" />
     </task>
     <servers />
   </component>

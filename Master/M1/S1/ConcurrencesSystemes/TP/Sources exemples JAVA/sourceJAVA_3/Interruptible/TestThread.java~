@@ -1,0 +1,47 @@
+  class Toto extends Thread {
+
+      
+      
+       public void interrupt(){
+          System.out.println(this +  "interrup recu...");
+        };
+      
+      
+      // a decommenter pour empecher exception interrup
+      //
+
+ 
+      public void run() {
+	  System.out.println(this +  "lance ...");
+	  
+	 
+	  
+	  // synchronized (this) {
+		  try {sleep(10000);}
+		  catch (InterruptedException e) {
+
+		      System.out.println(this +"Exception levee  + " + e);
+		  }
+		  System.out.println(this +"Sortie du sleep");
+
+		  //} 
+
+      }
+  }
+
+  public  class TestThread {
+   
+   public static void main (String[] args) {
+     Toto toto= new Toto();
+     toto.start();
+     try {
+	 Thread.sleep(2000);
+     } catch ( Exception  e) {} ; 
+     System.out.println(Thread.currentThread()+" envoie  toto.interrupt() ");
+     toto.interrupt();
+     System.out.println("toto.isInterrupted()" +  toto.isInterrupted());
+   } 
+   
+ }
+
+  

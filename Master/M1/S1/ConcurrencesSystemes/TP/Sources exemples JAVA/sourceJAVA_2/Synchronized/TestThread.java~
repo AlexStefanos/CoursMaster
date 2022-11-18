@@ -1,0 +1,60 @@
+
+class Toto {
+
+    int val=0;
+    //public  int getVal(){
+    public synchronized int getVal(){
+			return val;
+    }
+    //public void setVal( int v){
+     public synchronized void setVal( int v){
+				  val =  v;
+    }
+    //public  void inc(int p){
+       public synchronized void inc(int p){
+	int v =  getVal();
+		Thread.currentThread().yield();
+	val = v + p;
+    }
+
+}
+
+
+class Th extends Thread {
+     
+    Toto toto;
+    public Th(Toto t){
+	toto=t;
+    }  
+    
+    public void run() {
+	// compute primes larger than minPrime
+	System.out.println("th run");
+	System.out.println("CurrentThread : "+Thread.currentThread());
+	for(int i=0;i<100;i++) {
+             toto.inc(1);
+	    System.out.println(this +"  val : " + toto.getVal());
+	      
+
+	}
+    }
+}
+
+public  class TestThread {
+    
+    public static void main (String[] args) {
+	Toto unToto = new Toto();
+	Th th;
+	    for (int i=0;i<10;i++){
+              th= new Th(unToto);
+	      th.start();
+
+	    }
+
+  
+   } // end of main ()
+   
+   
+ }
+
+  

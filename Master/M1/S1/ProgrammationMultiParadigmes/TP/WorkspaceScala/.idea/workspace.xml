@@ -10,46 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd891058-93c6-4419-8c8d-561dee9b8d4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/WorkspaceScala_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/WorkspaceScala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/WorkspaceScala-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/WorkspaceScala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/WorkspaceScala.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2fa37798caeb3a121f8c4b7ae2670713777891" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/392472c13ceb2a4a165e1ca5dd6b02273df4dbee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/d/5/d5c329d153fc06fb0898491f757d670ee5b90075" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/f/5/f5a54aa93366b29d3f3ad3660d18ed82293b5fe2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/5743241a4613be20286f22ac84fc1b99b0ee1a42" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/WorkspaceScala_jar/Tp05.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$043ad6922570b2d07216$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$043ad6922570b2d07216.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$043ad6922570b2d07216.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$592d1a143c1ed4d55e66$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$592d1a143c1ed4d55e66.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$592d1a143c1ed4d55e66.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$785a175851af291fd364$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$785a175851af291fd364.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$785a175851af291fd364.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ff32d8173aa7c964c543$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ff32d8173aa7c964c543.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ff32d8173aa7c964c543.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP04/main/scala/Anagramme.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP04/test/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP04/test/scala/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP05/main/scala/Tp05.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.history3" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Anagramme$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Anagramme.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/test-classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +60,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -116,6 +82,8 @@
       <workItem from="1668674629852" duration="358000" />
       <workItem from="1668675303532" duration="1128000" />
       <workItem from="1668678962037" duration="905000" />
+      <workItem from="1668680003967" duration="70000" />
+      <workItem from="1668761448574" duration="428000" />
     </task>
     <servers />
   </component>

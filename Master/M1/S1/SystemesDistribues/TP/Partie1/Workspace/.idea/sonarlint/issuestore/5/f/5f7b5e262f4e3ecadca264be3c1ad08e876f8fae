@@ -1,8 +1,9 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôÿ÷¯üÿÿÿÿ8íÃÿşÈ0
-o
-java:S2095""MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(±Âş’şÿÿÿÿ8ûÃÿşÈ0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÿ´¾ƒşÿÿÿÿ8€ÄÿşÈ0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ8‚ÄÿşÈ0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ8„ÄÿşÈ0
-Z	java:S106/"9Replace this use of System.out or System.err by a logger.(½ì§‡ÿÿÿÿÿ8‹ÄÿşÈ0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôÿ÷¯üÿÿÿÿ
+D
+java:S2189\""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8¦¹›¨É0
+[
+java:S18548"9Remove this useless assignment to local variable "start".(ÎöıÍúÿÿÿÿ8Ï´¨É0
+c	java:S8991"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8Ö´¨É0
+L
+java:S14818"*Remove this unused "start" local variable.(ÎöıÍúÿÿÿÿ8Ù´¨É0

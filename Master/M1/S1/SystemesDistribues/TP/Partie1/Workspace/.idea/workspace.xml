@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Gossiper:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f1da33c5-b5bd-47e8-ab0b-b705c318bf7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/e/0/e0bbc1127014975061dfa8632e35522a66eab470" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ConcurrencesSystemes/TP/Workspace/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Workspace.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/Prep01.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/binData" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/dataPop3/-h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/dataPop3/hey" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/dataPop3/sameUserName/nina" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/lib/io-utils.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/mail.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp01/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp01/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp02/PopServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp03/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp04/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPs/src/ubs/info/as/tp04/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bd7e019b77dd1ce6b4f5262b0a4a4d984e5769a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2bd7e019b77dd1ce6b4f5262b0a4a4d984e5769a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/510320783ab8e019b9a062b358ef8f3f1aeb6add" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f7b5e262f4e3ecadca264be3c1ad08e876f8fae" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f7b5e262f4e3ecadca264be3c1ad08e876f8fae" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c9b79d7d20f7e0d851802af88b060499b189302" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c9b79d7d20f7e0d851802af88b060499b189302" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea99515b47f03a85c65949b2ad695e8fe8b0cf53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Workspace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp01/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp01/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp01/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp01/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp02/PopServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tp02/PopServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp03/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp04/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tp04/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +64,50 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/alexandre/Cours/Master/M1/S1/SystemesDistribues/TP/Partie1/Workspace/lib",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tp04" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="tp01.Client" />
+      <module name="Workspace" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 5555 blablabla" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp01.Server" />
+      <module name="Workspace" />
+      <option name="PROGRAM_PARAMETERS" value="5555 hey" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tp01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,6 +117,13 @@
       <option name="presentableId" value="Default" />
       <updated>1668860854810</updated>
       <workItem from="1668860855963" duration="661000" />
+      <workItem from="1668884427054" duration="490000" />
+      <workItem from="1668937154664" duration="3329000" />
+      <workItem from="1668945378959" duration="664000" />
+      <workItem from="1668947239739" duration="2544000" />
+      <workItem from="1668958980704" duration="474000" />
+      <workItem from="1668962455802" duration="2994000" />
+      <workItem from="1668965496872" duration="2101000" />
     </task>
     <servers />
   </component>

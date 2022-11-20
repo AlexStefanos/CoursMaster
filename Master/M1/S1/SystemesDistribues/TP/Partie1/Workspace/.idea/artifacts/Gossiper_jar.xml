@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Gossiper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Gossiper_jar</output-path>
+    <root id="archive" name="Gossiper.jar">
+      <element id="module-output" name="Workspace" />
+    </root>
+  </artifact>
+</component>

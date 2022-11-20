@@ -1,54 +1,96 @@
 package tp01;
 
-import java.io.IOException;
+import java.io.*;
+import java.net.InetAddress;
 import java.net.ServerSocket;
-import java.util.Date;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.net.Socket;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
+/**
+ * TP01 Systeme Distribue : TCP File Exchange
+ * @author Alexandre Stefanos
+ * Classe Server
+ */
 public class Server {
     ServerSocket serverSocket;
+    Socket socket;
+    int port;
+    String directoryName;
+    Path path;
+    InetAddress address;
+    File file;
+    FileInputStream fIS;
+    BufferedInputStream bIS;
+    OutputStream oS;
 
-    public Server() throws IOException {
-        serverSocket = new ServerSocket(5555);
-        System.out.println(serverSocket.isBound());
+    /**
+     * Constructeur de la classe Server
+     * @param port : port du serveur
+     * @param directoryName : nom du dossier de données
+     */
+    public Server(int port, String directoryName) {
+        this.port = port;
+        this.directoryName = directoryName;
     }
 
-    public void acceptClientSocket() {
+    /**
+     * Démarre le serveur
+     */
+    public void run() {
         try {
-            serverSocket.accept();
-        } catch(IOException e) {
-            System.err.println(e);
-        }
-    }
-
-    public void close() {
-        try {
+            serverSocket = new ServerSocket(port);
+            socket = serverSocket.accept();
+            address = InetAddress.getByName("localhost");
+            path = Paths.get("./" + directoryName);
+            Files.createDirectory(path);
+            file = new File("./" + directoryName + File.separator +  "addr-time");
+            file.createNewFile();
+            fIS = new FileInputStream(file);
+            bIS = new BufferedInputStream(fIS);
+            oS = socket.getOutputStream();
+            byte[] contents;
+            long fileLength = file.length();
+            long current = 0;
+            long start = System.nanoTime();
+            while(current != fileLength) {
+                int size = 100000;
+                if(fileLength - current >= size)
+                    current += size;
+                else {
+                    size = (int)(fileLength - current);
+                    current = fileLength;
+                }
+                contents = new byte[size];
+                bIS.read(contents, 0, size);
+                oS.write(contents);
+            }
+            oS.flush();
+            socket.close();
             serverSocket.close();
-        } catch (IOException e) {
-            System.err.println(e);
+        }
+        catch(IOException e) {
+            System.err.println(e.getMessage());
         }
     }
 
-    public void readData() throws IOException {
-        FileInputStream inputStream = new FileInputStream("binData");
-
-        inputStream.readAllBytes();
-        inputStream.transferTo(new FileOutputStream("binData"));
-        inputStream.close();
-    }
-
-    public static void main(String[] args) throws Exception {
-        Server server = new Server();
-        long startTime = System.currentTimeMillis();
-        long elapsedTime = 0L;
-
-        server.readData();
-        System.out.println(server.serverSocket.getReceiveBufferSize());
-        while(elapsedTime < 2*60) {
-            server.acceptClientSocket();
-            elapsedTime = (new Date()).getTime() - startTime;
+    /**
+     * Main de la classe Server
+     * @param args : arguments du main
+     */
+    public static void main(String[] args) {
+        if(args.length != 2) {
+            System.out.println("Error args");
+            System.exit(-1);
         }
-        server.close();
+        if(args[0].equals("-h") || args[0].equals("--help")) {
+            System.out.println("Usage : port, directoryName");
+            System.exit(-1);
+        }
+        Server server = new Server(Integer.parseInt(args[0]), args[1]);
+        while(true) {
+            server.run();
+        }
     }
 }

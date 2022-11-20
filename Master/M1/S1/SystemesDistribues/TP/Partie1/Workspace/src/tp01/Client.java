@@ -1,45 +1,70 @@
 package tp01;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.net.InetAddress;
 import java.net.Socket;
-import java.util.Date;
 
+/**
+ * TP01 Systeme Distribue : TCP File Exchange
+ * @author Alexandre Stefanos
+ * Classe Client
+ */
 public class Client {
     Socket socket;
-    FileInputStream fI;
-    FileOutputStream fO;
+    FileOutputStream fOS;
+    private String hostName, fileName;
+    private int port;
+    BufferedOutputStream bOS;
+    InputStream iS;
 
-    public Client() throws IOException {
-        socket = new Socket("localhost", 5555);
-        System.out.println(socket.isConnected());
+    /**
+     * Constructeur de la classe Client
+     * @param hostName
+     * @param port
+     * @param fileName
+     */
+    public Client(String hostName, int port, String fileName) {
+        this.hostName = hostName;
+        this.port = port;
+        this.fileName = fileName;
     }
 
-    public void close() throws IOException {
-        socket.close();
-        System.out.println(socket.isClosed());
-    }
-
-    public void writeData() throws IOException {
-        FileInputStream inputStream = new FileInputStream("binData");
-        FileOutputStream outputStream = new FileOutputStream("binData");
-
-        outputStream.write(inputStream.readAllBytes());
-        inputStream.close();
-        outputStream.close();
-    }
-
-    public static void main(String[] args) throws IOException {
-        Client client = new Client();
-        long startTime = System.currentTimeMillis();
-        long elapsedTime = 0L;
-
-        client.writeData();
-        System.out.println(client.socket.getReceiveBufferSize());
-        while(elapsedTime < 2*60) {
-            elapsedTime = (new Date()).getTime() - startTime;
+    /**
+     * Démarre la connexion Client
+     */
+    public void run() {
+        try {
+            socket = new Socket(InetAddress.getByName(hostName), port);
+            byte[] contents = new byte[10000];
+            fOS = new FileOutputStream(fileName);
+            bOS = new BufferedOutputStream(fOS);
+            iS = socket.getInputStream();
+            int bytesRead = 0;
+            while((bytesRead = iS.read(contents)) != -1)
+                bOS.write(contents, 0, bytesRead);
+            bOS.flush();
+            socket.close();
         }
-        client.close();
+        catch(IOException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    /**
+     * Main de la classe Client
+     * @param args
+     * @throws IOException
+     */
+    public static void main(String[] args) throws IOException {
+        if(args.length != 3) {
+            System.out.println("Error args");
+            System.exit(-1);
+        }
+        if(args[0].equals("-h") || args[0].equals("--help")) {
+            System.out.println("Usage : hostName, port, fileName");
+            System.exit(-1);
+        }
+        Client client = new Client(args[0], Integer.parseInt(args[1]), args[2]);
+        client.run();
     }
 }

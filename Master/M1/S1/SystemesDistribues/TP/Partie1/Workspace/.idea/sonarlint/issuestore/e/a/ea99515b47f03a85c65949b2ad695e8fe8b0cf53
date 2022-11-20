@@ -1,14 +1,0 @@
-
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Èó“«8¦ÌÿÈ0
-D
-java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8Ñ³ÿÈ0
-X
-java:S1854";Remove this useless assignment to local variable "message".(Æøú³8Õ³ÿÈ0
-=
-java:S2129" Remove this "String" constructor(Æøú³8ß³ÿÈ0
-I
-java:S1481",Remove this unused "message" local variable.(Æøú³8â³ÿÈ0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(«¯Çûÿÿÿÿ8ã³ÿÈ0
-L
-java:S1197!"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8å³ÿÈ0
-Z	java:S106""9Replace this use of System.out or System.err by a logger.(©Ò«Åıÿÿÿÿ8æ³ÿÈ0

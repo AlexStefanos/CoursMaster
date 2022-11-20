@@ -1,0 +1,12 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ôó
+[
+java:S3034&">Prevent "int" promotion by adding "& 0xff" to this expression.(ÃÑšø8ı…±É0
+g
+java:S2095"LUse try-with-resources or close this "DatagramSocket" in a "finally" clause.(ßÑ›ÿÿÿÿÿÿ
+S
+java:S1854'"8Remove this useless assignment to local variable "user".(‡–çƒøÿÿÿÿ
+P
+java:S1161":Add the "@Override" annotation above this method signature(“–ış
+D
+java:S1481'")Remove this unused "user" local variable.(‡–çƒøÿÿÿÿ

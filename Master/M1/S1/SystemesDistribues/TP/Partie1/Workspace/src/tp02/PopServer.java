@@ -19,14 +19,14 @@ import fr.ubs.io.MailFile;
  *
  */
 public class PopServer {
-    int validOps, keys;
+    private int validOps, keys;
+    private String directoryName;
     ServerSocketChannel serverSocket;
     SocketChannel socketChannel;
     Selector selector;
     SelectionKey selectionKey, selectionKey2;
     @SuppressWarnings("rawtypes")
     Set selectedKeys;
-    @SuppressWarnings("rawtypes")
     Iterator iter;
 
     /**
@@ -35,7 +35,7 @@ public class PopServer {
      * @param name : nom du fichier créé
      * @throws IOException
      */
-    public void run(int port, String name) throws IOException {
+    public void run(int port, String directoryName) throws IOException {
         selector = Selector.open();
         serverSocket = ServerSocketChannel.open();
         serverSocket.bind(new InetSocketAddress(port));
@@ -57,7 +57,7 @@ public class PopServer {
                 ByteBuffer buffer = ByteBuffer.allocate(256);
                 tmpClient.read(buffer);
                 String output = new String(buffer.array()).trim();
-                if(output.equals(name)) {
+                if(output.equals(directoryName)) {
                     tmpClient.close();
                 }
             }
@@ -72,23 +72,22 @@ public class PopServer {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        for(int i = 0; i < (args.length-1); i++) {
-            System.out.println(args[i]);
-        }
-        if(args.length > 2) {
+        System.out.println(args.length);
+        if(args.length != 1) {
             System.out.println("Error args");
             System.exit(-1);
         }
         if(args[0].equals("-h") || args[0].equals("--help")) {
-            System.out.println("Help : Write a name for the file that will be created");
+            System.out.println("Usage : directoryName");
             System.exit(-1);
         }
+        String directoryName = args[0];
         PopServer popServer = new PopServer();
         File file = new File("dataPop3");
         file.mkdir();
         file = new File("dataPop3/sameUserName");
         file.mkdir();
-        file = new File("dataPop3/" + args[0]);
+        file = new File("dataPop3/" + directoryName);
         File mailFile = new File("./mail.txt");
         mailFile.createNewFile();
         MailFile mail = new MailFile(mailFile);
@@ -102,7 +101,7 @@ public class PopServer {
             }
             System.out.println("Ouverture du Serveur POP3");
             while(true) {
-                popServer.run(5556, args[0]);
+                popServer.run(5556, directoryName);
             }
         }
         else {
@@ -110,7 +109,7 @@ public class PopServer {
             System.out.println("Création du fichier " + file.getName() + " : " + file.createNewFile());
             System.out.println("Ouverture du Serveur POP3");
             while(true) {
-                popServer.run(5556, args[0]);
+                popServer.run(5556, directoryName);
             }
         }
     }

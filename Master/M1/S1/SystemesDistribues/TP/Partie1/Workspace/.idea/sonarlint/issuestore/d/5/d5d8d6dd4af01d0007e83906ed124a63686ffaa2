@@ -1,0 +1,18 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼Ôóž
+b
+java:S2095r"LUse try-with-resources or close this "DatagramSocket" in a "finally" clause.(ýå£†
+b
+java:S2095-"LUse try-with-resources or close this "DatagramSocket" in a "finally" clause.(ýå£†
+b
+java:S2095["LUse try-with-resources or close this "DatagramSocket" in a "finally" clause.(ýå£†
+b
+java:S2095D"LUse try-with-resources or close this "DatagramSocket" in a "finally" clause.(ýå£†
+@
+java:S1659"%Declare "tcpPort" on a separate line.( ñ×µûÿÿÿÿ
+M
+java:S1854«"6Remove this useless assignment to local variable "ip".(þô…Ñ
+Š
+java:S1130¦"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8´©¦±É0
+>
+java:S1481«"'Remove this unused "ip" local variable.(þô…Ñ

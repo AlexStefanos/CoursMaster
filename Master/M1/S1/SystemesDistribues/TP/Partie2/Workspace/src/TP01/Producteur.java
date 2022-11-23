@@ -2,30 +2,46 @@ package TP01;
 
 //import jms.openjms.*;
 import javax.jms.*;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import java.util.Hashtable;
 
 public class Producteur {
+    static Context context;
     ConnectionFactory factory;
     Connection connection;
-    Session session;
+    static Session session;
     Destination destination;
     MessageProducer msgProducer;
 
-    public Producteur() {
+    public void start() {
         try {
-            factory = (ConnectioComptenFactory) context.lookup("ConnectionFactory");
+            Hashtable properties = new Hashtable();
+            properties.put(Context.INITIAL_CONTEXT_FACTORY, "");
+            properties.put(Context.PROVIDER_URL, "tcp://127.0.1.1:3035/");
+            context = new InitialContext(properties);
+            factory = (ConnectionFactory) context.lookup("ConnectionFactory");
             connection = factory.createConnection();
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             connection.start();
-            destination = (Destination) context.lookup("file1");
+            Destination destination = (Destination) context.lookup("file1");
             MessageProducer sender = session.createProducer(destination);
+            TextMessage message = session.createTextMessage("hey");
+            sender.send(message);
         } catch(JMSException e) {
+            System.err.println(e);
+        } catch(NamingException e) {
             System.err.println(e);
         }
     }
 
-    public static void main(String[] args) {
-        TextMessage message = session.createMessage("hey");
+    public static void main(String[] args) throws NamingException, JMSException {
+        Producteur prod = new Producteur();
+        prod.start();
+        Destination destination = (Destination) context.lookup("file1");
+        MessageProducer sender = session.createProducer(destination);
+        TextMessage message = session.createTextMessage("hey");
         sender.send(message);
-        String msg = new String();
     }
 }

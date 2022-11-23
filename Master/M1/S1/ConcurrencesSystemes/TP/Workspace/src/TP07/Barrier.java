@@ -12,6 +12,7 @@ wait <-   |                 |
 
 le problème de synchronisation c'est qu'il ne faut pas que le wait arrivant le notify
 il ne faut faire le notify sur un thread avant que ce thr est fait son wait
+Tombe très souvent en Exam
  */
 
 public class Barrier {

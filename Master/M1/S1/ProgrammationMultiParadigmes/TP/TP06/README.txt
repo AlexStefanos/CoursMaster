@@ -12,3 +12,23 @@ Tp06.jar
 
 executeTp06.sh
     scala Tp06.jar
+    
+Question 1 :
+	On appelle controleur() par convention car les () explicitent le fait 
+	qu'une méthode contient d'autres définitions.
+    
+Question 8 :
+	5x5 : 78ms
+	6x6 : 176ms
+	7x7 : 941ms
+	8x8 : 13667ms
+	à partir de 9x9, mon IDE cesse de répondre
+	
+Question 9 :
+	5x5 : 86ms
+	6x6 : 104ms
+	7x7 : 120ms
+	8x8 : 126ms
+	9x9 : 142ms
+	10x10 : 160ms
+	11x11 : 206ms

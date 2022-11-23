@@ -1,0 +1,10 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­ùÇÅ8Úô­£Ê0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆÿŒö
+C
+java:S1125"'Remove the unnecessary boolean literal.(àüås8ëô­£Ê0
+D
+java:S1068"'Remove this unused "num" private field.(¥Û¾º8îô­£Ê0
+N
+java:S1068",Remove this unused "idClient" private field.(›…’ÿÿÿÿÿ8ïô­£Ê0

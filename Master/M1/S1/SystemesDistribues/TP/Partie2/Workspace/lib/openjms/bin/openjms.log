@@ -1,3 +1,6 @@
 13:22:26.760 INFO  [main] - Server accepting connections on tcp://192.168.2.11:3035/
 13:22:26.763 INFO  [main] - JNDI service accepting connections on tcp://192.168.2.11:3035/
 13:22:26.764 INFO  [main] - Admin service accepting connections on tcp://192.168.2.11:3035/
+12:59:09.042 INFO  [main] - Server accepting connections on tcp://127.0.1.1:3035/
+12:59:09.044 INFO  [main] - JNDI service accepting connections on tcp://127.0.1.1:3035/
+12:59:09.045 INFO  [main] - Admin service accepting connections on tcp://127.0.1.1:3035/

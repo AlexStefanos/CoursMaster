@@ -1,6 +1,5 @@
 package TP01;
 
-//import jms.openjms.*;
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;

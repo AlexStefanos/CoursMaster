@@ -1,15 +1,16 @@
 
 E
-java:S3740"/Provide the parametrized type for this generic.(çßý¾
+java:S3740"/Provide the parametrized type for this generic.(çßý¾
 E
-java:S3740"/Provide the parametrized type for this generic.(çßý¾
+java:S3740"/Provide the parametrized type for this generic.(çßý¾
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„ÿþ†üÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(ŠÝÈéÿÿÿÿÿ
 l
-java:S1149"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(çßý¾
+java:S1149"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(çßý¾
+f
+java:S2147!"DCombine this catch with the one at line 31, which has the same body.(Õ¡ËÞøÿÿÿÿ8…ÖïŸÊ0
 Q
-java:S2696"6Make the enclosing method "static" or remove this set.(ˆ¿ ýÿÿÿÿ
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(Ë¼²¯ùÿÿÿÿ8Œç ›Ê0
+java:S2696"6Make the enclosing method "static" or remove this set.(ˆ¿ ýÿÿÿÿ
+Q
+java:S2696"6Make the enclosing method "static" or remove this set.(Ë¼²¯ùÿÿÿÿ
 Z
-java:S1117"?Rename "destination" which hides the field declared at line 15.(„®ñÁøÿÿÿÿ
+java:S1117"?Rename "destination" which hides the field declared at line 14.(„®ñÁøÿÿÿÿ

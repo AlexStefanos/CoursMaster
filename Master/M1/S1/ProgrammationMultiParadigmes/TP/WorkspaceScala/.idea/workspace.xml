@@ -10,31 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd891058-93c6-4419-8c8d-561dee9b8d4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../TP06/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TP06/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Tp05_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/5743241a4613be20286f22ac84fc1b99b0ee1a42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04661542c8fb45d764a8384cfbf12c87d21535fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74eee9a5cae8539312108dbd2430746bbcb9970d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/tp05.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Ansi$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Ansi$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Ansi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Ansi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Cavalier$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Cavalier$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Cavalier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Cavalier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Dame$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Dame$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Dame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Dame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Echiquier$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Echiquier$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Echiquier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Echiquier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Fou$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Fou$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Fou.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Fou.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Piece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/PieceCol$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/PieceCol$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/PieceCol.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/PieceCol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Pion$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Pion$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Pion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Pion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rien$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Rien$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Rien.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/tmp/tp05.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/tmp/tp05.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/tp06.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/tmp/tp06.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/sonarlint/issuestore/5/9/59f6f16b3fec5a180545719f08bc6ec70b4decfb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/out/production/Workspace/tp01/Producteur.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/out/production/Workspace/tp01/Producteur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/src/tp01/Producteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/src/tp01/Producteur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +92,10 @@
       <workItem from="1668762803171" duration="13000" />
       <workItem from="1669207667951" duration="619000" />
       <workItem from="1669225519509" duration="4383000" />
+      <workItem from="1669244852374" duration="607000" />
+      <workItem from="1669245846586" duration="6000" />
+      <workItem from="1669245861274" duration="7000" />
+      <workItem from="1669279696716" duration="956000" />
     </task>
     <servers />
   </component>

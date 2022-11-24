@@ -94,7 +94,7 @@ object Rien {
 
 class CavalierEuler(cote_ : Int = 8) {
   private var vue : Echiquier[PieceCol] = new Echiquier[PieceCol](cote_)
-  private var modele : Array[Array[Int]] = Array.fill(cote_, cote_)(0)
+  private var modele : Array[Array[/home/alexandre/Cours/Master/M1/S1/ProgrammationMultiParadigmes/TP/WorkspaceScala/src/main/scala/tmpInt]] = Array.fill(cote_, cote_)(0)
   private val heuristique = Array.fill(cote_, cote_)(0)
 
   def controleur(x_ : Int, y_ : Int): Unit = {

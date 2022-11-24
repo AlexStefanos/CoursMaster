@@ -17,7 +17,7 @@ public class Producteur {
     public void start() {
         try {
             Hashtable properties = new Hashtable();
-            properties.put(Context.INITIAL_CONTEXT_FACTORY, "javax.naming.InitialContext");
+            properties.put(Context.INITIAL_CONTEXT_FACTORY, "org.exolab.jms.jndi.InitialContextFactory");
             properties.put(Context.PROVIDER_URL, "tcp://127.0.1.1:3035/");
             context = new InitialContext(properties);
             factory = (ConnectionFactory) context.lookup("ConnectionFactory");

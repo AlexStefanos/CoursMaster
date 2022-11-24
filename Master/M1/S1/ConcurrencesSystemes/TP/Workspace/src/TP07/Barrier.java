@@ -16,23 +16,24 @@ Tombe très souvent en Exam
  */
 
 public class Barrier {
-    private final int nbThread;
+    private int nbThread;
     private int cpt;
+    private boolean isLock;
     public Barrier(int nbThread) {
         this.nbThread = nbThread;
         cpt = nbThread;
     }
-    public synchronized synchr() {
-        if(cpt > 1) { //pas le dernier
+    public synchronized void synchr() {
+        if(cpt > 1) {
             cpt--;
             try {
                 wait();
-            } catch() {
-
+            } catch(InterruptedException e) {
+                System.err.println(e.getMessage());
             }
         }
-        else { //le dernier
-            notifyAll();
+        else {
+            this.notifyAll();
             cpt = nbThread;
         }
     }

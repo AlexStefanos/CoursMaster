@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd891058-93c6-4419-8c8d-561dee9b8d4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04661542c8fb45d764a8384cfbf12c87d21535fc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74eee9a5cae8539312108dbd2430746bbcb9970d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0ef6cf2217031ee5255c6f39d356e61b4daaac1c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/tmp/tp05.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/tmp/tp05.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/tp06.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/tmp/tp06.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/sonarlint/issuestore/5/9/59f6f16b3fec5a180545719f08bc6ec70b4decfb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/out/production/Workspace/tp01/Producteur.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/out/production/Workspace/tp01/Producteur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/src/tp01/Producteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SystemesDistribues/TP/Partie2/Workspace/src/tp01/Producteur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +87,7 @@
       <workItem from="1669245846586" duration="6000" />
       <workItem from="1669245861274" duration="7000" />
       <workItem from="1669279696716" duration="956000" />
+      <workItem from="1669314195358" duration="11000" />
     </task>
     <servers />
   </component>

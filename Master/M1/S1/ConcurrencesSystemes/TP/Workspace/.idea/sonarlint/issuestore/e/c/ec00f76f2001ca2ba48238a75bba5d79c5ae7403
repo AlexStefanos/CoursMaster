@@ -1,0 +1,14 @@
+
+t
+java:S2293'"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜†“èûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÓäùÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÓäùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼ºæø
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾
+F
+java:S2446"0"notify" may not wake up the appropriate thread.(Œûî¶
+F
+java:S24465"0"notify" may not wake up the appropriate thread.(±öß

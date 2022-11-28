@@ -15,10 +15,10 @@ y = np.array(y0)
 sumX = 0
 sumY = 0
 
-#exo 2 : a = 1.193  b = -3.896
-#exo 3 : la fonction coût est donnée par l'équation(8)
-#quand le coût avoisine 0, on arrête l'algo
-#on essaie plusieurs coûts de manière eurystique et on compare le nb d'opérations/le temps de calcul
-
 def compute_partial_derivates(a, b):
+    y = np.empty_like(a)
+    y[:1] = np.diff(x, axis = 0) / b
+    y[-1] = -x[-1] / b
     return(a, b)
+
+#j'ai fait une erreur avec mon github, j'ai perdu la dernière version de mon fichier. Il faudrait que je refasse le TP.

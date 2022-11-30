@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Tp06:jar" />
+      <artifact name="Tp07:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,8 +10,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd891058-93c6-4419-8c8d-561dee9b8d4e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Tp06_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0ef6cf2217031ee5255c6f39d356e61b4daaac1c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/tp07.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/tp07.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Ansi$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Ansi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Cavalier$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Cavalier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/CavalierEuler$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/CavalierEuler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Dame$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Dame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Echiquier$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Echiquier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Fou$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Fou.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Piece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/PieceCol$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/PieceCol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Pion$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Pion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rien$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rien.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +112,7 @@
       <workItem from="1669245861274" duration="7000" />
       <workItem from="1669279696716" duration="956000" />
       <workItem from="1669314195358" duration="11000" />
+      <workItem from="1669822508422" duration="3926000" />
     </task>
     <servers />
   </component>

@@ -23,14 +23,15 @@ public class Test {
             factory = (ConnectionFactory)context.lookup("CF");
             connection = factory.createConnection();
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-            Queue queue = (Queue)session.createQueue("file1");
             Destination destination = (Destination)context.lookup("file1");
-            MessageProducer sender = session.createProducer(queue);
+            MessageProducer sender = session.createProducer(destination);
             TextMessage msgSend = session.createTextMessage("hey");
             connection.start();
             sender.send(msgSend);
             MessageConsumer receiver = session.createConsumer(destination);
             TextMessage msgReceived = (TextMessage)receiver.receive();
+            System.out.println(msgReceived.getText());
+            System.exit(1);
         } catch(JMSException e) {
             System.err.println(e);
         } catch(NamingException e) {

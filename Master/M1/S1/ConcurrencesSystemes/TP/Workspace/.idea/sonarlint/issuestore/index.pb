@@ -21,3 +21,7 @@ D
 src/TP08/Filter.java,9/2/92e95379c212dcaeea1c715f7112340e2d8e4e6f
 L
 src/TP08/TestMessageBox.java,4/e/4e72ab5a7e88cd2f986019299d5479942db0e768
+P
+ src/TP09/SynchroPrioLecteur.java,9/6/96125de306caf17b120449ce61428e5b9e44cc0c
+R
+"src/TP09/SynchroPrioRedacteur.java,8/7/8703ab76387468718dbf92476e4c67213a417b35

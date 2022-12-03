@@ -1,8 +1,25 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çýÿÿÿÿ
-J
-java:S1172"-Remove this unused method parameter "compte".(Ïûƒ¾8ÏÇ«™Í0
+o
+java:S1450"YRemove the "connection" field and declare it as a local variable in the relevant methods.(ÿ›ÅÒ
+k
+java:S1450"VRemove the "context" field and declare it as a local variable in the relevant methods.(êÝç
+l
+java:S1450"VRemove the "factory" field and declare it as a local variable in the relevant methods.(ñ©ÛÆ
+q
+java:S1450"VRemove the "session" field and declare it as a local variable in the relevant methods.(ÔÂòáÿÿÿÿÿ
 C
-java:S1068"&Remove this unused "id" private field.(æ¨ç†8ÑÇ«™Í0
-L
-java:S1068"*Remove this unused "compte" private field.(¾òìƒþÿÿÿÿ8ÒÇ«™Í0
+java:S1172"-Remove this unused method parameter "compte".(Ïûƒ¾
+f
+java:S2147""DCombine this catch with the one at line 32, which has the same body.(Õ¡ËÞøÿÿÿÿ8à›ÚÉÍ0
+<
+java:S1068
+"&Remove this unused "id" private field.(æ¨ç†
+E
+java:S1068"*Remove this unused "compte" private field.(¾òìƒþÿÿÿÿ
+F
+java:S1068"+Remove this unused "session" private field.(ÔÂòáÿÿÿÿÿ
+E
+java:S1068"/Remove this unused "destination" private field.(ëÍíí
+E
+java:S1068"/Remove this unused "msgProducer" private field.(Å“ÃÃ

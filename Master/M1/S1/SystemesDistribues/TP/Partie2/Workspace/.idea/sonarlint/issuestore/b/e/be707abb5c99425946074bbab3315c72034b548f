@@ -1,6 +1,28 @@
 
-v
-java:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(½œÙ8‚Û³™Í0
-’
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ôªÚ·ûÿÿÿÿ8…Û³™Í0
+j
+java:S1192/"MDefine a constant instead of duplicating this literal "ComptesGeres" 3 times.(„ŞÏÌ8áÉÁÉÍ0
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çıÿÿÿÿ
+V	java:S125
+"<This block of commented-out lines of code should be removed.(ÁßÊäşÿÿÿÿ
+f
+java:S21477"DCombine this catch with the one at line 53, which has the same body.(Õ¡ËŞøÿÿÿÿ8Ò§½ÉÍ0
+Q	java:S1253"<This block of commented-out lines of code should be removed.(ßˆ§¡
+f
+java:S2147J"DCombine this catch with the one at line 72, which has the same body.(Õ¡ËŞøÿÿÿÿ8ö¨ÀÉÍ0
+B
+java:S1125>"'Remove the unnecessary boolean literal.(¦Ÿáïúÿÿÿÿ
+Z
+java:S1854]"?Remove this useless assignment to local variable "msgReceived".(îÎü«øÿÿÿÿ
+f
+java:S2147a"DCombine this catch with the one at line 95, which has the same body.(Õ¡ËŞøÿÿÿÿ8šôÁÉÍ0
+B
+java:S1125Q"'Remove the unnecessary boolean literal.(¦Ÿáïúÿÿÿÿ
+]	java:S125V"<This block of commented-out lines of code should be removed.(ËÇšüÿÿÿÿ8İû¹ÉÍ0
+K
+java:S1481]"0Remove this unused "msgReceived" local variable.(îÎü«øÿÿÿÿ
+B
+java:S1125u"'Remove the unnecessary boolean literal.(¦Ÿáïúÿÿÿÿ
+]	java:S125z"<This block of commented-out lines of code should be removed.(ËÇšüÿÿÿÿ8µÊºÉÍ0
+^	java:S125€"<This block of commented-out lines of code should be removed.(éâµÄùÿÿÿÿ8õÁ¼ÉÍ0
+L
+java:S1068#"/Remove this unused "destination" private field.(ëÍíí8ßÏÉÍ0

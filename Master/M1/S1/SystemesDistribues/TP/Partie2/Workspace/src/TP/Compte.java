@@ -1,10 +1,11 @@
 package TP;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Compte {
     private int num;
     private String idClient;
-    private ArrayList<Double> historiqueOperations;
+    private Double[] historiqueOperations;
     private double solde;
     private boolean etatOuvert;
 
@@ -12,18 +13,35 @@ public class Compte {
         this.num = num;
         this.idClient = idClient;
         this.etatOuvert = false;
-        historiqueOperations = new ArrayList<Double>();
+        historiqueOperations = new Double[100];
         solde = 0;
-    }
-
-    public void modifSoldes(double modif) {
-        this.solde += (modif);
-        historiqueOperations.add(modif);
-        if(this.etatOuvert == false)
-            etatOuvert = true;
     }
 
     public double getSolde() {
         return(this.solde);
+    }
+
+    public void setSolde(double montant) {
+        solde = montant;
+    }
+
+    public int getNum() {
+        return(num);
+    }
+
+    public String getIdClient() {
+        return(idClient);
+    }
+
+    public boolean getEtatOuvert() {
+        return(etatOuvert);
+    }
+
+    public void setEtatOuvert(boolean bool) {
+        etatOuvert = bool;
+    }
+
+    public Double[] getHistoriqueOperations() {
+        return(historiqueOperations);
     }
 }

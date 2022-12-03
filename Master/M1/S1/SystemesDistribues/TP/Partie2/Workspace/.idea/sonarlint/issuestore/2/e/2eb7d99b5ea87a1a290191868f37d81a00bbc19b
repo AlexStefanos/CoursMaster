@@ -1,0 +1,16 @@
+
+h
+java:S1192""FDefine a constant instead of duplicating this literal "file1" 3 times.(Ü“æÎùÿÿÿÿ8¬ú¼¾Í0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Šİò¼ûÿÿÿÿ
+_
+java:S21470"DCombine this catch with the one at line 46, which has the same body.(öéŠÅıÿÿÿÿ
+a
+java:S1117'"?Rename "destination" which hides the field declared at line 19.(„®ñÁøÿÿÿÿ8ˆ‹¿¾Í0
+f
+java:S2147I"DCombine this catch with the one at line 71, which has the same body.(Õ¡ËŞøÿÿÿÿ8Êú¼¾Í0
+T
+java:S1854S"7Remove this useless assignment to local variable "tmp".(°ñ‰­8­Ã¾Í0
+Y
+java:S1854R"7Remove this useless assignment to local variable "tmp".(Ç––”ÿÿÿÿÿ8¼Êº¾Í0
+E
+java:S1481P"(Remove this unused "tmp" local variable.(‚Öç¶8¾Êº¾Í0

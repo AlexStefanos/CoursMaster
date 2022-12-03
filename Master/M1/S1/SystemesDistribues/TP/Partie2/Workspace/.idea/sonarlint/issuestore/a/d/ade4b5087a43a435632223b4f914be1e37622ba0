@@ -1,0 +1,18 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŠÝò¼ûÿÿÿÿ
+_
+java:S2147)"DCombine this catch with the one at line 39, which has the same body.(Õ¡ËÞøÿÿÿÿ
+_
+java:S2147B"DCombine this catch with the one at line 64, which has the same body.(Õ¡ËÞøÿÿÿÿ
+Z
+java:S11178"?Rename "destination" which hides the field declared at line 14.(„®ñÁøÿÿÿÿ
+M
+java:S1854L"7Remove this useless assignment to local variable "tmp".(âéÿ‰
+R
+java:S1854K"7Remove this useless assignment to local variable "tmp".(Ö‡úÐüÿÿÿÿ
+‘
+java:S1130H"uRemove the declaration of thrown exception 'javax.naming.NamingException', as it cannot be thrown from method's body.(ä©·%8¾·ž¾Í0
+‹
+java:S1130H"oRemove the declaration of thrown exception 'javax.jms.JMSException', as it cannot be thrown from method's body.(ä©·%8¾·ž¾Í0
+>
+java:S1481I"(Remove this unused "tmp" local variable.(‚Öç¶

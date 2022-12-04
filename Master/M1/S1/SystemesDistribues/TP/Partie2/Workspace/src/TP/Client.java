@@ -1,21 +1,30 @@
 package TP;
 
-import javax.jms.*;
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
 
+/**
+ * TP MOM 2 : Application bancaire avec OpenJMS (Systeme Distribue)
+ * @author Alexandre Stefanos
+ */
 public class Client {
     private String id;
     private Compte compte;
+
+    /**
+     * Constructeur de la classe Client
+     * @param id : identite du client
+     * @param compte : compte du client
+     */
     public Client(String id, Compte compte) {
         this.id = id;
         this.compte = compte;
     }
 
+    /**
+     * Permet de demander une opération sur le compte
+     * @param montant : montant de l'opération
+     */
     public void demandeOperation(double montant) {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
         Date date = new Date(System.currentTimeMillis());

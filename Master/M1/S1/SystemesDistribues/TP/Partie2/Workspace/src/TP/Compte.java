@@ -6,6 +6,10 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.util.Properties;
 
+/**
+ * TP MOM 2 : Application bancaire avec OpenJMS (Systeme Distribue)
+ * @author Alexandre Stefanos
+ */
 public class Compte {
     private int num;
     private String idClient;
@@ -19,10 +23,14 @@ public class Compte {
     private QueueSession queueSession;
     private Destination destination;
     private QueueSender queueSender;
-    private QueueReceiver queueReceiver;
     private MessageProducer msgProducer;
     private MapMessage mapMessageCompte;
 
+    /**
+     * Constructeur de la classe Compte
+     * @param num : numero de compte
+     * @param idClient : identite du client
+     */
     public Compte(int num, String idClient) {
         this.num = num;
         this.idClient = idClient;
@@ -31,6 +39,11 @@ public class Compte {
         solde = 0;
     }
 
+    /**
+     * Permet d'ajouter une operation à la file d'operations de ce gerant
+     * @param montant : montant de l'operation
+     * @param date : date de l'operation
+     */
     public void ajoutOperationQueue(double montant, String date) {
         try {
             Properties props = new Properties();
@@ -51,7 +64,7 @@ public class Compte {
             mapMessageCompte.setString("Date", date);
             msgProducer = queueSession.createProducer(destination);
             msgProducer.send(mapMessageCompte);
-            queueConnection.close();
+            queueConnection.stop();
         } catch(JMSException e) {
             System.err.println(e.getMessage());
         } catch(NamingException e) {
@@ -59,38 +72,84 @@ public class Compte {
         }
     }
 
+    /**
+     * Permet de fermer les processus ouverts
+     */
+    public void close() {
+        try {
+            if(queueConnection != null)
+                queueConnection.close();
+            if(msgProducer != null)
+                msgProducer.close();
+            if(queueSender != null)
+                queueSender.close();
+            if(queueSession != null)
+                queueSession.close();
+        } catch(JMSException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    /**
+     * Getter du solde de ce compte
+     * @return le solde de ce compte
+     */
     public double getSolde() {
         return(this.solde);
     }
 
+    /**
+     * Setter du solde de ce compte
+     * @param montant : montant du nouveau solde
+     */
     public void setSolde(double montant) {
         solde = montant;
     }
 
+    /**
+     * Getter du numero de ce compte
+     * @return le numero du compte
+     */
     public int getNum() {
         return(num);
     }
 
+    /**
+     * Getter de l'identite du client de ce compte
+     * @return l'identite du client de ce compte
+     */
     public String getIdClient() {
         return(idClient);
     }
 
+    /**
+     * Getter de l'etat d'ouverture de ce compte
+     * @return l'etat d'ouverture de ce compte : true si le compte est ouvert, false sinon
+     */
     public boolean getEtatOuvert() {
         return(etatOuvert);
     }
 
+    /**
+     * Setter de l'etat d'ouverture de ce compte
+     * @param bool : l'etat d'ouverture de ce compte
+     */
     public void setEtatOuvert(boolean bool) {
         etatOuvert = bool;
     }
 
-    public Double[] getHistoriqueOperations() {
-        return(historiqueOperations);
-    }
-
+    /**
+     * Getter de la date d'ouverture de ce compte
+     * @return la date d'ouverture de ce compte
+     */
     public String getDateOuverture() {
         return(dateOuverture);
     }
 
+    /**
+     * Setter de la date d'ouverture de ce compte
+     * @param date : date d'ouverture de compte
+     */
     public void setDateOuverture(String date) {
         dateOuverture = date;
     }

@@ -8,25 +8,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
+/**
+ * TP MOM 2 : Application bancaire avec OpenJMS (Systeme Distribue)
+ * @author Alexandre Stefanos
+ */
 public class Gerant {
-//    private ArrayList<Compte> comptesGeres;
-//    private String/Operation/File operation(s)
-//
-//    public Gerant() {
-//        comptesGeres = new ArrayList<Compte>();
-//    }
-//
-//    public void addCompte(Compte compte) {
-//        this.comptesGeres.add(compte);
-//    }
-//
-//    public ArrayList<Compte> getComptesGeres() {
-//        return(this.comptesGeres);
-//    }
-//
-//    public void faireOperation() {
-//        file JMS
-//    }
     private Context context;
     private TopicConnectionFactory topicConnectionFactory;
     private Topic topic;
@@ -37,6 +23,10 @@ public class Gerant {
     private Destination destination;
     private MapMessage mapMessageCompte;
 
+    /**
+     * Permet de demarrer la session de ce gerant
+     * @param compte : premier compte dont ce gerant doit s'occuper
+     */
     public void start(Compte compte) {
         try {
             Properties props = new Properties();
@@ -60,6 +50,10 @@ public class Gerant {
         }
     }
 
+    /**
+     * Permet d'envoyer les donnees changees
+     * @param compte : compte dont les donnees doivent etre envoyees
+     */
     public void send(Compte compte) {
         try {
             if(compte.getEtatOuvert() == false) {
@@ -82,6 +76,10 @@ public class Gerant {
         }
     }
 
+    /**
+     * Permet de recevoir les donnees changees
+     * @param compte : compte dont les donnees doivent etre recues
+     */
     public void receive(Compte compte) {
         try {
             if(compte.getEtatOuvert() == false) {
@@ -107,8 +105,13 @@ public class Gerant {
         }
     }
 
-    public void stop() {
+    /**
+     * Permet de fermer tous les processus ouverts
+     */
+    public void close() {
         try {
+            if(topicConnection != null)
+                topicConnection.close();
             if(topicSession != null)
                 topicSession.close();
             if(topicPublisher != null)
@@ -120,6 +123,11 @@ public class Gerant {
         }
     }
 
+    /**
+     * Permet de faire la prochaine operation
+     * @param compte : compte sur lequel l'operation doit etre faite
+     * @param montant : montant de l'operation
+     */
     public void faireOperation(Compte compte, Double montant) {
         //if(si cette Operation est la dernière de la Queue) {
         try {

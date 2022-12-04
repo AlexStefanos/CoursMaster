@@ -1,16 +1,6 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çıÿÿÿÿ
 I
-java:S1125"'Remove the unnecessary boolean literal.(¦Ÿáïúÿÿÿÿ8Ïç”éÍ0
-C
-java:S1128"&Remove this unused import 'javax.jms'.(şˆº«8İƒ•éÍ0
-N
-java:S1128"1Remove this unused import 'javax.naming.Context'.(¯‘—³8İƒ•éÍ0
-U
-java:S1128"8Remove this unused import 'javax.naming.InitialContext'.(Àÿ£ø8İƒ•éÍ0
-[
-java:S1128"9Remove this unused import 'javax.naming.NamingException'.(‹ùæêüÿÿÿÿ8İƒ•éÍ0
-N
-java:S1128	"1Remove this unused import 'java.util.Properties'.(¬µ²8İƒ•éÍ0
+java:S1125"'Remove the unnecessary boolean literal.(¦Ÿáïúÿÿÿÿ8Ïç”éÍ0
 <
-java:S1068"&Remove this unused "id" private field.(æ¨ç†
+java:S1068"&Remove this unused "id" private field.(æ¨ç†

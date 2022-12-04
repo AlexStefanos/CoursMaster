@@ -1,24 +1,14 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çıÿÿÿÿ
 k
-java:S1450"VRemove the "context" field and declare it as a local variable in the relevant methods.(êİç
+java:S1450"VRemove the "context" field and declare it as a local variable in the relevant methods.(êİç
 p
-java:S1450"ZRemove the "destination" field and declare it as a local variable in the relevant methods.(ëÍíí
+java:S1450"ZRemove the "destination" field and declare it as a local variable in the relevant methods.(ëÍíí
 z
-java:S1450"_Remove the "mapMessageCompte" field and declare it as a local variable in the relevant methods.(Ìñõşÿÿÿÿ
-p
-java:S1450"ZRemove the "msgProducer" field and declare it as a local variable in the relevant methods.(Å“ÃÃ
-t
-java:S1450"^Remove the "queueConnection" field and declare it as a local variable in the relevant methods.(™ Ú
+java:S1450"_Remove the "mapMessageCompte" field and declare it as a local variable in the relevant methods.(Ìñõşÿÿÿÿ
 €
-java:S1450"eRemove the "queueConnectionFactory" field and declare it as a local variable in the relevant methods.(”Òåùûÿÿÿÿ
-p
-java:S1450"ZRemove the "queueSender" field and declare it as a local variable in the relevant methods.(²é×ö
-v
-java:S1450"[Remove the "queueSession" field and declare it as a local variable in the relevant methods.(íÈùÍùÿÿÿÿ
+java:S1450"eRemove the "queueConnectionFactory" field and declare it as a local variable in the relevant methods.(”Òåùûÿÿÿÿ
 _
-java:S21479"DCombine this catch with the one at line 55, which has the same body.(Õ¡ËŞøÿÿÿÿ
-E
-java:S1068"/Remove this unused "queueSender" private field.(²é×ö
-F
-java:S1068"1Remove this unused "queueReceiver" private field.( ªÎ`
+java:S2147F"DCombine this catch with the one at line 68, which has the same body.(Õ¡ËŞøÿÿÿÿ
+Z
+java:S1068"8Remove this unused "historiqueOperations" private field.(ÍÊÎãúÿÿÿÿ8‹×°ìÍ0

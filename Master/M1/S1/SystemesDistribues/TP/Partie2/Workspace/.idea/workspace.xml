@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TP02:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -15,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e67ccdfa25da049bd8c0a48b5c505419470fd523" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Workspace.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Workspace/TP/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Workspace/TP/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Workspace/TP/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Workspace/TP/Compte.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Workspace/TP/Gerant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Workspace/TP/Gerant.class" afterDir="false" />
@@ -66,22 +72,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alexandre/Cours/Master/M1/S1/SystemesDistribues/TP/Partie2/openjms-0.7.7-beta-1/lib&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/alexandre/Cours/Master/M1/S1/SystemesDistribues/TP/Partie2/openjms-0.7.7-beta-1/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TP" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="TP.Main" />
@@ -107,6 +113,7 @@
       <workItem from="1670074273285" duration="4480000" />
       <workItem from="1670087435752" duration="4307000" />
       <workItem from="1670153772099" duration="5469000" />
+      <workItem from="1670162084540" duration="3130000" />
     </task>
     <servers />
   </component>

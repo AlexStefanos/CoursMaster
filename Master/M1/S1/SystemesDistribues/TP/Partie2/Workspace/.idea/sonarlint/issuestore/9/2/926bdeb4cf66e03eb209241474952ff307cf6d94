@@ -1,4 +1,19 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çıÿÿÿÿ
+@
+java:S1068"+Remove this unused "context" private field.(êİç
 U
-java:S1068"3Remove this unused "compteSurveille" private field.(Ëëìşÿÿÿÿ8«“®™Í0
+java:S1068
+":Remove this unused "topicConnectionFactory" private field.(·Ú»»üÿÿÿÿ
+D
+java:S1068")Remove this unused "topic" private field.(Ã§—Öıÿÿÿÿ
+N
+java:S1068"3Remove this unused "topicConnection" private field.(äÌ†Ìÿÿÿÿÿ
+K
+java:S1068"0Remove this unused "topicSession" private field.(Œ³ˆÒüÿÿÿÿ
+M
+java:S1068"2Remove this unused "topicPublisher" private field.(“¡Í–ÿÿÿÿÿ
+N
+java:S1068"3Remove this unused "topicSubscriber" private field.(½É£¢ûÿÿÿÿ
+E
+java:S1068"/Remove this unused "destination" private field.(ëÍíí

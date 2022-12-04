@@ -1,6 +1,24 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çıÿÿÿÿ
-S
-java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8´“ÆÉÍ0
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8—ØÉÍ0
+k
+java:S1450"VRemove the "context" field and declare it as a local variable in the relevant methods.(êİç
+p
+java:S1450"ZRemove the "destination" field and declare it as a local variable in the relevant methods.(ëÍíí
+z
+java:S1450"_Remove the "mapMessageCompte" field and declare it as a local variable in the relevant methods.(Ìñõşÿÿÿÿ
+p
+java:S1450"ZRemove the "msgProducer" field and declare it as a local variable in the relevant methods.(Å“ÃÃ
+t
+java:S1450"^Remove the "queueConnection" field and declare it as a local variable in the relevant methods.(™ Ú
+€
+java:S1450"eRemove the "queueConnectionFactory" field and declare it as a local variable in the relevant methods.(”Òåùûÿÿÿÿ
+p
+java:S1450"ZRemove the "queueSender" field and declare it as a local variable in the relevant methods.(²é×ö
+v
+java:S1450"[Remove the "queueSession" field and declare it as a local variable in the relevant methods.(íÈùÍùÿÿÿÿ
+_
+java:S21479"DCombine this catch with the one at line 55, which has the same body.(Õ¡ËŞøÿÿÿÿ
+E
+java:S1068"/Remove this unused "queueSender" private field.(²é×ö
+F
+java:S1068"1Remove this unused "queueReceiver" private field.( ªÎ`

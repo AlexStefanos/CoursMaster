@@ -1,0 +1,12 @@
+
+E
+java:S1066("/Merge this if statement with the enclosing one.(–îð
+9
+java:S1643""Use a StringBuilder instead.(ÊÄÍý8¨Å¢éÍ0
+>
+java:S1643#"Use a StringBuilder instead.(Š†éúúÿÿÿÿ8«×©éÍ0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çýÿÿÿÿ
+;
+java:S2129" Remove this "String" constructor(ú«Ê±ûÿÿÿÿ
+B
+java:S2129 " Remove this "String" constructor(ï®ÍÛÿÿÿÿÿ8¶³©éÍ0

@@ -10,32 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ef06760-0f92-4b34-91c1-7a90408da15b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03ae4ccc9b3c69bf5f6744e0445ed64176134364" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/926bdeb4cf66e03eb209241474952ff307cf6d94" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be707abb5c99425946074bbab3315c72034b548f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c9826f221506c8eeb822097e9ee97873a816e6e6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d34cf0de40d14a160e50d4d038f7c480c07d3595" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e67ccdfa25da049bd8c0a48b5c505419470fd523" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP/DptDecouvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP/DptDecouvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP/DptPlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP/DptPlacement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TP/Gerant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP/Gerant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/bin/openjms.log" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/bin/openjms.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c360.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c360.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c371.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c371.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c380.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../openjms-0.7.7-beta-1/db/openjmsdb/seg0/c391.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../TraitementNumeriqueDonnees/TP/TP12/tp12.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../TraitementNumeriqueDonnees/TP/TP12/tp12.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +88,7 @@
       <workItem from="1670153772099" duration="5469000" />
       <workItem from="1670162084540" duration="3130000" />
       <workItem from="1670182466977" duration="5000" />
-      <workItem from="1670249963203" duration="1325000" />
+      <workItem from="1670249963203" duration="1885000" />
     </task>
     <servers />
   </component>

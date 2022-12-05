@@ -1,0 +1,14 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¶’Çıÿÿÿÿ
+k
+java:S1450"VRemove the "context" field and declare it as a local variable in the relevant methods.(êİç
+p
+java:S1450"ZRemove the "destination" field and declare it as a local variable in the relevant methods.(ëÍíí
+z
+java:S1450"_Remove the "mapMessageCompte" field and declare it as a local variable in the relevant methods.(Ìñõşÿÿÿÿ
+€
+java:S1450"eRemove the "queueConnectionFactory" field and declare it as a local variable in the relevant methods.(”Òåùûÿÿÿÿ
+_
+java:S2147E"DCombine this catch with the one at line 67, which has the same body.(Õ¡ËŞøÿÿÿÿ
+Z
+java:S1068"8Remove this unused "historiqueOperations" private field.(ÍÊÎãúÿÿÿÿ8‹×°ìÍ0

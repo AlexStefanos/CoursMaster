@@ -1,7 +1,7 @@
 package TP;
 
 /**
- * Departement Decouvert
+ * TP MOM 2 : Application bancaire avec OpenJMS (Systeme Distribue)
  * @author Alexandre Stefanos
  */
 public class DptDecouvert {

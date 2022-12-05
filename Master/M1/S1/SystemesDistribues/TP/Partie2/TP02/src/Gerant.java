@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.Properties;
 
 /**
+ * TP MOM 2 : Application bancaire avec OpenJMS (Systeme Distribue)
  * @author Alexandre Stefanos
  */
 public class Gerant {

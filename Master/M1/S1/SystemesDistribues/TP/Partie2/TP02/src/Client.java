@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * TP MOM 2 : Application bancaire avec OpenJMS (Systeme Distribue)
  * @author Alexandre Stefanos
  */
 public class Client {

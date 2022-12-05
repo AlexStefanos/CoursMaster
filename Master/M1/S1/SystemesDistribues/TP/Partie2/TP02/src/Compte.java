@@ -7,6 +7,7 @@ import javax.naming.NamingException;
 import java.util.Properties;
 
 /**
+ * TP MOM 2 : Application bancaire avec OpenJMS (Systeme Distribue)
  * @author Alexandre Stefanos
  */
 public class Compte {

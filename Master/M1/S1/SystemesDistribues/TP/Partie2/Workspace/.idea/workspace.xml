@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ef06760-0f92-4b34-91c1-7a90408da15b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TP/Gerant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP/Gerant.java" afterDir="false" />
-    </list>
+    <list default="true" id="7ef06760-0f92-4b34-91c1-7a90408da15b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +86,7 @@
       <workItem from="1670162084540" duration="3130000" />
       <workItem from="1670182466977" duration="5000" />
       <workItem from="1670249963203" duration="1885000" />
+      <workItem from="1670350267659" duration="41000" />
     </task>
     <servers />
   </component>

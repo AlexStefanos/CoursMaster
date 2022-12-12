@@ -1,0 +1,13 @@
+Oui, car ils partagent le même segment.
+Oui, quand on fait un fork on duplique les segments du père donc on récupère ses descripteurs
+Non, il suffit que le compteur soit > 1 pour qu'on ne puisse pas bloquer.
+Un sémaphore
+Non, parce que c'est deux objets différents donc deux verrous différents.
+
+Il faut faire un kill stop sur le processus.
+reduce
+Fait l'attachement du seg partagé dans l'espace d'un processus
+Un processus qui ne reçoit jamais les ressources dont il a besoin.
+
+Exo 3
+voir photos/vidéos (tel)

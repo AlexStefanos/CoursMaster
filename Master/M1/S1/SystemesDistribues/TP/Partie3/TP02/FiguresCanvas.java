@@ -6,6 +6,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.Rectangle2D;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.util.Scanner;
 
 /**
  * A canvas used to draw figures, composed of a list of figures and a figure currently drawing
@@ -21,7 +25,7 @@ import java.awt.geom.Rectangle2D;
  *
  * @author Pascale Launay
  */
-public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseListener, KeyListener
+public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseListener, KeyListener, Client
 {
     /**
      * the initial width of the canvas
@@ -179,6 +183,7 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
         if (this.selectedFigure != null) {
             this.selectedFigure.setColor(color);
             // !!! the figure color has been updated
+            sendModiFigure(selectedFigure, 3);
             repaint();
         }
         requestFocusInWindow();
@@ -221,8 +226,10 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
             if (!moveCursor) {
                 figures.addCurrentFigure();
                 // !!! the figure has been added
+                sendModiFigures(figures);
             } else {
                 // !!! the figure size has been updated
+                sendModiFigure(selectedFigure, 3);
             }
         } else { // select the figure at the mouse location or deselect the currently selected figure
             Figure selectedFigure = figures.getFigureAt(x, y);
@@ -339,6 +346,7 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
         if (event.getKeyCode() == KeyEvent.VK_DELETE && this.selectedFigure != null) {
             figures.remove(this.selectedFigure);
             // !!! the figure has been removed
+            sendModiFigure(selectedFigure, 2);
             this.selectedFigure = null;
             repaint();
         }
@@ -402,5 +410,64 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
     private double getY(MouseEvent event)
     {
         return (event.getY() - ty) / scale;
+    }
+
+
+    public void sendModiFigure(Figure figure, int operation) throws RemoteException {
+        if(operation == 1) { //createFigure
+
+        }
+        else if(operation == 2) { //deleteFigure
+
+        }
+        else if(operation == 3) { //updateFigure
+
+        }
+        else {
+            System.out.println("Erreur lors du choix de l'operation");
+        }
+    }
+
+    public void sendModiFigures(Figures figures) throws RemoteException { //envoyer figures
+    }
+
+    public void receiveModiFigure(Figure figure) throws RemoteException { //recevoir les modifs sur le serveur
+        
+    }
+
+    public static void main(String[] args) {
+        if(args.length != 3 || args[0] == "-h") {
+            System.out.println("3 arguments sont attendus : l'host, le numéro de port et l'obj permettant de Registry.rebind");
+            System.exit(-1);
+        }
+        String host = args[0];
+        try {
+            int port = Integer.parseInt(args[1]);
+            String str = args[2];
+            Registry registry = LocateRegistry.getRegistry(host, port);
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Voulez-vous envoyer une modification sur une figure (tapez 1) ou envoyer une modification sur l'ensemble des figures (tapez 2) ?");
+            int tmp = scanner.nextInt();
+            while((tmp != 1) && (tmp != 2)) {
+                System.out.println("Voulez-vous créer une figure (tapez 1) supprimer une figure (tapez 2) ou update une figure (tapez 3) ?");
+                while((tmp != 1) && (tmp != 2) && (tmp != 3)) {
+                    tmp = scanner.nextInt();
+                if(tmp == 1) { //createFigure()
+
+                }
+                else if(tmp == 2) { //deleteFigure()
+
+                }
+                else if(tmp == 3) { //updateFigure()
+
+                }
+                else {
+                    System.out.println("Erreur");
+                }
+            }
+        }
+        } catch(RemoteException e) {
+            System.err.println(e.getMessage());
+        }
     }
 }

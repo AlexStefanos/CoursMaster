@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+echo "Installation en cours"
+
+if [ ! `echo $PATH | grep '/ubs/soft/anaconda3/bin'`  ] ; then
+ 	echo "mise a jour du fichier .bashrc"
+	cat /ubs/soft/anaconda3/varenv >> ~/.bashrc
+fi	
+echo "ajout icone spyder"
+cat <<EOF > ~/Bureau/spyder3.desktop
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Spyder3
+GenericName=Spyder3
+Comment=Scientific PYthon Development EnviRonment - Python3
+Icon=/ubs/soft/anaconda3/share/icons/spyder.png
+TryExec=spyder
+Exec=spyder %F
+Terminal=false
+MimeType=text/x-python;
+Categories=Development;Science;IDE;Qt;
+Keywords=Development;Science;IDE;Qt;
+StartupNotify=true
+EOF
+chmod 755 ~/Bureau/spyder3.desktop
+source /ubs/soft/anaconda3/varenv
+echo "Installation terminée"
+

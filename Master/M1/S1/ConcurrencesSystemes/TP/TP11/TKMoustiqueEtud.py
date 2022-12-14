@@ -34,19 +34,23 @@ class Moustique( ):
         
         self.image=image
         
+    def setTh(self):
+        self.thread = threading
         
-    def getpos(self) :    
+    def getpos(self):
+        self.mutex.acquire()    
         x=self.x
         y=self.y     
+        self.mutex.release()
         return x,y
     
     def getImage(self):
         return self.image
-    
+
     def move(self) :
         global start
-           
-       
+
+        self.mutex.acquire()
         if start :
             self.x+=self.dx
             self.y+=self.dy
@@ -56,6 +60,7 @@ class Moustique( ):
                self.dx=-self.dx
             if  self.y < 0 or self.y > self.width   :
                   self.dy=-self.dy
+        self.mutex.release()
                   
  
 
@@ -72,7 +77,7 @@ def anime():
     for mous in l_moustique :
         #print( "Moutique ",mous)
         
-        mous.move()
+        #mous.move()
         x,y=mous.getpos()
         can.coords(mous.getImage(),x ,y)
         
@@ -138,9 +143,14 @@ for i in range(max) :  # creation de 4 threads
     y=random.randint(0,yDim)
     monimage = can.create_image(x ,y , anchor = CENTER, image=mou1)
     m=Moustique(x,y,xDim,yDim,monimage)
-    
-   
+    t=threading.Thread()
+    m.setTh(t)
+    t.start()
     l_moustique.append(m)
 
 # demarrage du receptionnaire d'evenements (boucle principale) :
 fen.mainloop()
+
+#il faut faire une liste d'objets Moustique, on fait un thread/moustique, et après le thread va passer son temps à faire des move sur son moustique
+#il faut juste récupérer les x, y des moustiques et les afficher
+#il faut protéger le fait de les afficher en les déplaçant (principe de lecteur redacteur : tk est une sorte de lecteur, chaque moustique est un rédacteur)

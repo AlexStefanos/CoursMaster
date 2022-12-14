@@ -1,6 +1,5 @@
 package fr.ubs.scribble;
 
-import fr.ubs.scribble.shapes.Shape;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -11,39 +10,29 @@ public class ServerImpl implements Server {
     private Figures figures;
 
     public void createFigure(Figure figure) throws RemoteException {
-        if(figure != null && !figure.isEmpty())
-            figures.add(figure);
-        figure = null;
+        System.out.println("createFigure");
     }
 
     public void deleteFigure(Figure figure) throws RemoteException {
-        for(Figure tmp : figures) {
-            if(tmp.getId() == figure.getId())
-                figures.remove(tmp);
-        }
+        System.out.println("deleteFigure");
     }
 
     public void updateFigure(Figure figure) throws RemoteException {
-        for(Figure tmp : figures) {
-            if(tmp.getId() == figure.getId())
-                tmp = figure;
-        }
+        System.out.println("updateFigure");
     }
 
     public static void main(String args[]) throws Exception {
-        if(args.length != 2 || args[0] == "-h") {
+        if(args.length > 1) {
             System.out.println("2 arguments sont attendus : le numéro de port et l'obj permettant de Registry.rebind");
             System.exit(-1);
         }
         try {
             int port = Integer.parseInt(args[0]);
-            String str = args[1];
-            FiguresCanvas figureCanvas = new FiguresCanvas();
-            Remote stub = UnicastRemoteObject.exportObject(figureCanvas, 0);
+            ServerImpl serverImpl = new ServerImpl();
+            Remote stub = UnicastRemoteObject.exportObject(serverImpl, 0);
             Registry registry  = LocateRegistry.createRegistry(port);
-            registry.rebind(figureCanvas, stub);
-            System.out.println(str + " bound");
-            //on recoit ici lorsque le client sendModiFigure(...), ou sendModiFigures(...), ou receiveModiFigure(...);
+            registry.rebind("Server", stub);
+            System.out.println("Server" + " bound");
         } catch(RemoteException e) {
             System.err.println(e.getMessage());
         }

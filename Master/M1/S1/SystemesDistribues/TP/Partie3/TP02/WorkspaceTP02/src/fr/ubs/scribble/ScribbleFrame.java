@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
+import java.rmi.RemoteException;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.zip.ZipEntry;
@@ -16,7 +17,6 @@ import java.util.zip.ZipInputStream;
  */
 public class ScribbleFrame extends JFrame
 {
-
     /**
      * Print a usage message and exit
      */
@@ -33,16 +33,18 @@ public class ScribbleFrame extends JFrame
      */
     public static void main(String[] args)
     {
-        if (args.length > 0) {
+        if (args.length > 1) {
             usage();
         }
+        int port = Integer.parseInt(args[0]);
+        String host = "localhost";
         SwingUtilities.invokeLater(new Runnable()
         {
             @Override
             public void run()
             {
                 try {
-                    ScribbleFrame frame = new ScribbleFrame();
+                    ScribbleFrame frame = new ScribbleFrame(host, port);
                     frame.pack();
                     frame.setVisible(true);
                 } catch (Exception e) {
@@ -55,14 +57,14 @@ public class ScribbleFrame extends JFrame
     /**
      * Constructor. Initialize the frame widgets
      */
-    public ScribbleFrame() throws Exception
+    public ScribbleFrame(String host ,int port) throws Exception
     {
         super("Scribble Pad");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         setBackground(Color.WHITE);
         setLayout(new BorderLayout(5, 5));
-        FiguresCanvas canvas = new FiguresCanvas();
+        FiguresCanvas canvas = new FiguresCanvas(host, port);
         add(makeToolbar(canvas), BorderLayout.NORTH);
         add(canvas, BorderLayout.CENTER);
     }
@@ -73,7 +75,7 @@ public class ScribbleFrame extends JFrame
      * @param canvas the canvas to be notified when a new shape or color is selected
      * @return the toolbar
      */
-    private JPanel makeToolbar(FiguresCanvas canvas)
+    private JPanel makeToolbar(FiguresCanvas canvas) throws RemoteException
     {
         JPanel panel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 5));
         panel.setBackground(Color.WHITE);
@@ -95,7 +97,11 @@ public class ScribbleFrame extends JFrame
         ColorButton colorSelector = new ColorButton(new Color(0, 0, 0x8b));
         colorSelector.addActionListener(event -> {
             if (event.getActionCommand().equals(ColorButton.ACTION_COLOR)) {
-                canvas.setColor(colorSelector.getColor());
+                try {
+                    canvas.setColor(colorSelector.getColor());
+                } catch (RemoteException e) {
+                    System.err.println(e.getMessage());
+                }
             }
         });
         canvas.setColor(colorSelector.getColor());

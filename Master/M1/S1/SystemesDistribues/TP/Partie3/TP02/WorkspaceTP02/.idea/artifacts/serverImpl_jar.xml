@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="serverImpl:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/serverImpl_jar</output-path>
+    <root id="archive" name="serverImpl.jar">
+      <element id="module-output" name="WorkspaceTP02" />
+      <element id="module-source" name="WorkspaceTP02" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Labyrinthe:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Labyrinthe_jar</output-path>
+    <root id="archive" name="Labyrinthe.jar">
+      <element id="module-output" name="WorkspaceJava" />
+      <element id="module-source" name="WorkspaceJava" />
+    </root>
+  </artifact>
+</component>

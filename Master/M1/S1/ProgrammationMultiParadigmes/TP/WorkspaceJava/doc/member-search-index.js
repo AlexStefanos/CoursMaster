@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"ubs.mi.as.tp01","c":"HelloDate","l":"HelloDate()","u":"%3Cinit%3E()"},{"p":"ubs.mi.as.tp01","c":"HelloDate","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

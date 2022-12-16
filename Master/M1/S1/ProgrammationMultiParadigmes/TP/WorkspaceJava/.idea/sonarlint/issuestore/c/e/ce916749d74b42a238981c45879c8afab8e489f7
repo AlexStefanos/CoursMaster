@@ -1,0 +1,33 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(Şöš
+k	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÒÎùÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ‹ßŞüÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ Ò­ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ Ò­ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ Ò­ûÿÿÿÿ
+f
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(Ûª€‘úÿÿÿÿ
+2
+java:S16438"Use a StringBuilder instead.(Õ”’ä
+7
+java:S1643;"Use a StringBuilder instead.(ƒëñ”ıÿÿÿÿ
+2
+java:S1643>"Use a StringBuilder instead.(ú¿º¯
+2
+java:S1643A"Use a StringBuilder instead.(àäü
+7
+java:S1643E"Use a StringBuilder instead.(¡ÜÈùÿÿÿÿ
+4
+java:S1700"Rename field "labyrinthe"(²Š…£şÿÿÿÿ
+\
+java:S1659"ADeclare "blue" and all following declarations on a separate line.(àåÁûÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(€ Ò­ûÿÿÿÿ
+<	java:S131""Add a default case to this switch.(Ûª€‘úÿÿÿÿ
+;
+java:S21293" Remove this "String" constructor( à‡Öûÿÿÿÿ
+<	java:S1316""Add a default case to this switch.(ÚöÛ¾ÿÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ

@@ -9,7 +9,6 @@ import java.awt.geom.Rectangle2D;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import java.util.Scanner;
 
 /**
  * A canvas used to draw figures, composed of a list of figures and a figure currently drawing
@@ -25,7 +24,7 @@ import java.util.Scanner;
  *
  * @author Pascale Launay
  */
-public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseListener, KeyListener
+public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseListener, KeyListener, Client
 {
     /**
      * the initial width of the canvas
@@ -114,12 +113,13 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
     private double ty;
 
     private Server server;
+    private Client client;
+    private int id, ctNotify;
 
     /**
      * Constructor
      */
-    public FiguresCanvas(String host, int port) throws Exception
-    {
+    public FiguresCanvas(String host, int port) throws Exception {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setBackground(Color.WHITE);
 
@@ -133,7 +133,9 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
         requestFocusInWindow();
 
         Registry registry = LocateRegistry.getRegistry(host, port);
-        this.server = (Server)registry.lookup("Server");
+        this.server = (Server) registry.lookup("Server");
+        ctNotify = 0;
+        notifyServer();
     }
 
     /**
@@ -189,7 +191,8 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
             this.selectedFigure.setColor(color);
             // !!! the figure color has been updated
             try {
-                server.updateFigure(this.selectedFigure);
+                this.server.updateFigure(this.selectedFigure, id);
+                notifyServer();
             } catch(RemoteException e) {
                 System.err.println(e.getMessage());
             }
@@ -236,7 +239,8 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
                 figures.addCurrentFigure();
                 // !!! the figure has been added
                 try {
-                    server.createFigure(this.selectedFigure);
+                    server.createFigure(this.selectedFigure, id);
+                    notifyServer();
                 } catch(RemoteException e) {
                     System.err.println(e.getMessage());
                 }
@@ -244,7 +248,8 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
             } else {
                 // !!! the figure location has been updated
                 try {
-                    server.updateFigure(this.selectedFigure);
+                    server.updateFigure(this.selectedFigure, id);
+                    notifyServer();
                 } catch(RemoteException e) {
                     System.err.println(e.getMessage());
                 }
@@ -365,7 +370,8 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
             figures.remove(this.selectedFigure);
             // !!! the figure has been removed
             try {
-                server.deleteFigure(this.selectedFigure);
+                server.deleteFigure(this.selectedFigure, id);
+                notifyServer();
             } catch(RemoteException e) {
                 System.err.println(e.getMessage());
             }
@@ -408,6 +414,29 @@ public class FiguresCanvas extends JPanel implements MouseMotionListener, MouseL
             moveCursor = true;
             repaint();
         }
+    }
+    
+    public void notifyServer() throws RemoteException {
+        if(ctNotify == 0) {
+            System.out.println("Notifying Server Connection");
+            id = this.server.getId();
+        } else
+            System.out.println("Notifying Server");
+        ctNotify++;
+    }
+
+//    public void updateFigures(Figures figures) throws RemoteException {
+//        for(int i = 0; i < this.figures.size(); i++) {
+//            for(int j = 0; j < figures.size(); j++) {
+//                if(figures.get(j).getId() != this.figures.get(i).getId()) {
+//                    this.figures.add(figures.get(i));
+//                }
+//            }
+//        }
+//    }
+
+    public Figures getFigures() throws RemoteException {
+        return(this.figures);
     }
 
     /**

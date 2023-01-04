@@ -1,0 +1,9 @@
+
+‹
+java:S1319,"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‘ÇÄ÷ùÿÿÿÿ
+Œ
+java:S1130,"qRemove the declaration of thrown exception 'java.rmi.RemoteException', as it cannot be thrown from method's body.(‘ÇÄ÷ùÿÿÿÿ
+E
+java:S11974"*Move the array designators [] to the type.(ùï¾Žÿÿÿÿÿ
+E
+java:S1068"*Remove this unused "client" private field.(‚Ø–øùÿÿÿÿ

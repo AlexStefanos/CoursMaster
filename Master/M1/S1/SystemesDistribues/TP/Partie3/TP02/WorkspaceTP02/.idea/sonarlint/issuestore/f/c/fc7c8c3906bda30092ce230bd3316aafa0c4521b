@@ -1,0 +1,14 @@
+
+<
+java:S1659u"&Declare "ctNotify" on a separate line.(¿Ã¼—
+I
+java:S1948]"'Make "shape" transient or serializable.(ß‡’ÿÿÿÿÿ8¦°‡Ó0
+C
+java:S1948t"(Make "client" transient or serializable.(‚Ø–øùÿÿÿÿ
+Y
+java:S1117‚"BRename "selectedFigure" which hides the field declared at line 57.(ù›¤þ
+ˆ
+java:S1130¶"qRemove the declaration of thrown exception 'java.rmi.RemoteException', as it cannot be thrown from method's body.(Éœˆ
+R	java:S125¬"<This block of commented-out lines of code should be removed.(»¢Ñ‘
+L
+java:S1068t"*Remove this unused "client" private field.(‚Ø–øùÿÿÿÿ8«¦°‡Ó0

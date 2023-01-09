@@ -84,9 +84,7 @@ def anime():
  
     fen.after(100,anime)         # appel de la fonction apres 100 millisecondes
  
- 
- 
- 
+
 # fonction appelée lors de l'apui sur le bouton "demarrer"
 def start_it():
     global start
@@ -98,7 +96,6 @@ def stop_it():
     os.kill(os.getpid(), signal.SIGKILL)
   
 #========== Programme principal =============
- 
  
 xDim,yDim =400,400 # hauteur et largeur du dessin
  
@@ -119,9 +116,7 @@ can.pack()
 mou1 = PhotoImage(file="moustique.gif");  
  
 #base = PhotoImage(file="base.png");
- 
 
- 
 
 # bouton pour démarrer l'animation
 # command :  fonction associé au bouton

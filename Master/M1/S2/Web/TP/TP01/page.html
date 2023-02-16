@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <canvas id="dessin" width="5000" height="1000"></canvas>
+        <script>
+            function *syracuse(nb) { //faire pour que la fonction s'arrête à la fin du canvas et non lorsqu'il arrive à 1
+                while(nb != 1) {
+                    if((nb % 2) == 0)
+                        nb /= 2;
+                    else {
+                        nb *= 3;
+                        nb += 1;
+                    }
+                    yield nb;
+                }
+            }
+            const iterator = syracuse(22);
+            const iteratorBool = syracuse(22);
+            var cahier = document.getElementById("dessin").getContext("2d");
+            cahier.font = "10px Helvetica";
+            cahier.fillText("hello", 100, 100);
+            cahier.beginPath();
+            cahier.moveTo(0, 1000);
+            tmp = 0;
+            save = 0;
+            while((iteratorBool.next().done) != true) {
+                tmp = iterator.next().value;
+                if((save != 0) && (tmp >= save))
+                    cahier.lineTo(tmp * 10, 1000 - (tmp * 10));
+                else
+                    cahier.lineTo(-tmp * 10, 1000 - (tmp * 10));
+                console.log(tmp);
+                save = tmp;
+            }
+            cahier.stroke();
+        </script>
+    </body>
+</html>

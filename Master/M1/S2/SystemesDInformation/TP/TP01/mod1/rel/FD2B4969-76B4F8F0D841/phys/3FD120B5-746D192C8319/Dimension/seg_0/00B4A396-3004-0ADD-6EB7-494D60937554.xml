@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DimensionOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionOraclev10g" name="cilent" directorySegmentName="seg_0" id="00B4A396-3004-0ADD-6EB7-494D60937554">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<generatorID>39F7F82B-1FCA-DCEB-45CA-C972613F155C</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="client" id="5336CA04-BA2A-C5EB-37FB-94EB5764B617">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>6F7707A7-4FC5-9146-D84A-1335AF5779D0</columns>
+<levelTable>0B803E92-3510-D610-8970-4C33CEC71E0B</levelTable>
+</Level>
+</levels>
+<hierarchies>
+<Hierarchy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HierarchyOraclev10g" name="Hierarchy_3" id="D66D916F-5121-0096-250D-4D2831CB9F99">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>5336CA04-BA2A-C5EB-37FB-94EB5764B617</levels>
+</Hierarchy>
+</hierarchies>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="client" id="894958E7-B43C-9BAD-0796-D5D246AC75F1">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<level>5336CA04-BA2A-C5EB-37FB-94EB5764B617</level>
+</Attribute>
+</attributes>
+</DimensionOraclev10g>

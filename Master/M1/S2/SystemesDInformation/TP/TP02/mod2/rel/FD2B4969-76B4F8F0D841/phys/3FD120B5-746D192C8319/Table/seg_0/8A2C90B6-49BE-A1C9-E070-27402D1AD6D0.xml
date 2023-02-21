@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="categorie" directorySegmentName="seg_0" id="8A2C90B6-49BE-A1C9-E070-27402D1AD6D0">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:14:41 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>89A056C3-932D-2C74-0FF4-10AB25551A8B</segment>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="categorie" id="53706688-7098-879F-F2FD-C7C71EC859E7">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:14:41 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nom" id="E60E0B6A-1556-7840-1F77-69183E4B0180">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:14:41 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="categorie_PK" id="F733ABBD-9AF7-A48C-AE7B-84F56ADBF892">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:14:41 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

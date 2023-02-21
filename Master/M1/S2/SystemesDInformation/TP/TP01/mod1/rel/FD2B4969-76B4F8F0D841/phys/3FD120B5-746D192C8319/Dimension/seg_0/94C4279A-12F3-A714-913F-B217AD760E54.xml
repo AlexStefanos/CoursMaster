@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DimensionOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionOraclev10g" name="temps" directorySegmentName="seg_0" id="94C4279A-12F3-A714-913F-B217AD760E54">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:56 UTC</createdTime>
+<generatorID>B604C72B-9B9B-6FC4-EE9C-25489CA01E96</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="mois" id="9020E66A-6154-13D4-6243-81C65469C34C">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>2A167588-D8EF-1377-3BDE-CB90019A8505,2B70536D-FB93-9E94-9191-9F12A9453CED</columns>
+<levelTable>EC367C0C-C0DA-6701-8553-13854548D58F</levelTable>
+</Level>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="annee" id="3FC35186-FBBD-31B4-D46D-0D2F3D3EE089">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>2A167588-D8EF-1377-3BDE-CB90019A8505</columns>
+<levelTable>EC367C0C-C0DA-6701-8553-13854548D58F</levelTable>
+</Level>
+</levels>
+<hierarchies>
+<Hierarchy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HierarchyOraclev10g" name="Hierarchy_2" id="19E6A8F8-5F5C-2FA0-F8F4-F5B237A00200">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>9020E66A-6154-13D4-6243-81C65469C34C, 3FC35186-FBBD-31B4-D46D-0D2F3D3EE089</levels>
+</Hierarchy>
+</hierarchies>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="annee" id="706205B9-D443-A210-9A01-0494687661A8">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<level>3FC35186-FBBD-31B4-D46D-0D2F3D3EE089</level>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="mois" id="3E32C0CD-992B-349A-40E6-4D96DAEB69E1">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-06 15:03:05 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<level>9020E66A-6154-13D4-6243-81C65469C34C</level>
+</Attribute>
+</attributes>
+</DimensionOraclev10g>

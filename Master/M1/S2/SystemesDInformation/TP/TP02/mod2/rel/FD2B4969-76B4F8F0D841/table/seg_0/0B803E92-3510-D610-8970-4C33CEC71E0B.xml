@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B803E92-3510-D610-8970-4C33CEC71E0B" name="commande">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:54:09 UTC</createdTime>
+<generatorID>3CD1577A-5271-33EF-204B-F4F8F8D41AD4</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B0E478B3-83BC-DEE8-CDA7-D6EC326B4142">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:54:09 UTC</createdTime>
+<generatorID>DA830C9F-A5C7-B0C0-4DFB-C0B94771D622</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clientid" id="6F7707A7-4FC5-9146-D84A-1335AF5779D0">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:54:09 UTC</createdTime>
+<generatorID>8242D89E-8DD1-1230-44EB-F1BB623E9C71</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datecommande" id="DDB7483F-4C13-22C8-1B09-1169B0089E2F">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:54:09 UTC</createdTime>
+<generatorID>CAABE83C-0B34-AE2A-B1AC-8304C4465A5A</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF92F295-EB2F-D5FA-C768-FDCA51F97493" name="commande_PK">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:54:09 UTC</createdTime>
+<generatorID>E215C264-D7C6-DC2E-8AA3-9D0D10E760EE</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0E478B3-83BC-DEE8-CDA7-D6EC326B4142"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

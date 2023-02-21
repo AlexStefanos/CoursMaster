@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="59735676-2232-1ADC-57C7-20A9F48A7586" containerWithKeyObject="AE9735AA-7479-8EAB-B630-AADB0BAC9127" localFKIndex="189F08F2-A4D9-2B27-FDA4-2372290FDDB2" name="vente_categorie_FK">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:14:41 UTC</createdTime>
+<generatorID>25DE93EE-5D6E-8898-76F6-98DC13975817</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<referredTableLongName>categorie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8A2C90B6-49BE-A1C9-E070-27402D1AD6D0</referredTableID>
+<keyObject>F733ABBD-9AF7-A48C-AE7B-84F56ADBF892</keyObject>
+<referredKeyID>F733ABBD-9AF7-A48C-AE7B-84F56ADBF892</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>categorie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

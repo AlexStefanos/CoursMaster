@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="vente" directorySegmentName="seg_0" id="AE9735AA-7479-8EAB-B630-AADB0BAC9127">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="produit" id="03A38F1B-D79F-98AA-4D34-F0BE761F9F8A">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="prix" id="2A4D022D-D174-06C2-4B9B-5A340BAB3A76">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="7CF08E0B-92B3-802A-2FE6-4307F2A0342F">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="quantite" id="A53BFB63-D099-8A91-4C20-B49E516096B9">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID1" id="B016F98E-1A5A-3999-9D4A-00FAA918DA51">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="vente_commande_FK" id="C709DEFD-388E-FB70-A7A3-AB52D2452E4A">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="vente_PK" id="F2B8F30D-4EAF-4960-AAF0-46CF7808BE8E">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:56:40 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

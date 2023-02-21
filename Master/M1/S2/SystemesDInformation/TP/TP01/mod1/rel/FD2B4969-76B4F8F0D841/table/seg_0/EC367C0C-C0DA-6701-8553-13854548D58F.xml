@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC367C0C-C0DA-6701-8553-13854548D58F" name="temps">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<generatorID>ED4B77F1-F6D4-9FFF-20F8-CBCA6B277817</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mois" id="2B70536D-FB93-9E94-9191-9F12A9453CED">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<generatorID>D748A861-75A1-4C6A-4FBA-8E37EC9CEA99</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="annee" id="2A167588-D8EF-1377-3BDE-CB90019A8505">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<generatorID>E8089F13-9126-64BA-55FC-B24636A94483</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72121059-70D6-D48A-11B1-F013CFD43030" name="temps_PK">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<generatorID>A5F76EBA-4618-9017-5E55-51CEA3CF49BC</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B70536D-FB93-9E94-9191-9F12A9453CED"/>
+<colUsage columnID="2A167588-D8EF-1377-3BDE-CB90019A8505"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

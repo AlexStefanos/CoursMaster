@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BDA87EEE-26F3-15FF-0C64-2F262761D57B" name="commande">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>3CD1577A-5271-33EF-204B-F4F8F8D41AD4</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="A66433A1-F4A2-C6BB-3052-006E16E71DE3">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>DA830C9F-A5C7-B0C0-4DFB-C0B94771D622</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clientid" id="496C6EB2-F79D-D4BE-4038-B047355F9C8E">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>8242D89E-8DD1-1230-44EB-F1BB623E9C71</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datecommande" id="0965F9ED-5794-AD72-E32E-29E94F16F351">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>CAABE83C-0B34-AE2A-B1AC-8304C4465A5A</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mois" id="0444BFAC-4B6B-4AE4-1789-83CDEDB35DED">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>AECAB1C4-52B5-46CE-295D-0A48547B5005</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>12C71303-F7D0-CE39-BF3F-2573A94BC231</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<referedAttribute>611757E2-3EE3-31A3-FB22-B696FEC3621C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="F7E47A84-C350-B2DA-C174-1F49998EA94B">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>AECAB1C4-52B5-46CE-295D-0A48547B5005</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>15723CE4-C169-7094-202A-CCF1383A8483</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<referedAttribute>05353308-B128-3D83-6C65-4FBC6A43D9ED</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D419E8C2-5225-2D5B-86D6-D85A9B50E218" name="commande PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>E215C264-D7C6-DC2E-8AA3-9D0D10E760EE</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A66433A1-F4A2-C6BB-3052-006E16E71DE3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

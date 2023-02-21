@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1(3)" id="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" mainViewID="EC549C8C-A045-1496-729D-FB69687AE2CB">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:27 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

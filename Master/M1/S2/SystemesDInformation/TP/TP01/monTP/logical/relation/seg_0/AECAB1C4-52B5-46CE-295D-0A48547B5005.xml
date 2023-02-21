@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="AECAB1C4-52B5-46CE-295D-0A48547B5005">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>EE90C75F-C1D8-E105-2B69-E5B6442027FB</importedID>
+<engineerTo>
+<item key="DDC89C13-2B75-2148-3388-A91C9C20EA7A" value="true"/>
+<item key="491805BC-8562-84C0-AB43-697FFC8BD5C2" value="true"/>
+<item key="B93BDA73-A9EA-FB6E-B53A-5E54DC1C4740" value="true"/>
+</engineerTo>
+<sourcePk>40247309-2D1E-DABB-C6B0-3A648F7B1466</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CAA7F544-DC77-6579-9DDF-836B46F03919</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BDA87EEE-26F3-15FF-0C64-2F262761D57B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

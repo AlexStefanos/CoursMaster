@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C54B4D1F-1887-6436-4C04-789379403A7D" name="commande">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>BDA87EEE-26F3-15FF-0C64-2F262761D57B</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>0B803E92-3510-D610-8970-4C33CEC71E0B</importedID>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E84C397E-BB7C-4BFE-A624-58CA24BF6F48">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>A66433A1-F4A2-C6BB-3052-006E16E71DE3</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>B0E478B3-83BC-DEE8-CDA7-D6EC326B4142</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clientid" id="5D39FBEA-E115-6876-7399-29D2C789D70E">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>496C6EB2-F79D-D4BE-4038-B047355F9C8E</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>6F7707A7-4FC5-9146-D84A-1335AF5779D0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datecommande" id="28132B80-A6E5-4500-2F28-A4FBC14E1B61">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>0965F9ED-5794-AD72-E32E-29E94F16F351</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>DDB7483F-4C13-22C8-1B09-1169B0089E2F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mois" id="493B39B7-9AF1-A4E6-046C-576FA78193B7">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>0444BFAC-4B6B-4AE4-1789-83CDEDB35DED</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>B82F9C02-13FE-321F-7294-A6BB7D85218D</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0062A460-0A39-9954-1D04-23E678BAFC49" referredColumn="CFAE35C2-7353-993D-A142-159C0911B58D"/>
+</associations>
+</Column>
+<Column name="annee" id="9481548D-E766-4BDF-16BF-F8FA934A4E98">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>F7E47A84-C350-B2DA-C174-1F49998EA94B</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>19D6FD1D-6F98-C957-6850-334C9638E5E4</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0062A460-0A39-9954-1D04-23E678BAFC49" referredColumn="B7EC9E51-523C-6BB5-92E2-42B20B0626E9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B2C4988-072C-838E-2CBA-F73E6AB65A62" name="commande_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>D419E8C2-5225-2D5B-86D6-D85A9B50E218</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>EF92F295-EB2F-D5FA-C768-FDCA51F97493</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E84C397E-BB7C-4BFE-A624-58CA24BF6F48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2D5C434-4F8C-73E8-4C80-F3ED23306DD5" name="commande_temps_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>AECAB1C4-52B5-46CE-295D-0A48547B5005</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="493B39B7-9AF1-A4E6-046C-576FA78193B7"/>
+<colUsage columnID="9481548D-E766-4BDF-16BF-F8FA934A4E98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

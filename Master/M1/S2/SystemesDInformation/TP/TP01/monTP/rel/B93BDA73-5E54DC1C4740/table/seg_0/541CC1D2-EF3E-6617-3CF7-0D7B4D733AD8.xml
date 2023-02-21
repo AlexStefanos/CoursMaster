@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="541CC1D2-EF3E-6617-3CF7-0D7B4D733AD8" name="temps">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>CAA7F544-DC77-6579-9DDF-836B46F03919</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>EC367C0C-C0DA-6701-8553-13854548D58F</importedID>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mois" id="CFAE35C2-7353-993D-A142-159C0911B58D">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>611757E2-3EE3-31A3-FB22-B696FEC3621C</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>2B70536D-FB93-9E94-9191-9F12A9453CED</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="annee" id="B7EC9E51-523C-6BB5-92E2-42B20B0626E9">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>05353308-B128-3D83-6C65-4FBC6A43D9ED</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>2A167588-D8EF-1377-3BDE-CB90019A8505</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83E718AF-C1F8-C20D-AA12-9B0F971B0C8E" name="temps_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:57:40 UTC</createdTime>
+<generatorID>40247309-2D1E-DABB-C6B0-3A648F7B1466</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>72121059-70D6-D48A-11B1-F013CFD43030</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFAE35C2-7353-993D-A142-159C0911B58D"/>
+<colUsage columnID="B7EC9E51-523C-6BB5-92E2-42B20B0626E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

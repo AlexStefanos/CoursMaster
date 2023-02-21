@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="394A4F61-E277-7247-4E05-B66B024F5EEA">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-21 10:52:13 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

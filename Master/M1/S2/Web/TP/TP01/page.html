@@ -1,9 +1,24 @@
 <html>
     <body>
         <canvas id="dessin" width="5000" height="1000"></canvas>
+        <input type="text" id="updateSyracuse" onchange="clearCanvas">
+        <button type="button" onclick="syracuse(300)">Calculer syracuse</button>
         <script>
+            function clearCanvas() {
+                var canvas = document.getElementById("dessin")
+                var context = canvas.getContext("2d")
+                context.clearRect(0, 0, 5000, 1000)
+            }
+
+            function getInput() {
+                var input = document.getElementById("updateSyracuse").value;
+                return input;
+            }
+
             function *syracuse(nb) { //faire pour que la fonction s'arrête à la fin du canvas et non lorsqu'il arrive à 1
-                while(nb != 1) {
+                count = 300;
+                yield nb;
+                while(count != 0) {
                     if((nb % 2) == 0)
                         nb /= 2;
                     else {
@@ -11,25 +26,27 @@
                         nb += 1;
                     }
                     yield nb;
+                    count -= 1;
                 }
             }
-            const iterator = syracuse(22);
-            const iteratorBool = syracuse(22);
+            const iterator = syracuse(157);
+            const iteratorBool = syracuse(157);
             var cahier = document.getElementById("dessin").getContext("2d");
+            cahier.fillStyle = "blue";
             cahier.font = "10px Helvetica";
-            cahier.fillText("hello", 100, 100);
             cahier.beginPath();
-            cahier.moveTo(0, 1000);
-            tmp = 0;
+            tmp = iterator.next().value
+            x = 0;
+            y = 0;
             save = 0;
             while((iteratorBool.next().done) != true) {
-                tmp = iterator.next().value;
-                if((save != 0) && (tmp >= save))
-                    cahier.lineTo(tmp * 10, 1000 - (tmp * 10));
-                else
-                    cahier.lineTo(-tmp * 10, 1000 - (tmp * 10));
+                y = 1000 - tmp;
+                cahier.lineTo(x, y);
+                cahier.fillText(tmp, x, y); // le texte doit être bleu
                 console.log(tmp);
                 save = tmp;
+                tmp = iterator.next().value;
+                x += 10;
             }
             cahier.stroke();
         </script>

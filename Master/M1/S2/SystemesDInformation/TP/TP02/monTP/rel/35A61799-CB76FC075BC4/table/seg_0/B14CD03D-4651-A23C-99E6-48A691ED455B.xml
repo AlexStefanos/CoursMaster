@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B14CD03D-4651-A23C-99E6-48A691ED455B" name="tabledefaits2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:54:19 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nbventes" id="501BC63D-C3B8-E1DA-A1C5-301D22891D4A">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:11:32 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nbcommandes" id="45201B78-C115-B15C-5960-DB4D9FB4F962">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:11:52 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantitevendue" id="D9B0C2EA-EC13-C392-4EAA-9F64B87CB7FB">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:12:03 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="temps2_ID" id="89EE1129-8AAC-644B-BDE1-814B7EB9A26D">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:07:26 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01DE0E62-535F-37F3-8D7D-2BFBBF4C8900" referredColumn="50093649-9E88-3776-209E-A85593CBB0CA"/>
+</associations>
+</Column>
+<Column name="vente2_produit" id="00C44CE4-7ACC-C18B-7458-9A3F2EC88930">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:07:43 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75EF70F3-ED9C-C653-4FF2-30495364FE46" referredColumn="2B7F5651-B135-EAE6-0A99-8047CBD999F6"/>
+</associations>
+</Column>
+<Column name="commande2_ID" id="672F7375-05CC-5DD3-503A-7933D27C98EA">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:10:47 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6442E8E1-00AD-9E2F-9B9A-31CB6D205296" referredColumn="41FDDD9F-2BAE-C4FE-2E8E-751F304C40ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4DB640DE-3C7C-967A-8752-68D879D3BC56" name="tabledefaits2_temps2_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:07:26 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89EE1129-8AAC-644B-BDE1-814B7EB9A26D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB0CF4DA-F0E3-3AE6-108E-58DDA923801A" name="tabledefaits2_vente2_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:07:43 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00C44CE4-7ACC-C18B-7458-9A3F2EC88930"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C5CBCC9-4327-A918-BD0C-02F550B64C9C" name="tabledefaits2_commande2_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:10:47 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="672F7375-05CC-5DD3-503A-7933D27C98EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

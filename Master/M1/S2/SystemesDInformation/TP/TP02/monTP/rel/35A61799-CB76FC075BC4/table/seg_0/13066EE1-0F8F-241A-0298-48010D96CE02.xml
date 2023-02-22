@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13066EE1-0F8F-241A-0298-48010D96CE02" name="vente">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>F5963DF0-2A81-31DE-69DB-DCF8AAD687E4</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>AE9735AA-7479-8EAB-B630-AADB0BAC9127</importedID>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="produit" id="2D2B33B9-2B87-586E-F06E-5DCBC525ADB6">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>BD21C03D-DFB9-041E-88CD-FC569C165081</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>03A38F1B-D79F-98AA-4D34-F0BE761F9F8A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categorie" id="47AC9E74-6F34-E91D-9A3E-45918E47E02D">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>D1268A8C-C9DB-72B6-9074-834E43EBDA6C</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>003C3C8A-7ABD-C2BA-50B5-3FC64C0E70B2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="003507F6-1C9B-181C-B235-4F86AE4A96D5" referredColumn="CE1BB1D1-86A6-2004-A989-0C23A452CDA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="821531F8-8593-E417-B0CA-DBAAC07FDBF1" name="vente_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>CA9B18B2-91E7-40E2-B0DD-E192232DDE1A</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>F2B8F30D-4EAF-4960-AAF0-46CF7808BE8E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D2B33B9-2B87-586E-F06E-5DCBC525ADB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7D81434-CBEF-7480-1568-39AB4124F496" name="vente_categorie_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>08D8C8A2-A797-48F7-5FE1-79C2932EDA8A</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47AC9E74-6F34-E91D-9A3E-45918E47E02D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<columnGroups>
+<columnGroup class="oracle.dbtools.crest.model.design.relational.Table$ColumnGroup" name="ColumnGroup_1" objectID="C9DC5202-7CF4-0D79-116E-4BF1D50B0F54">
+<columns>2D2B33B9-2B87-586E-F06E-5DCBC525ADB6 47AC9E74-6F34-E91D-9A3E-45918E47E02D</columns>
+</columnGroup>
+</columnGroups>
+</Table>

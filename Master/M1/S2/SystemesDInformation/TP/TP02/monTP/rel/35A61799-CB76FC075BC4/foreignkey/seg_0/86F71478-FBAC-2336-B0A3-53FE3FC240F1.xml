@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="86F71478-FBAC-2336-B0A3-53FE3FC240F1" containerWithKeyObject="FE99D6BD-279A-E509-9CE6-20494C6EE95B" localFKIndex="074E021A-ED29-9117-EE9E-2F18A71DA7D0" name="Tabledefaits_commande_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>E215C264-D7C6-DC2E-8AA3-9D0D10E760EE</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>6559AF53-2E93-C18F-C805-C2741654915D</importedID>
+<referredTableLongName>commande</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>416D2733-52B1-C8C3-19ED-682DCD0477F6</referredTableID>
+<keyObject>468EF49F-15CC-C604-0BAE-7F01EBEA9B4A</keyObject>
+<referredKeyID>468EF49F-15CC-C604-0BAE-7F01EBEA9B4A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

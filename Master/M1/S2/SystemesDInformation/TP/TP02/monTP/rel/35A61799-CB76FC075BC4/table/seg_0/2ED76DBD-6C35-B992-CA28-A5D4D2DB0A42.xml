@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ED76DBD-6C35-B992-CA28-A5D4D2DB0A42" name="temps2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:57:54 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mois" id="0405F734-50C1-5C2E-90A5-4DCAF0BFBD68">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:05:49 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="annee" id="FD6A2820-BE28-36D6-2BD6-166AA7BB42E9">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:06:18 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="semaine" id="26034148-BF98-903C-5634-6DAF38ABAEF0">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:06:31 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vacance" id="3767B7F7-C04F-CD9A-1FC9-E5D898F5080F">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:06:55 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="50093649-9E88-3776-209E-A85593CBB0CA">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:06:55 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08B31A2F-289C-4D0B-DF50-FC53E6590B96" name="temps2_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:07:01 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50093649-9E88-3776-209E-A85593CBB0CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

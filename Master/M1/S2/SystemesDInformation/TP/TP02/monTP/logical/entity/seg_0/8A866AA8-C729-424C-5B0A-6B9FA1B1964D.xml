@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A866AA8-C729-424C-5B0A-6B9FA1B1964D" name="categorie">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>D40CEC49-8A78-1B60-AFCC-7C0AD2FE30C4</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="categorie" id="750EDA83-D15A-9CCF-6025-373C5BF650D2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>EE321F30-14D8-5666-1481-33220D7FF17E</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom" id="849FCD17-C4B6-C82C-9126-46DAAB5377B3">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>396D164C-7141-78DE-0F39-3B269CA70F74</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DAFE2A64-B460-49D1-E753-0152F94C9479" name="categorie PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>5A858983-AA7F-4491-4382-E3B56A890BBD</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>750EDA83-D15A-9CCF-6025-373C5BF650D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

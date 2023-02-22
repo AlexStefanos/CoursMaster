@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E31342EF-572D-5F4F-0D3E-5CA708C6422C" name="commande2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:54:35 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="41FDDD9F-2BAE-C4FE-2E8E-751F304C40ED">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:09:49 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clientid" id="6915D9FC-3D6A-EFB3-9C78-A56772110AC6">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:10:05 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datecommande" id="8A2E3768-2E93-08D3-1F9C-931E15004895">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:10:17 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE379E62-52E8-2821-ECBC-756DD2B16E6D" name="commande2_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:10:34 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41FDDD9F-2BAE-C4FE-2E8E-751F304C40ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

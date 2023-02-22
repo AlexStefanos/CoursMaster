@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E91C5548-3466-A63C-9B63-E1C0FF7E239C" containerWithKeyObject="FE99D6BD-279A-E509-9CE6-20494C6EE95B" localFKIndex="8B3FAF7C-4582-A2DA-84E3-9774A0793953" name="Tabledefaits_temps_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>A5F76EBA-4618-9017-5E55-51CEA3CF49BC</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>434BC845-6747-C1EF-410B-48C4B6D5A284</importedID>
+<referredTableLongName>temps</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C50C14C5-5E58-2EF1-A50A-AA6D8BAC3207</referredTableID>
+<keyObject>A85DAD64-638E-4BDB-6CC7-74CFD9DCC3BD</keyObject>
+<referredKeyID>A85DAD64-638E-4BDB-6CC7-74CFD9DCC3BD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE0F1395-7E6E-0492-CD15-B585619F40A4" name="temps">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>ED4B77F1-F6D4-9FFF-20F8-CBCA6B277817</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mois" id="DB94341A-4689-790F-B96A-F51FFAA66653">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>D748A861-75A1-4C6A-4FBA-8E37EC9CEA99</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="C8D4903D-A42A-F6FC-7F07-887BE7432B67">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>E8089F13-9126-64BA-55FC-B24636A94483</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="semaine" id="0D1119B1-D0DC-8034-6CED-A0889C9A47E2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>AEBB9983-94D9-0C81-9F7B-86896A6692BA</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vacance" id="AD847560-2459-B458-CF26-2863C41B1966">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>29AB59E0-40BA-1966-E91E-CC6672467283</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="223354E9-0534-1F9A-45D1-F070C7EB8D8C" name="temps PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>A5F76EBA-4618-9017-5E55-51CEA3CF49BC</importedID>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB94341A-4689-790F-B96A-F51FFAA66653</attributeRef>
+<attributeRef>C8D4903D-A42A-F6FC-7F07-887BE7432B67</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

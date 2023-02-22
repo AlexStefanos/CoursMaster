@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B53F7B15-8568-5B18-4F60-5BD5C1D9F13D" name="vente2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:54:03 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="produit" id="2B7F5651-B135-EAE6-0A99-8047CBD999F6">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:00:37 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categorie" id="66F700A2-78A3-AF89-0960-8993E64DB4CF">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:01:55 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6F35FD6-339F-CAD1-55DE-7FC183CC21DA" referredColumn="A94FEFDC-6269-8DAF-9A29-EED055AFD477"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D49F0EE-8F47-B202-2C36-691D50BFE036" name="vente2_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:01:41 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B7F5651-B135-EAE6-0A99-8047CBD999F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA7C38A5-C876-6D1F-CBCA-885752A2D4A5" name="vente2_categorie2_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:01:55 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66F700A2-78A3-AF89-0960-8993E64DB4CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

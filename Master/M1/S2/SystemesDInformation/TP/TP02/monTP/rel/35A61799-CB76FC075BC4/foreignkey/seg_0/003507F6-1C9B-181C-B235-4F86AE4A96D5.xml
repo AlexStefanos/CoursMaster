@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="003507F6-1C9B-181C-B235-4F86AE4A96D5" containerWithKeyObject="13066EE1-0F8F-241A-0298-48010D96CE02" localFKIndex="A7D81434-CBEF-7480-1568-39AB4124F496" name="vente_categorie_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>08D8C8A2-A797-48F7-5FE1-79C2932EDA8A</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>59735676-2232-1ADC-57C7-20A9F48A7586</importedID>
+<referredTableLongName>categorie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6B4068A8-1502-1FEB-93B0-5178E49709F1</referredTableID>
+<keyObject>8DFF2CA5-149C-DF4B-7E14-7973BF2AD71B</keyObject>
+<referredKeyID>8DFF2CA5-149C-DF4B-7E14-7973BF2AD71B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>categorie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

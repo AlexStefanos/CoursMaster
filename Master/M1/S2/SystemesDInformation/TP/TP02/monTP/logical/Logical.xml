@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6FDD7983-3DC9-D97B-3FBA-76B8D258821A" mainViewID="DEC3183E-2322-514B-67FB-9701FDE5E17A">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:52:43 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

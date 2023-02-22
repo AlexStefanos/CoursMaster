@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6BD4F3D6-A429-F07D-A9DF-8E2895FF20EA" name="categorie2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:13:05 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="categorie" id="595F7927-4C80-28B3-6B42-85BDDC95214F">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:17:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom" id="6EE6DE1D-35AA-B073-C682-DD6B4BB8B508">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:17:31 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFA83D40-F4EC-922F-B767-09A96C340AE5" name="categorie2 PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:17:45 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>595F7927-4C80-28B3-6B42-85BDDC95214F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

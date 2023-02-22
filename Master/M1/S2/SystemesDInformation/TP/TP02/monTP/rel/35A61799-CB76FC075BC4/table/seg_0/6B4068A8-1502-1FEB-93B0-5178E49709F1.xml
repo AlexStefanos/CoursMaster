@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B4068A8-1502-1FEB-93B0-5178E49709F1" name="categorie">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>8A866AA8-C729-424C-5B0A-6B9FA1B1964D</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>8A2C90B6-49BE-A1C9-E070-27402D1AD6D0</importedID>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="categorie" id="CE1BB1D1-86A6-2004-A989-0C23A452CDA2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>750EDA83-D15A-9CCF-6025-373C5BF650D2</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>53706688-7098-879F-F2FD-C7C71EC859E7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="87FF9646-1052-4F23-BD5B-5329A20D83CE">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>849FCD17-C4B6-C82C-9126-46DAAB5377B3</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>E60E0B6A-1556-7840-1F77-69183E4B0180</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DFF2CA5-149C-DF4B-7E14-7973BF2AD71B" name="categorie_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>DAFE2A64-B460-49D1-E753-0152F94C9479</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>F733ABBD-9AF7-A48C-AE7B-84F56ADBF892</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE1BB1D1-86A6-2004-A989-0C23A452CDA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

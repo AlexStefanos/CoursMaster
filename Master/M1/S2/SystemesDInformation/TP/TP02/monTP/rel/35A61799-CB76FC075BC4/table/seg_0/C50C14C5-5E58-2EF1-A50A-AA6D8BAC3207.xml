@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C50C14C5-5E58-2EF1-A50A-AA6D8BAC3207" name="temps">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>AE0F1395-7E6E-0492-CD15-B585619F40A4</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>EC367C0C-C0DA-6701-8553-13854548D58F</importedID>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mois" id="13598C41-84CF-9489-2B50-32D63174EAD6">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>DB94341A-4689-790F-B96A-F51FFAA66653</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>2B70536D-FB93-9E94-9191-9F12A9453CED</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="annee" id="1C55E80A-DEE8-A7B9-E484-91E66BFC8A8B">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>C8D4903D-A42A-F6FC-7F07-887BE7432B67</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>2A167588-D8EF-1377-3BDE-CB90019A8505</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="semaine" id="266D1711-1AD1-3798-D3C1-6C9284BF5ADE">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>0D1119B1-D0DC-8034-6CED-A0889C9A47E2</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>37348745-A522-6468-FFD0-AADC427228E9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vacance" id="725FA4A5-0D4E-3870-AED7-F874DCB3200D">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>AD847560-2459-B458-CF26-2863C41B1966</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>CA5D2FA6-538E-BE83-93C1-EE891B1DECC6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="FA76A373-1C40-5919-2569-3163E6E79160">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>3002C8CA-984D-AE87-1352-787B57D4BF85</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A85DAD64-638E-4BDB-6CC7-74CFD9DCC3BD" name="temps_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>223354E9-0534-1F9A-45D1-F070C7EB8D8C</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>72121059-70D6-D48A-11B1-F013CFD43030</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA76A373-1C40-5919-2569-3163E6E79160"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

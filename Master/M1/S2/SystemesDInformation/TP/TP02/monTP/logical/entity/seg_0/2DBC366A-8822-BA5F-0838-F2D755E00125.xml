@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2DBC366A-8822-BA5F-0838-F2D755E00125" name="commande2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:12:45 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="6DFAFC1B-DC7C-9907-9704-4FB670E0F6B8">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:15:05 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clientid" id="A132FDC1-7A06-43B5-B1AA-B5F54851A84F">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:15:07 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datecommande" id="8DD962AD-502A-A10C-E79D-D21AD2D33FFA">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:15:10 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mois" id="6178E8C5-979A-6051-2D50-05C92CD9C4E7">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:16:38 UTC</createdTime>
+<generatorID>DFEFA39A-2E81-95EA-F2F1-1455D62B8C99</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<referedAttribute>7BF9F201-47DD-8509-A928-67B941C35961</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="A7D952E7-EBFF-21EB-A13D-875F0951EB26">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:16:38 UTC</createdTime>
+<generatorID>DFEFA39A-2E81-95EA-F2F1-1455D62B8C99</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<referedAttribute>BD3FE8B5-4701-EFEE-9700-907D44F37ACF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="817DD033-BEF1-A8E3-7300-C1846BD61DDD" name="commande2 PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:15:33 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="35A61799-4751-8EED-0C51-CB76FC075BC4" value="true"/>
+<item key="273B6890-5BD8-D79E-6C6F-922764D32AE8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6DFAFC1B-DC7C-9907-9704-4FB670E0F6B8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

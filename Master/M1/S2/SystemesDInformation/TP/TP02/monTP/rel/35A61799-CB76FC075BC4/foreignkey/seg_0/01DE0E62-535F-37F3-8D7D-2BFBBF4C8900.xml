@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="01DE0E62-535F-37F3-8D7D-2BFBBF4C8900" containerWithKeyObject="B14CD03D-4651-A23C-99E6-48A691ED455B" localFKIndex="4DB640DE-3C7C-967A-8752-68D879D3BC56" name="tabledefaits2_temps2_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 10:07:26 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<referredTableLongName>temps2</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2ED76DBD-6C35-B992-CA28-A5D4D2DB0A42</referredTableID>
+<keyObject>08B31A2F-289C-4D0B-DF50-FC53E6590B96</keyObject>
+<referredKeyID>08B31A2F-289C-4D0B-DF50-FC53E6590B96</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

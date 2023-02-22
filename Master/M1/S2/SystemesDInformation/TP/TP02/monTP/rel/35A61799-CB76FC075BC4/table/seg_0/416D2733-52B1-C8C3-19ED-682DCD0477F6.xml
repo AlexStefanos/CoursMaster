@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="416D2733-52B1-C8C3-19ED-682DCD0477F6" name="commande">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>55419FBD-BACF-97EB-A10E-DE417980F4FE</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>0B803E92-3510-D610-8970-4C33CEC71E0B</importedID>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5C35C7C5-19C9-6407-3A97-D73694B676F2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>0D7547F8-EBAA-4ABC-CE4F-ECF50CD3ABA8</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>B0E478B3-83BC-DEE8-CDA7-D6EC326B4142</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clientid" id="7C847956-F1ED-BA80-EA4A-72BEA3CFF5CF">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>B3756C8A-5531-181B-BF01-3A6C19EFC3AD</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>6F7707A7-4FC5-9146-D84A-1335AF5779D0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datecommande" id="C057F914-D90A-5AB1-A1B2-D8B5804F5A29">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>EA6DBD26-919B-EB31-9762-21DA99694D91</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>DDB7483F-4C13-22C8-1B09-1169B0089E2F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="468EF49F-15CC-C604-0BAE-7F01EBEA9B4A" name="commande_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-22 09:53:15 UTC</createdTime>
+<generatorID>950ED97F-78B0-6C21-8B63-F992CC4FB4B4</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>EF92F295-EB2F-D5FA-C768-FDCA51F97493</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C35C7C5-19C9-6407-3A97-D73694B676F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

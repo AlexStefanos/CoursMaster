@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h5>Veuillez dérouler la page vers le bas</h5>
+        <canvas id="canvasSyracuse" width="5000" height="1000"></canvas>
+        <input type="text" id="inputSyracuse">
+        <button onclick="displaySyracuse()">Calculer syracuse</button>
+        <canvas id="canvasFlyingTime" width="5000" height="300"></canvas>
+        <script>
+            function clearCanvas() {
+                var context = document.getElementById("canvasSyracuse").getContext("2d");
+                context.clearRect(0, 0, 5000, 1000);
+            }
+
+            function displaySyracuse() {
+                clearCanvas();
+                var nb = document.getElementById("inputSyracuse").value;
+                const iterator = syracuse(nb);
+                var contextSyracuse = document.getElementById("canvasSyracuse").getContext("2d");
+                contextSyracuse.fillStyle = "blue";
+                contextSyracuse.font = "10px Helvetica";
+                contextSyracuse.beginPath();
+                syracuseIterator = iterator.next().value
+                x = 0;
+                y = 0;
+                previousValue = 0;
+                while(syracuseIterator != undefined) {
+                    y = 1000 - syracuseIterator;
+                    contextSyracuse.lineTo(x, y);
+                    contextSyracuse.fillText(syracuseIterator, x, y);
+                    previousValue = syracuseIterator;
+                    syracuseIterator = iterator.next().value;
+                    x += 10;
+                }
+                contextSyracuse.stroke();
+            }
+
+            function *syracuse(nb) { 
+                limitDisplay = 0;
+                yield nb;
+                while(limitDisplay != 250) {
+                    if((nb % 2) == 0)
+                        nb /= 2;
+                    else {
+                        nb *= 3;
+                        nb += 1;
+                    }
+                    yield nb;
+                    if(nb == 1)
+                        limitDisplay += 1;
+                }
+            }
+
+            function *flyingTime() {
+                limit = 1;
+                countTime = 0;
+                while(limit <= 500) {
+                    nb = limit
+                    while(nb != 1) {
+                        if((nb % 2) == 0)
+                            nb /= 2;
+                        else {
+                            nb *= 3;
+                            nb += 1;
+                        }
+                        countTime += 1;
+                    }
+                    yield countTime;
+                    countTime = 0;
+                    limit += 1;
+                }
+            }
+            const iterator = flyingTime();
+            var contextFlyingTime = document.getElementById("canvasFlyingTime").getContext("2d");
+            contextFlyingTime.fillStyle = "blue";
+            contextFlyingTime.font = "10px Helvetica";
+            contextFlyingTime.beginPath();
+            x = 0;
+            y = iterator.next().value;
+            while(y != undefined) {
+                contextFlyingTime.font = "10px Helvetica";
+                contextFlyingTime.fillStyle = "black";
+                contextFlyingTime.fillText(y, x, 200 - y);
+                contextFlyingTime.fillStyle = "red";
+                contextFlyingTime.fillRect(x, 200, 10, -y);
+                x += 10;
+                y = iterator.next().value;
+            }
+            contextFlyingTime.stroke();
+        </script>
+    </body>
+</html>

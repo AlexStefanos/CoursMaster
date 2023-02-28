@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="canvas" width="5000" height="1000"></canvas>
+        <script>
+            function init() {
+                var context = document.getElementById("canvas").getContext("2d");
+                context.width = document.getElementById("canvas").width;
+                context.height = document.getElementById("canvas").height
+                context.fillStyle = "yellow";
+                context.fillRect(0, 0, context.width, context.height);
+                context.beginPath();
+                context.fillStyle = "red";
+                context.fillRect(0, 0, 120, 40);
+                context.fillStyle = "black";
+                context.font = "16px Helvetica";
+                context.fillText("efface", 35, 20);
+                context.stroke();
+                document.addEventListener("click", captureClick);
+            }
+
+            function captureClick(event) {
+                var x = event.pageX - event.target.offsetLeft;
+                var y = event.pageY - event.target.offsetTop;
+                var context = document.getElementById("canvas").getContext("2d");
+                var nbPoints = 0;
+                var tableauX = new Array();
+                var tableauY = new Array();
+                context.fillStyle = "black";
+                if(x <= 120 && y <= 40) {
+                    context.clearRect(0, 0, document.getElementById("canvas").width, document.getElementById("canvas").height);
+                    init();
+                    tableauX = new Array(); //revérif si ça fonctionne
+                    tableauY = new Array(); //revérif si ça fonctionne
+                }
+                else {
+                    context.fillRect(x, y, 4, 4);
+                    tableauX.push(x); //revérif si ça fonctionne
+                    tableauY.push(y); //revérif si ça fonctionne
+                }
+            }
+
+            init();
+        </script>
+    </body>
+</html>

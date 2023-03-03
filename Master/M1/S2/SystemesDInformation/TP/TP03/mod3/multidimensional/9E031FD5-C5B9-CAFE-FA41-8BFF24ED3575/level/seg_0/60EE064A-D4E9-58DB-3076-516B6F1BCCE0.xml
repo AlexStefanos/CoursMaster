@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="semaine" directorySegmentName="seg_0" id="60EE064A-D4E9-58DB-3076-516B6F1BCCE0">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 15:41:10 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nameInOracleAW>SEMAINE</nameInOracleAW>
+<levelEntity>ED4B77F1-F6D4-9FFF-20F8-CBCA6B277817</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>AEBB9983-94D9-0C81-9F7B-86896A6692BA</attribute>
+</levelKey>
+<descriptiveAttributes>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="vacance" id="E3A4D752-0F44-CA8A-DFDB-F2DF55E958D3">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:10:56 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<attribute>29AB59E0-40BA-1966-E91E-CC6672467283</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+</descriptiveAttributes>
+</Level>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="monTP" id="356D0772-9492-8E2B-D5CF-6D632DAEABC6" version="3.5">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:36:48 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>356D0772-9492-8E2B-D5CF-6D632DAEABC6</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="363C83D3-0245-82A9-9F98-B7AEA8A54122">
+<designStoragePath>C:\Users\alexa\Documents\Cours\Master\M1\S2\SystemesDInformation\TP\TP03\mod3</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

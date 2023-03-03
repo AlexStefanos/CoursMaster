@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="628332D5-B2B0-4B84-7E1A-7E696FDBB260" name="vente">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>911A07C0-5364-6835-39D3-110254CC6A78</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>AE9735AA-7479-8EAB-B630-AADB0BAC9127</importedID>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="produit" id="480A5111-C083-EDEF-8923-094B60F0D4CF">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>035270ED-7F59-AA9B-FFE6-C0F25B3C29EE</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>03A38F1B-D79F-98AA-4D34-F0BE761F9F8A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categorie" id="17787F44-9E62-E630-FF82-1BED9E2A5645">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>F0DEE5C1-DC49-686E-CA53-9761960D9894</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>53706688-7098-879F-F2FD-C7C71EC859E7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="FCD34289-CFF5-0CEA-6C21-E1C7A9E9F852">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>90D5BD11-B41D-6673-83D7-CF7275AAC7FD</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>E60E0B6A-1556-7840-1F77-69183E4B0180</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="D20BB6C9-ABF8-DA0E-F313-5CF0D5F10DB4">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>EDB57C9A-3CCD-7C1E-C3FC-8C34F4E5CA7F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datedebut" id="C8585AE4-836D-B5AB-40FA-4B4F45CCD8A8">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>281987FE-FC74-4C9F-BB68-6B704EF17983</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datefin" id="B167630E-8A2F-EF77-24A3-825984CB837E">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>CA3511D0-CE8E-5E1F-9513-B4C1A40738B9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mêmecategorie" id="D72D18FB-3EA0-3521-BF96-04EB7ED2B72D">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>FE106ED0-F7B9-252E-AEBF-E3057EBB7FF2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nomprecedent" id="AAB77524-5C48-FBB0-F66F-7195AB4412F3">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>06D0041D-C090-7633-CB8E-83D9B0D3D240</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="455C7E7D-3E0C-E0FC-4C98-86DDE5953762" name="vente_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>D7483D73-1EBF-C9C2-13E0-CFCC03BCAF29</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>F2B8F30D-4EAF-4960-AAF0-46CF7808BE8E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D20BB6C9-ABF8-DA0E-F313-5CF0D5F10DB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE9C3935-A27A-F55D-F669-002633D783FE" name="categorie_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>0DC71BD7-D4BB-BA5B-A6C1-EE00E0115305</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>F733ABBD-9AF7-A48C-AE7B-84F56ADBF892</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17787F44-9E62-E630-FF82-1BED9E2A5645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<columnGroups>
+<columnGroup class="oracle.dbtools.crest.model.design.relational.Table$ColumnGroup" name="ColumnGroup_1" objectID="C9DC5202-7CF4-0D79-116E-4BF1D50B0F54">
+<columns>480A5111-C083-EDEF-8923-094B60F0D4CF</columns>
+</columnGroup>
+</columnGroups>
+</Table>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DimensionOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionOraclev10g" name="produit" directorySegmentName="seg_0" id="973F8FF5-D3F8-2DBB-E42D-3D3DDC45008D">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:56 UTC</createdTime>
+<generatorID>A43FA13E-4F77-CE40-7F86-209B6A6380FB</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="produit" id="E8F08F4E-AAD3-A497-2227-BAD334B2838B">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>03A38F1B-D79F-98AA-4D34-F0BE761F9F8A</columns>
+<levelTable>AE9735AA-7479-8EAB-B630-AADB0BAC9127</levelTable>
+</Level>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="categorie" id="48C079A2-FBAB-102E-4B8F-206AD8483835">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>53706688-7098-879F-F2FD-C7C71EC859E7</columns>
+<levelTable>8A2C90B6-49BE-A1C9-E070-27402D1AD6D0</levelTable>
+</Level>
+</levels>
+<hierarchies>
+<Hierarchy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HierarchyOraclev10g" name="Hierarchy_1" id="725C70B5-DBE9-33FD-BEC4-3D4EA21E0C7B">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<joins>JOIN KEY vente.categorie REFERENCES categorie</joins>
+<levels>E8F08F4E-AAD3-A497-2227-BAD334B2838B, 48C079A2-FBAB-102E-4B8F-206AD8483835</levels>
+</Hierarchy>
+</hierarchies>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="categorie" id="6FD8E906-A3C9-2BF4-3E45-082F4DB1F94D">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<level>48C079A2-FBAB-102E-4B8F-206AD8483835</level>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="produit" id="57B14B20-56AF-1814-CCFD-BDB28EE991F7">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<level>E8F08F4E-AAD3-A497-2227-BAD334B2838B</level>
+</Attribute>
+</attributes>
+</DimensionOraclev10g>

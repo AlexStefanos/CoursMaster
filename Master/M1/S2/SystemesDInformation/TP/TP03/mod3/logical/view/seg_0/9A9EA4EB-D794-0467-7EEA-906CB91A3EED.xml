@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="9A9EA4EB-D794-0467-7EEA-906CB91A3EED" name="VIEW_3">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 13:56:59 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    vente.prix * vente.quantite AS ca
+FROM
+    vente]]></userDefinedSQL>
+<layoutSQL><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<ActiveQueryBuilderLayout><SQL>Select vente.prix * vente.quantite As CA From vente</SQL><SubQueries><SubQuery SQL="Select vente.prix * vente.quantite As CA From vente"><UnionSubQuery><DataSource SQL="vente" X="50" Y="20" Height="155" Width="140"/></UnionSubQuery></SubQuery></SubQueries></ActiveQueryBuilderLayout>]]></layoutSQL>
+<parsed>true</parsed>
+<viewType>EntityView</viewType>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CA" id="C1B920C8-EB84-CC6D-9D9B-EDDC10721EBC">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 13:58:52 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CA</alias>
+<dataType>NUMBER</dataType>
+<expression>vente.prix * vente.quantite</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3D27919A-8891-373F-3998-C7F83694CEF3">
+<container>true</container>
+<tableName>vente</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7F82857D-A538-464A-1B78-2AF2900FC232">
+<columnName>prix</columnName>
+<tableName>vente</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="30EBF831-6243-3303-D9C5-E0EB910C5AA4">
+<columnName>quantite</columnName>
+<tableName>vente</tableName>
+</UsedObject>
+</usedObjects>
+</EntityView>

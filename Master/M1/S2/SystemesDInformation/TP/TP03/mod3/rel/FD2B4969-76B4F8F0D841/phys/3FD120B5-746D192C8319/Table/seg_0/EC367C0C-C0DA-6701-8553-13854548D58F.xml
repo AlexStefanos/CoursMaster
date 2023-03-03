@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="temps" directorySegmentName="seg_0" id="EC367C0C-C0DA-6701-8553-13854548D58F">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="annee" id="2A167588-D8EF-1377-3BDE-CB90019A8505">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="mois" id="2B70536D-FB93-9E94-9191-9F12A9453CED">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="3002C8CA-984D-AE87-1352-787B57D4BF85">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:40:38 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="semaine" id="37348745-A522-6468-FFD0-AADC427228E9">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:14:41 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vacance" id="CA5D2FA6-538E-BE83-93C1-EE891B1DECC6">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:14:41 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="temps_PK" id="72121059-70D6-D48A-11B1-F013CFD43030">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:12 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

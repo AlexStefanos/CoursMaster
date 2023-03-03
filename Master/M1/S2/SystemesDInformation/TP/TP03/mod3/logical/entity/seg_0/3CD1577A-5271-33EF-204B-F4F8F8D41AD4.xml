@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3CD1577A-5271-33EF-204B-F4F8F8D41AD4" name="commande">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:43:22 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="DA830C9F-A5C7-B0C0-4DFB-C0B94771D622">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:44:11 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clientid" id="8242D89E-8DD1-1230-44EB-F1BB623E9C71">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:45:07 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datecommande" id="CAABE83C-0B34-AE2A-B1AC-8304C4465A5A">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:45:29 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mois" id="12C71303-F7D0-CE39-BF3F-2573A94BC231">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:20:12 UTC</createdTime>
+<generatorID>EE90C75F-C1D8-E105-2B69-E5B6442027FB</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>D748A861-75A1-4C6A-4FBA-8E37EC9CEA99</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="15723CE4-C169-7094-202A-CCF1383A8483">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:20:12 UTC</createdTime>
+<generatorID>EE90C75F-C1D8-E105-2B69-E5B6442027FB</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>E8089F13-9126-64BA-55FC-B24636A94483</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E215C264-D7C6-DC2E-8AA3-9D0D10E760EE" name="commande PK">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:46:04 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA830C9F-A5C7-B0C0-4DFB-C0B94771D622</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

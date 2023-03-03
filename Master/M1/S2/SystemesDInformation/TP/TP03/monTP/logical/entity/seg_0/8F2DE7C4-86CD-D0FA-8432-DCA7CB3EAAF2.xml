@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8F2DE7C4-86CD-D0FA-8432-DCA7CB3EAAF2" name="commande2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:41:02 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1852ACFA-88D6-9CE9-316E-766D95D18BF4">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:42:39 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="878B9F54-991D-FA9A-3EB3-BDE125D6A9C0" name="commande2 PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:42:51 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1852ACFA-88D6-9CE9-316E-766D95D18BF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

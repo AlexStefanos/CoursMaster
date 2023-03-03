@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="categorie" directorySegmentName="seg_0" id="4F6CF546-984E-241A-3E39-2148891C9CC5">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:01:50 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nameInOracleAW>CATEGORIE</nameInOracleAW>
+<levelEntity>D40CEC49-8A78-1B60-AFCC-7C0AD2FE30C4</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>EE321F30-14D8-5666-1481-33220D7FF17E</attribute>
+</levelKey>
+</Level>

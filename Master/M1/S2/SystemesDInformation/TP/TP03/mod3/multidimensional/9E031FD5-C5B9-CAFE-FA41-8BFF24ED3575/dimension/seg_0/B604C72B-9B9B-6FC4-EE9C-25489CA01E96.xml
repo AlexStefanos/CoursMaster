@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Dimension class="oracle.dbtools.crest.model.design.multidimensional.Dimension" name="temps" directorySegmentName="seg_0" id="B604C72B-9B9B-6FC4-EE9C-25489CA01E96">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:13:49 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nameInOracleAW>TEMPS</nameInOracleAW>
+</Dimension>

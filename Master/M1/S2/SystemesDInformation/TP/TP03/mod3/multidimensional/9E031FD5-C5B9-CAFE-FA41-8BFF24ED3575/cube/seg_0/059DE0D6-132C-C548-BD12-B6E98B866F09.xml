@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Cube class="oracle.dbtools.crest.model.design.multidimensional.Cube" name="promo" directorySegmentName="seg_0" id="059DE0D6-132C-C548-BD12-B6E98B866F09">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:42:44 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<nameInOracleAW>PROMO</nameInOracleAW>
+<compressedcomposites>false</compressedcomposites>
+<factEntity>7723D6A1-41C3-D99F-159B-0033001A34A2</factEntity>
+<partitioned>true</partitioned>
+<useGlobalComposites>false</useGlobalComposites>
+<virtual>true</virtual>
+<dimensions>
+<dimension>09190860-FCAD-E6C5-FEDB-049CA32B90D8</dimension>
+<dimension>8AC3640C-5AE5-DF0E-6AB3-9237C9111F76</dimension>
+<dimension>6523BA2A-3E0E-9148-4AA3-4E551DDBB244</dimension>
+</dimensions>
+<measures itemClass="oracle.dbtools.crest.model.design.multidimensional.Measure">
+<measure name="nbPromo" id="74E0D8C2-4E63-E6F1-B191-D3C93A92CE47">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-15 07:59:06 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<nameInOracleAW>NBPROMO</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Fully-Additive</additivity>
+<aggregationFunctionID>3</aggregationFunctionID>
+<cube>059DE0D6-132C-C548-BD12-B6E98B866F09</cube>
+<isformula>false</isformula>
+<iscustomFormula>false</iscustomFormula>
+<measureFact>FF7FEF4E-0501-7D5C-65DB-1C361B6D9276</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" name="count(distinct)" id="3">
+<measureAlias>nbPromo</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+<measure name="quantitevendue" id="A16B95A2-A32B-F83D-0482-4D030E9A5EC7">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-15 08:00:07 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<nameInOracleAW>QUANTITEVENDUE</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Fully-Additive</additivity>
+<aggregationFunctionID>1</aggregationFunctionID>
+<cube>059DE0D6-132C-C548-BD12-B6E98B866F09</cube>
+<isformula>false</isformula>
+<iscustomFormula>false</iscustomFormula>
+<measureFact>30EBF831-6243-3303-D9C5-E0EB910C5AA4</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" name="SUM" id="1">
+<measureAlias>Measure_12</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+</measures>
+<factContainers>
+<container>7723D6A1-41C3-D99F-159B-0033001A34A2</container>
+<container>B6E65601-4EC4-9BFD-3895-714BCB9012A4</container>
+<container>3D27919A-8891-373F-3998-C7F83694CEF3</container>
+</factContainers>
+</Cube>

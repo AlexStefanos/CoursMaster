@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D27919A-8891-373F-3998-C7F83694CEF3" name="vente">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:46:50 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="E5160D2B-E5B1-C595-04DC-41D8D13CD5B2">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:47:19 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="produit" id="3F119307-850D-0ACB-1941-75690BA8DA4E">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:47:42 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prix" id="7F82857D-A538-464A-1B78-2AF2900FC232">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:48:16 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantite" id="30EBF831-6243-3303-D9C5-E0EB910C5AA4">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:48:38 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="B429F360-5E99-F860-AA6C-3FE8B0D5530A">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:50:02 UTC</createdTime>
+<generatorID>39186340-3087-8CDC-50CF-87CCE0530DA0</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>DA830C9F-A5C7-B0C0-4DFB-C0B94771D622</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="categorie" id="CE7781D3-575F-768B-E512-8E4DB9EE90BA">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-07 16:00:53 UTC</createdTime>
+<generatorID>25DE93EE-5D6E-8898-76F6-98DC13975817</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>EE321F30-14D8-5666-1481-33220D7FF17E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idproduit" id="48335D44-87C1-20CE-7E2B-3C2C23CC3900">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:26:08 UTC</createdTime>
+<generatorID>FE97FA2C-D078-F174-9315-FA4618E25283</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>06788A98-FF1F-DFAC-1223-70C7896A0EED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="66504C8B-8903-1585-0438-17A2041A1196">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-15 07:57:45 UTC</createdTime>
+<generatorID>8C3604D5-7D76-D53A-36A8-2ED03B265A72</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FF7FEF4E-0501-7D5C-65DB-1C361B6D9276</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="57A0ACD6-9818-1855-E4BE-8DEF8D38E429" name="vente PK">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 15:50:02 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B429F360-5E99-F860-AA6C-3FE8B0D5530A</attributeRef>
+<attributeRef>E5160D2B-E5B1-C595-04DC-41D8D13CD5B2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

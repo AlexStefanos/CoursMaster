@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DimensionOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionOraclev10g" name="temps" directorySegmentName="seg_0" id="94C4279A-12F3-A714-913F-B217AD760E54">
+<createdBy>berio</createdBy>
+<createdTime>2023-01-31 16:38:56 UTC</createdTime>
+<generatorID>B604C72B-9B9B-6FC4-EE9C-25489CA01E96</generatorID>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="semaine" id="FB69A3AB-295F-FE9B-AE06-4EDA37A469F3">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>37348745-A522-6468-FFD0-AADC427228E9</columns>
+<levelTable>EC367C0C-C0DA-6701-8553-13854548D58F</levelTable>
+</Level>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="mois" id="1B6CD937-E517-5D90-F142-B232CEAFF2FD">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>2A167588-D8EF-1377-3BDE-CB90019A8505,2B70536D-FB93-9E94-9191-9F12A9453CED</columns>
+<levelTable>EC367C0C-C0DA-6701-8553-13854548D58F</levelTable>
+</Level>
+<Level class="oracle.dbtools.crest.model.design.storage.oracle.v10g.LevelOraclev10g" name="annee" id="15053179-4A9C-7945-1548-89372B67F465">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>2A167588-D8EF-1377-3BDE-CB90019A8505</columns>
+<levelTable>EC367C0C-C0DA-6701-8553-13854548D58F</levelTable>
+</Level>
+</levels>
+<hierarchies>
+<Hierarchy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HierarchyOraclev10g" name="Hierarchy_5" id="6C6DB33C-AB57-10AE-1358-64D888FBADF0">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>FB69A3AB-295F-FE9B-AE06-4EDA37A469F3</levels>
+</Hierarchy>
+<Hierarchy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HierarchyOraclev10g" name="Hierarchy_2" id="89555F75-D028-C616-4D5B-2DA11BACF498">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<levels>1B6CD937-E517-5D90-F142-B232CEAFF2FD, 15053179-4A9C-7945-1548-89372B67F465</levels>
+</Hierarchy>
+</hierarchies>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="annee" id="8F633D2D-AE5E-CB86-DA8D-DF2267E4A508">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<level>15053179-4A9C-7945-1548-89372B67F465</level>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="mois" id="518C49AD-602E-7060-298F-DC0E4940AA81">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<level>1B6CD937-E517-5D90-F142-B232CEAFF2FD</level>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DimensionAttributeOraclev10g" name="semaine" id="01AE55DB-5311-0228-CD4F-B358BBDB2489">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 09:26:26 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columns>CA5D2FA6-538E-BE83-93C1-EE891B1DECC6</columns>
+<level>FB69A3AB-295F-FE9B-AE06-4EDA37A469F3</level>
+</Attribute>
+</attributes>
+</DimensionOraclev10g>

@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28B7AF9B-B6E3-DF82-2F56-305B79F97A7C" name="vente2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:40:57 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="9AE405F9-132D-8E4D-BEE9-09127C72AD97">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:42:04 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="11D42412-662A-1B3A-C439-A69540AABA8D">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:43:43 UTC</createdTime>
+<generatorID>9AECE16B-6B18-66D5-B765-0971143095EA</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<referedAttribute>1852ACFA-88D6-9CE9-316E-766D95D18BF4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9609ABEF-5EFF-3E5D-9119-D30D8EA161F6" name="vente2 PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:42:19 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9AE405F9-132D-8E4D-BEE9-09127C72AD97</attributeRef>
+<attributeRef>11D42412-662A-1B3A-C439-A69540AABA8D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

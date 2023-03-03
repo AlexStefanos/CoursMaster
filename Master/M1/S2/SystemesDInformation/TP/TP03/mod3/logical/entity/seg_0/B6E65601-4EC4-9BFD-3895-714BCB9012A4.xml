@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6E65601-4EC4-9BFD-3895-714BCB9012A4" name="Promotion">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:20:54 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="remise" id="E43CAC0C-A323-B7BE-7C59-8C445B8E9501">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:21:20 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="FF7FEF4E-0501-7D5C-65DB-1C361B6D9276">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:21:42 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mois" id="38242202-F0B9-AD50-4742-22A89E14237A">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:23:11 UTC</createdTime>
+<generatorID>3251F4A1-3D4D-78A5-8ED0-83A972462951</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>D748A861-75A1-4C6A-4FBA-8E37EC9CEA99</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="6DBDE46B-FF3A-CDE7-DF12-F9A562F534E2">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:23:11 UTC</createdTime>
+<generatorID>3251F4A1-3D4D-78A5-8ED0-83A972462951</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>E8089F13-9126-64BA-55FC-B24636A94483</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mois1" id="55872917-6C25-456B-0ED4-DA708B215221">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:23:22 UTC</createdTime>
+<generatorID>ABD1822F-5364-3A54-1351-03456C1B96DE</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>D748A861-75A1-4C6A-4FBA-8E37EC9CEA99</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee1" id="6FF634EF-9737-AC40-01E6-A3347F30EA96">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:23:22 UTC</createdTime>
+<generatorID>ABD1822F-5364-3A54-1351-03456C1B96DE</generatorID>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<referedAttribute>E8089F13-9126-64BA-55FC-B24636A94483</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="187E3B4B-D94C-58F9-1D74-C919711F302E" name="Promotion PK">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:21:53 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<engineerTo>
+<item key="FD2B4969-7775-1CDC-2D3F-76B4F8F0D841" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FF7FEF4E-0501-7D5C-65DB-1C361B6D9276</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

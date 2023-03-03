@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="256FC9BF-309C-5BCB-F9E8-832E4FB5D231" name="view2">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:41:34 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<userDefined>false</userDefined>
+<parsed>true</parsed>
+<viewType>EntityView</viewType>
+</EntityView>

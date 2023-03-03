@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="produitv2" directorySegmentName="seg_0" id="AA0D763E-BB43-C659-587B-BEE1338440D2">
+<createdBy>berio</createdBy>
+<createdTime>2023-02-14 14:45:03 UTC</createdTime>
+<ownerDesignName>mod2</ownerDesignName>
+<nameInOracleAW>PRODUITV2</nameInOracleAW>
+<levelEntity>7723D6A1-41C3-D99F-159B-0033001A34A2</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>06788A98-FF1F-DFAC-1223-70C7896A0EED</attribute>
+</levelKey>
+</Level>

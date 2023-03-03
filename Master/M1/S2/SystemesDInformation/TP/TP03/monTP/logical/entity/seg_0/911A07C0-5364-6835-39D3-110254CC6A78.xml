@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="911A07C0-5364-6835-39D3-110254CC6A78" name="vente">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>3D27919A-8891-373F-3998-C7F83694CEF3</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B74B88A8-5F5D-1298-4EBA-9872F2E917E4">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>E5160D2B-E5B1-C595-04DC-41D8D13CD5B2</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="produit" id="035270ED-7F59-AA9B-FFE6-C0F25B3C29EE">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>3F119307-850D-0ACB-1941-75690BA8DA4E</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prix" id="DF737888-8211-FC7E-9C03-EC6A06712C40">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>7F82857D-A538-464A-1B78-2AF2900FC232</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantite" id="697FB701-2349-127E-722D-5F7D25A55562">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>30EBF831-6243-3303-D9C5-E0EB910C5AA4</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="0D259A26-A76E-9546-4CC1-B77739B90A57">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>0C771CD8-4BF8-2F21-DCAE-BEDDA3162BEA</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>B429F360-5E99-F860-AA6C-3FE8B0D5530A</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<referedAttribute>8790E77F-862F-7D6C-1B52-81EC5EB8A277</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="categorie" id="C4439416-1E6D-C357-8928-6675B93DC4DF">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>61E2125D-F2F1-70E2-ECD0-3247D5EDB7C0</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>CE7781D3-575F-768B-E512-8E4DB9EE90BA</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<referedAttribute>F0DEE5C1-DC49-686E-CA53-9761960D9894</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idproduit" id="E9B74F85-912C-391B-922D-1CC1EC4B3B3F">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>5A8564C1-08E9-E7FF-8665-B19BB104F9FD</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>48335D44-87C1-20CE-7E2B-3C2C23CC3900</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<referedAttribute>C5F9A2BE-472D-98C3-2382-10C2C539E14D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="6B62ECD0-9B48-4EFD-C04F-96A3EADD6113">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<generatorID>0B376262-8D36-FB51-C492-D02C912D5A3D</generatorID>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>66504C8B-8903-1585-0438-17A2041A1196</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>BB1107D1-9B17-89B8-8607-7AFBF9C1CF60</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D7483D73-1EBF-C9C2-13E0-CFCC03BCAF29" name="vente PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-02-28 15:37:20 UTC</createdTime>
+<ownerDesignName>monTP</ownerDesignName>
+<importedID>57A0ACD6-9818-1855-E4BE-8DEF8D38E429</importedID>
+<engineerTo>
+<item key="0902638D-FB93-8990-3AF6-A15EE3E330A0" value="true"/>
+<item key="470AB39A-55E3-6D26-C7B4-2C2F0D8523F4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D259A26-A76E-9546-4CC1-B77739B90A57</attributeRef>
+<attributeRef>B74B88A8-5F5D-1298-4EBA-9872F2E917E4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

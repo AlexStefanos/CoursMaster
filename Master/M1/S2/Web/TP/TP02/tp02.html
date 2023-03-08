@@ -3,6 +3,87 @@
     <body>
         <canvas id="canvas" width="5000" height="1000"></canvas>
         <script>
+            var tableauX = new Array();
+            var tableauY = new Array();
+
+            function drawLine(point1x, point1y, point2x, point2y) {
+                var context = document.getElementById("canvas").getContext("2d");
+                context.fillStyle = "green";
+                context.beginPath();
+                context.moveTo(point1x, point1y);
+                context.lineTo(point2x, point2y);
+                context.stroke();
+            }
+
+            function dessineChat(x, y) {
+                const img = new Image();
+                img.src = "chatmarche.png";
+                var context = document.getElementById("canvas").getContext("2d");
+                context.drawImage(img, x, y);
+            }
+
+            function dessineChatAuPoint(n) {
+                dessineChat(tableauX[n] - 55, tableauY[n]- 59);
+            }
+
+            function drawAfterClearPoints() {
+                var context = document.getElementById("canvas").getContext("2d");
+                var countAfterClearPoints = 0;
+                while(countAfterClearPoints < tableauX.length) {
+                    console.log(countAfterClearPoints);
+                    context.fillRect(tableauX[countAfterClearPoints], tableauY[countAfterClearPoints], 4, 4);
+                    countAfterClearPoints++;
+                }
+            }
+
+            function drawAfterClearLines() {
+                var countAfterClearLines = 0;
+                while(countAfterClearLines < (tableauX.length - 1)) {
+                    console.log(countAfterClearLines);
+                    drawLine(tableauX[countAfterClearLines], tableauY[countAfterClearLines], tableauX[countAfterClearLines + 1], tableauY[countAfterClearLines + 1]);
+                    countAfterClearLines++;
+                }
+            }
+
+            function captureClick(event) {
+                var x = event.pageX - event.target.offsetLeft;
+                var y = event.pageY - event.target.offsetTop;
+                var context = document.getElementById("canvas").getContext("2d");
+                var nbPoints = 0;
+                context.fillStyle = "black";
+                if((x <= 120) && (y <= 40)) {
+                    context.clearRect(0, 0, document.getElementById("canvas").width, document.getElementById("canvas").height);
+                    init();
+                    tableauX = new Array();
+                    tableauY = new Array();
+                }
+                else if ((x >= 150) && (x <= 270) && (y <= 40)) {
+                    var count = 0;
+                    while(count < (tableauX.length - 1)) {
+                        drawLine(tableauX[count], tableauY[count], tableauX[count + 1], tableauY[count + 1]);
+                        count++;
+                    }
+                }
+                else if((x >= 300) && (x <= 420) && (y <= 40)) {
+                    var countChat = 0;
+                    while(countChat < (tableauX.length - 1)) {
+                        dessineChatAuPoint(countChat);
+                        setTimeout(function() {
+                            context.clearRect(0, 0, document.getElementById("canvas").width, document.getElementById("canvas").height, );
+                        }, 3000);
+                        setTimeout(init, 3000);
+                        drawAfterClearPoints();
+                        drawAfterClearLines();
+                        countChat++;
+                    }
+                }
+                else {
+                    context.fillRect(x, y, 4, 4);
+                    tableauX.push(x);
+                    tableauY.push(y);
+                }
+            }
+
             function init() {
                 var context = document.getElementById("canvas").getContext("2d");
                 context.width = document.getElementById("canvas").width;
@@ -15,29 +96,16 @@
                 context.fillStyle = "black";
                 context.font = "16px Helvetica";
                 context.fillText("efface", 35, 20);
+                context.fillStyle = "red";
+                context.fillRect(150, 0, 120, 40);
+                context.fillStyle = "black";
+                context.fillText("ligne", 185, 20);
+                context.fillStyle = "red";
+                context.fillRect(300, 0, 120, 40);
+                context.fillStyle = "black";
+                context.fillText("animation", 335, 20);
                 context.stroke();
                 document.addEventListener("click", captureClick);
-            }
-
-            function captureClick(event) {
-                var x = event.pageX - event.target.offsetLeft;
-                var y = event.pageY - event.target.offsetTop;
-                var context = document.getElementById("canvas").getContext("2d");
-                var nbPoints = 0;
-                var tableauX = new Array();
-                var tableauY = new Array();
-                context.fillStyle = "black";
-                if(x <= 120 && y <= 40) {
-                    context.clearRect(0, 0, document.getElementById("canvas").width, document.getElementById("canvas").height);
-                    init();
-                    tableauX = new Array(); //revérif si ça fonctionne
-                    tableauY = new Array(); //revérif si ça fonctionne
-                }
-                else {
-                    context.fillRect(x, y, 4, 4);
-                    tableauX.push(x); //revérif si ça fonctionne
-                    tableauY.push(y); //revérif si ça fonctionne
-                }
             }
 
             init();

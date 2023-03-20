@@ -60,7 +60,7 @@ class Modele {
     constructor(sideBoardLength_) {
         this.sideBoardLength_ = sideBoardLength;
         this.score = 0;
-        this. = 
+        this.Q = 
     }
 
     explodeLine(x_) {

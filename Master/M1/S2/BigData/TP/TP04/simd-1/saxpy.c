@@ -86,13 +86,14 @@ int scalar_saxpy(float ss[], float yy[], float a, float xx[]) {
 
 int simd_saxpy(float ss[], float yy[], float a, float xx[]) {
     
-    __m256i a2 = _mm256_load_ps(a);
+    __m256 a8 = _mm256_set1_ps(a);
 
     for (int i = 0; i < N; i += 16) {
+        __m256 y8 = _mm256_load_ps(yy+i);
+        __m256 x8 = _mm256_load_ps(xx+i);
 
-        __m256i s = _mm256_load_si256((__mm256i *) (ss+i));
-        __m256i y = _mm256_load_si256((__mm256i *) (yy+i));
-        __m256i x = _mm256_load_si256((__mm256i *) (xx+i));
+        __m256 s8 = _mm256_fmadd_ps(a8, x8, y8);
+        _m256_store_ps(ss + i, s8);
     }
 }
 

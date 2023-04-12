@@ -1,5 +1,9 @@
 {
-    "main":"test.html",
-    "name":"test",
-    "version":"0.1.0"
+    "main": "test.html",
+    "name": "test",
+    "version": "0.1.0",
+    "dependencies": {
+        "node.js": "^0.0.1-security",
+        "nw-builder": "^4.2.1"
+    }
 }

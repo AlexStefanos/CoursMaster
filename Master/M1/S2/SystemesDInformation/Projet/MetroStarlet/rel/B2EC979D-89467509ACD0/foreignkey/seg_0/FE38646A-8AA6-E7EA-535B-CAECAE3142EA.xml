@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FE38646A-8AA6-E7EA-535B-CAECAE3142EA" containerWithKeyObject="8AAD2080-CF57-5610-DB0F-214C5B5BE440" localFKIndex="DF24F0A8-FA5D-53DB-515D-1BC3FE183C27" name="product_category_movie_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 07:05:46 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<referredTableLongName>movie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6ECDBA2B-B48A-716C-19F5-0C501E3E9737</referredTableID>
+<keyObject>B8CDA95E-30F1-7DD5-C774-E382C4A2BA61</keyObject>
+<referredKeyID>B8CDA95E-30F1-7DD5-C774-E382C4A2BA61</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>movie_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

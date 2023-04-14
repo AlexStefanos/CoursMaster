@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F778ABDB-18F5-BDA9-5834-9659E47D50E7" name="movie">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>6ECDBA2B-B48A-716C-19F5-0C501E3E9737</importedID>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="movie_id" id="5DC628CF-F9FC-4FC9-E190-96F972AB3A9E">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>ADF64E3C-247B-23D7-F93B-BF3E2AA3A667</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movie_title" id="1DA9A491-679D-3FBC-CF56-96223290BCDD">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>70F5A673-A5CF-982D-A6C2-334DFABE7385</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_year" id="822A04C6-4E8A-E957-40EB-926B42CAE3D2">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>81D81FBE-35D1-4FE6-A59A-74CAEBCF8D81</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D899D7A-A02E-E7AC-84E8-72BF91E55178" name="movie_PK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>B8CDA95E-30F1-7DD5-C774-E382C4A2BA61</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DC628CF-F9FC-4FC9-E190-96F972AB3A9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="ECF4A5D8-8817-57A1-EE12-4A049D2A993B" mainViewID="51B60295-3B05-D4F0-455E-F10D51694AF6">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:12:38 UTC</createdTime>
+<ownerDesignName>MovieMegaMart</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

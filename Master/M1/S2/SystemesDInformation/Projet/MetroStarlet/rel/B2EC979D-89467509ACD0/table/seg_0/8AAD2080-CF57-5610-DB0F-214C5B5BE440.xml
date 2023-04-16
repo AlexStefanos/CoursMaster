@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8AAD2080-CF57-5610-DB0F-214C5B5BE440" name="product_category">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 06:59:19 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="04AEEF28-6EE4-E68C-A3FD-A3C03E4AD191">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 06:59:19 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="A477DC88-87CE-AFE7-A9F0-ACF7E47F61FF">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 06:59:19 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="production_year" id="AF65A215-47C4-850D-BD72-956A0653C641">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 06:59:19 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category" id="B6ABB3EB-E376-AA88-B5E8-EFC8CB364B54">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 07:00:37 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_date" id="1B66E51B-90FF-CBC1-6750-7EDA6FC97DD9">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 07:01:45 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inventory_date" id="3207673D-45EB-5199-2D6B-027F81122E5F">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 07:02:14 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refers_to_movie_id" id="EB3E5C17-904E-9AF8-A153-97B2D917561D">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 07:05:46 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE38646A-8AA6-E7EA-535B-CAECAE3142EA" referredColumn="ADF64E3C-247B-23D7-F93B-BF3E2AA3A667"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="97699DE6-5B00-8F13-6A98-C2CB8A48B198" name="product_category_PK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 06:59:19 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04AEEF28-6EE4-E68C-A3FD-A3C03E4AD191"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF24F0A8-FA5D-53DB-515D-1BC3FE183C27" name="product_category_movie_FK">
+<createdBy>alexa</createdBy>
+<createdTime>2023-04-14 07:05:46 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB3E5C17-904E-9AF8-A153-97B2D917561D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

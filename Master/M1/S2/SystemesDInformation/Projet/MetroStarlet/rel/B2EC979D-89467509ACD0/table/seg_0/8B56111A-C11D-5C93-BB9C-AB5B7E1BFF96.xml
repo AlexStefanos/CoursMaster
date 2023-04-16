@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B56111A-C11D-5C93-BB9C-AB5B7E1BFF96" name="sale">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:14:44 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sale_id" id="E5E9BCC4-6D15-6917-CBDB-73BF1202D811">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:17:51 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_sale_sale_id</notNullConstraintName>
+</Column>
+<Column name="product_id" id="FA010FE2-3097-C6C5-573C-87913A9311DE">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:19:07 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A0191B5-5847-6043-4020-703D27FA1D94" referredColumn="C3E49A2D-212F-FFA6-6E9C-B0CF59D58DB8"/>
+</associations>
+</Column>
+<Column name="customer_id" id="B5883072-FC5A-BFAC-ACF2-8014CCEE238C">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:19:53 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CABAD032-8C9C-81F3-D7E7-B9BCF287C39A" referredColumn="F3B36B00-010E-09FB-36BE-33067632A981"/>
+</associations>
+</Column>
+<Column name="sale_date" id="3102B044-6F32-4CB6-77A9-7FDDC1F60972">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:20:20 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="paid_price" id="EB738BFF-B23F-549E-E053-68A343E9E6EC">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:21:08 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="9E7268D3-4387-AA55-5877-508CCD72F672">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:22:04 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_paid" id="80195B59-1AD1-DC49-1CEB-40AFABDAFDAF">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:22:49 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DB17F59-FA94-2B0D-12E1-E61BED0E3341" name="sale_PK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:17:51 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5E9BCC4-6D15-6917-CBDB-73BF1202D811"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="501AF646-1341-7674-3388-1DC7AB688E82" name="sale_product_FK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:57:15 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA010FE2-3097-C6C5-573C-87913A9311DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD6FDE4B-D7C7-59D7-3DEC-D3DCE2811A94" name="sale_customer_FK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:58:10 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5883072-FC5A-BFAC-ACF2-8014CCEE238C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

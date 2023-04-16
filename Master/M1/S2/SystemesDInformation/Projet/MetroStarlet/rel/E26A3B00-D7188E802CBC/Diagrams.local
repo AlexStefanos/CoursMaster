@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="6E4B6F7E-E13F-E33A-3500-7FED79FC65D4" name="Relational_1(2)" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

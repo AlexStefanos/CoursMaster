@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="BF64BBB6-3149-798B-8452-EB0A50E44633">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:12:39 UTC</createdTime>
+<ownerDesignName>MovieMegaMart</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

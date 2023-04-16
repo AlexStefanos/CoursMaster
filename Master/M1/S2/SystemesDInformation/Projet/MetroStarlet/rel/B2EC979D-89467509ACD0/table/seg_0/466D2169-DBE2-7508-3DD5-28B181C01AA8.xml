@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="466D2169-DBE2-7508-3DD5-28B181C01AA8" name="acts_in">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:29:33 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="acts_in_id" id="4F2725F4-3BA9-78CB-2B56-5182DF994B78">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:30:56 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movie_id" id="F4BD4B1E-70CB-D427-48E1-130E32BFCABC">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:31:22 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ADD729A-EF18-DE61-1E7B-BD608D48CFC7" referredColumn="ADF64E3C-247B-23D7-F93B-BF3E2AA3A667"/>
+</associations>
+</Column>
+<Column name="actor_id" id="AE0746CF-A0D2-A89B-01D6-B5003BF147C5">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:31:47 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23B6E0D3-6E5B-E405-EAAB-3ACD9CA17221" referredColumn="FA517DDE-9F61-9536-9770-84D11EAEF988"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52A8D231-D3DA-5B64-9CB8-CAE5CF913FDA" name="acts_in_PK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:32:15 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F2725F4-3BA9-78CB-2B56-5182DF994B78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACA753AC-860A-3AF9-F204-81BCD84B6700" name="acts_in_movie_FK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:35:59 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4BD4B1E-70CB-D427-48E1-130E32BFCABC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C211CB9B-A279-1868-01DD-F970BB1EB883" name="acts_in_actor_FK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:36:57 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE0746CF-A0D2-A89B-01D6-B5003BF147C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

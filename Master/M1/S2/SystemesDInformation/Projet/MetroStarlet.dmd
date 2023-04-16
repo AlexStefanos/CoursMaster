@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MetroStarlet" id="9CAB264D-7E2D-CFDD-7F9D-50418999F730" version="3.5">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:12:38 UTC</createdTime>
+<ownerDesignName>MovieMegaMart</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9CAB264D-7E2D-CFDD-7F9D-50418999F730</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9CAB264D-7E2D-CFDD-7F9D-50418999F730">
+<designStoragePath>C:\Users\proua\Documents\0-UBSMasterAIDN\2022-2023\M1\S2\INF2204 - SystemesInfoDecisionnelsEntrepôtsDonnées\Projet\MovieMegaMart</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

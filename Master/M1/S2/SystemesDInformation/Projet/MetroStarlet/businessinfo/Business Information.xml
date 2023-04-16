@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="85E106EA-39CA-56BF-723A-DDF26AA62688">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:12:40 UTC</createdTime>
+<ownerDesignName>MovieMegaMart</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

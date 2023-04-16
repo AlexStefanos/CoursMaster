@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3610C9E8-6991-A489-28C2-8FD2180F9289" name="rental">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>30254FE8-B4E4-B5F3-2BC0-C00667DD3790</importedID>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rental_id" id="73B8BDE0-4CFB-278E-97AC-B998F340654E">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>4583358F-639C-9BF5-A7AF-C3AC6797CB8E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_id" id="616B412C-74AB-7B71-B2D4-DD1DD4928381">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>95ACF8E2-1DA4-BD3E-98A7-40C95D33D580</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7FCECE9-85D9-A2FF-CD80-A6D3F3B41D75" referredColumn="8AFE6FDF-79DE-6016-19F9-381F979F6B0D"/>
+</associations>
+</Column>
+<Column name="customer_id" id="22CFA4CC-DF67-6D84-5DEC-4ADACE944EF0">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>8F7BA9F1-6458-9661-C2FD-A53990D9EFD9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0844B397-0CD1-90A3-7D0A-756D3996E06C" referredColumn="ABDAB920-558A-FEF2-4822-CE7FCB19853C"/>
+</associations>
+</Column>
+<Column name="rental_date" id="34E5B81F-6DC4-9F08-EF97-B3181A627CE9">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>012A674B-D9A0-27C3-B230-7B5E9E9BFF24</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="return_date" id="A9A8686F-8F7D-4CFA-688A-F9BC2186F867">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>BFE1FAB9-0F8B-B765-C6B5-6AAEB6F1B39A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rent_price_per_day" id="09AFCB6D-A986-7F31-82BF-4C1CA15949DD">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>C8FE1BE7-D8CE-373B-4EF6-0E4F795B03DD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_paid" id="C143EFD1-0AEC-C8CE-0DCC-3F454A897EBB">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>0F251551-505F-B5D5-D2F2-C0B1C8924C14</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B153F2C6-01F5-8E02-7242-574F4C4F1443" name="rental_PK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>348C92E6-F031-69F8-A17F-65A8E3615BB1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73B8BDE0-4CFB-278E-97AC-B998F340654E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20C28BF1-78E5-E4F6-7D35-65019612A2C4" name="rental_product_FK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="616B412C-74AB-7B71-B2D4-DD1DD4928381"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6F3C924-3F9E-DE9A-0E85-3932EA89EA26" name="rental_customer_FK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22CFA4CC-DF67-6D84-5DEC-4ADACE944EF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

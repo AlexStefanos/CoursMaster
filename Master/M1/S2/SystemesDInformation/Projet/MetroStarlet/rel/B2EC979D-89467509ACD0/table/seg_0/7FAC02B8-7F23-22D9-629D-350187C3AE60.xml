@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7FAC02B8-7F23-22D9-629D-350187C3AE60" name="actor">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:32:23 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="actor_id" id="FA517DDE-9F61-9536-9770-84D11EAEF988">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:32:58 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="AB6A9286-2081-D79D-6C1C-A94CB6F065F6">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:33:15 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sex" id="345D2036-617B-DD8C-2DE4-051F076A5345">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:33:44 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B23CCE8-AE01-6FCF-B60E-DA737384CA63" name="actor_PK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:36:32 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA517DDE-9F61-9536-9770-84D11EAEF988"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

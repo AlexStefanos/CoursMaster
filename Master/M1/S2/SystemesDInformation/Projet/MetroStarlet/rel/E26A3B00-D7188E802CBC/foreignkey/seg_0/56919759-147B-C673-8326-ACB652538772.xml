@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="56919759-147B-C673-8326-ACB652538772" containerWithKeyObject="E655FB94-C0FB-B7F7-6EC6-97729BBA3CC5" localFKIndex="35400F89-3D23-9E57-973F-8DFF4E9F0E00" name="sale_customer_FK">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 16:20:09 UTC</createdTime>
+<ownerDesignName>MetroStarlet</ownerDesignName>
+<importedID>CABAD032-8C9C-81F3-D7E7-B9BCF287C39A</importedID>
+<referredTableLongName>customer</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7E7A01DC-2FE7-7597-A806-1FF60F8A297E</referredTableID>
+<keyObject>5D3E095A-E4C3-F710-8CF0-B57F14EDF9DF</keyObject>
+<referredKeyID>5D3E095A-E4C3-F710-8CF0-B57F14EDF9DF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>customer_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="B2EC979D-3826-B569-3ED6-89467509ACD0" mainViewID="99C820C8-BCA8-7EF4-C2F6-9D5BB11DE170">
+<createdBy>proua</createdBy>
+<createdTime>2023-04-13 14:14:15 UTC</createdTime>
+<ownerDesignName>MovieMegaMart</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

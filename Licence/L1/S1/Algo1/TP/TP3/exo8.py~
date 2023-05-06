@@ -1,9 +1,0 @@
-for a in range (5) :
-    print("Veuillez entrer l'entier numéro",a)
-    if a==42 :
-        b="Gagné"
-    else :
-        b="Perdu"
-print(b)
-
-        

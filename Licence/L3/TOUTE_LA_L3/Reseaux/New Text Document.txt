@@ -1,8 +1,0 @@
-Sinon tu copie colle ca dans ton invite de commande 
-netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow
-
-Et ca pour l'ipv6 
-netsh advfirewall firewall add rule name="ICMP Allow incoming V6 echo request" protocol=icmpv6:8,any dir=in action=allow
-
-Essaie de faire ca sur les deux PC puis essaie a nouveau de faire les pings
-Essaie de faire ca sur les deux PC puis essaie a nouveau de faire les pings

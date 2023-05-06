@@ -1,5 +1,0 @@
-chaine="Bonjour chez Vous"
-chaine.lower()
-chaine.swapcase()
-chaine.capitalize()
-print(chaine)

@@ -48,7 +48,7 @@ public class MRWordCountAWS {
 
   static final String default_input= "s3://ubs-datasets/gutenberg/Zane_Grey___Wildfire.txt";
   //static final String default_input= "gutenberg/Zane_Grey___Wildfire.txt";
-  static final String default_stoplist= "s3://ubs-datasets/stop-words/stop-words-english4.txt" ;
+  static final String default_stoplist= "s3://ubs-datasets/stop-words/stop-words-english4.txt";
   //static final String default_stoplist= "stop-words/stop-words-english4.txt" ;
   //static final String output_bucket= "ubs-m1info-output";
   static final String output_folder= "output-mr-wc";

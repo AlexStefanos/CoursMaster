@@ -1,5 +1,5 @@
 // s3a://ubs-datasets/gutenberg/
-package tpsparkwc;
+package sparkwc;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -45,7 +45,7 @@ public class SparkWordCountAWS {
         System.out.println("# of accepted words = " + accepted_cnt);
         System.out.println("# of rejected words = " + refused_cnt);
         JavaPairRDD<String, Integer> ones = accepted.mapToPair(s -> new Tuple2<>(s, 1));
-        JavaPairRDD<String, Integer> counts = ones.reduceByKey((i1, i2) -> i1 + i2);
+        JavaPairRDD<String, Integer> counts = ones.reduceByKey((i1, i2) -> (i1 + i2));
         
         counts.persist(StorageLevel.MEMORY_ONLY());
         long distinct_cnt = counts.count();

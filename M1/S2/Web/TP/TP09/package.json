@@ -1,0 +1,17 @@
+{
+  "name": "tp10",
+  "version": "1.0.0",
+  "description": "TP10 mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "AlexStefanos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": ">=3.5.0",
+    "mongodb": "^3.5.5"
+  }
+}

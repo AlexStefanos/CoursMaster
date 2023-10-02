@@ -1,3 +1,5 @@
+package ubs.info.as.tp02;
+
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 import java.io.IOException;
@@ -5,6 +7,12 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 
 public class Metro {
+    private int numLigne;
+
+    public Metro(int numLigne) {
+        this.numLigne = numLigne;
+    }
+
     //voir aussi Pattern.split / Regexp
     public static ArrayList<String> lireMetro(String nomDeFichier_) throws IOException {
         FileReader fileReader = new FileReader(nomDeFichier_);
@@ -35,8 +43,4 @@ public class Metro {
             System.err.println(e.getMessage());
         }
     }
-}
-
-class Ligne {
-    
 }

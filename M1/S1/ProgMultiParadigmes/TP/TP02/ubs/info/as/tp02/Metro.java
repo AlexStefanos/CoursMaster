@@ -7,12 +7,6 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 
 public class Metro {
-    private int numLigne;
-
-    public Metro(int numLigne) {
-        this.numLigne = numLigne;
-    }
-
     //voir aussi Pattern.split / Regexp
     public static ArrayList<String> lireMetro(String nomDeFichier_) throws IOException {
         FileReader fileReader = new FileReader(nomDeFichier_);
@@ -26,11 +20,11 @@ public class Metro {
         while(stringTokenizer.hasMoreTokens()) {
             String str = new String();
             str = stringTokenizer.nextToken();
-            if(str.equals("  ")) {
-                coupleMetro.add(stringTokenizer.nextToken());
+            if(!str.equals("  ")) {
+                coupleMetro.add(str);
             }
             else {
-                coupleMetro.add(str);
+                
             }
         }
         return(coupleMetro);

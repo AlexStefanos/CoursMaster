@@ -1,30 +1,33 @@
 package ubs.info.as.tp02;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Station {
     private String nom;
+    private Iterator<Ligne> iterator;
     private HashSet<Ligne> lignes;
 
-    public Station(String nom) {
-        this.nom = nom;
-        lignes = new HashSet<Ligne>();
+    public Station(String nom_) {
+        this.nom = nom_;
+        this.lignes = new HashSet<Ligne>();
+        iterator = lignes.iterator();
     }
 
     public String getNom() {
         return(this.nom);
     }
 
-    public void setNom(String nouveauNom) {
-        this.nom = nouveauNom;
+    public void setNom(String nouvNom_) {
+        this.nom = nouvNom_;
     }
 
     public HashSet<Ligne> getLignes() {
         return(this.lignes);
     }
 
-    public void setLignes(HashSet<Ligne> nouvellesLignes) {
-        this.lignes = nouvellesLignes;
+    public void setLignes(HashSet<Ligne> nouvLignes_) {
+        this.lignes = nouvLignes_;
     }
 
     public void ajouteLigne(Ligne ligne_) {
@@ -43,5 +46,8 @@ public class Station {
         System.out.println(st.getLignes());
         st.ajouteLigne(ligne3);
         System.out.println(st.getLignes());
+        for(Ligne l : st) {
+            System.out.println(l.getNumLigne());
+        }
     }
 }

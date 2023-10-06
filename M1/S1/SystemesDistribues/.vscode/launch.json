@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "ubs.info.as.Client",
+            "projectName": "SystemesDistribues_c6d2dfa1"
+        },
+        {
+            "type": "java",
+            "name": "PopServer",
+            "request": "launch",
+            "mainClass": "ubs.info.as.PopServer",
+            "projectName": "SystemesDistribues_c6d2dfa1",
+            "args": "2222 hey.txt"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "ubs.info.as.Server",
+            "projectName": "SystemesDistribues_c6d2dfa1"
+        }
+    ]
+}

@@ -6,12 +6,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.InetAddress;
+import fr.ubs.io.MailFile;
 
 public class Client {
     private static void usage() {
-        System.out.println("Le jar Client permet de se connecter et d'envoyer un fichier au Server");
-        System.out.println("Veuillez indiquer en argument l'adresse de l'hôte, le port et le chemin du fichier que vous souhaitez envoyer au serveur");
-        System.out.println("Exemple : java -jar Client.jar localhost 2222 ./input.txt");
+        System.out.println("Veuillez indiquer en argument le chemin du fichier que vous souhaitez envoyer au serveur.");
         System.out.println("Veuillez indiquer dans le header du fichier si c'est un mail ou non.");
     }
 
@@ -26,7 +25,7 @@ public class Client {
             usage();
         else {
             try {
-                InetAddress address = InetAddress.getByName(host);
+                InetAddress address = InetAddress.getLocalHost();
                 socket = new Socket(address.getHostName(), port);
                 File file = new File(filePath);
                 System.out.println("Envoi du contenu du fichier : " + filePath);

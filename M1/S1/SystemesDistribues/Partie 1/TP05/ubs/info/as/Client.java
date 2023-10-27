@@ -1,4 +1,4 @@
-package ubs.info;
+package ubs.info.as;
 
 import java.net.Socket;
 import java.io.DataOutputStream;
@@ -7,7 +7,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.InetAddress;
 
+/**
+ * TP01 Systemes Distribues : TCP File Exchange
+ * @author Alexandre Stefanos
+ */
 public class Client {
+    /**
+	 * Methode de gestion de message d'erreur
+	 */
     private static void usage() {
         System.out.println("Le jar Client permet de se connecter et d'envoyer un fichier au Server");
         System.out.println("Veuillez indiquer en argument l'adresse de l'hôte, le port et le chemin du fichier que vous souhaitez envoyer au serveur");
@@ -15,6 +22,10 @@ public class Client {
         System.out.println("Veuillez indiquer dans le header du fichier si c'est un mail ou non.");
     }
 
+    /**
+     * Main de la classe Client
+     * @args args : arguments du Main
+     */
     public static void main(String[] args) {
         String host = args[0];
         int port = Integer.parseInt(args[1]);

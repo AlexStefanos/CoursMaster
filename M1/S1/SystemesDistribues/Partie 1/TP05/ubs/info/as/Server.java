@@ -1,4 +1,4 @@
-package ubs.info;
+package ubs.info.as;
 
 import java.net.Socket;
 import java.time.LocalTime;
@@ -11,8 +11,14 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import fr.ubs.io.MailFile;
 
+/**
+ * TP01 Systemes Distribues : TCP File Exchange
+ * @author Alexandre Stefanos
+ */
 public class Server {
-
+    /**
+	 * Methode de gestion de message d'erreur
+	 */
     private static void usage() {
         System.out.println("Le jar Server permet d'ouvrir un serveur en localhost, de recevoir le fichier envoyer par le jar Client et de créer un nouveau fichier en fonction de ce que contient le fichier envoye et de la date d'envoi.");
         System.out.println("Le port doit être indiqué en argument.");

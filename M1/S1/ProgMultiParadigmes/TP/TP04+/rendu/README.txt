@@ -1,3 +1,0 @@
-TP04+ : Le problème des Reines
-
-Je n'ai pas réussir à le faire complètement fonctionner mon algorithme mais le but était de faire le premier positionnement du problèmes des Reines, avec la première Reine placée dans la première case. Puis, on résoud le problème avec la Reine positionné dans la deuxième case, etc. L'idée est de faire un tableau récupérant les positionnements de la première Reine afin de faire chaque possibilité de placement tout en évitant de faire des répétitions.

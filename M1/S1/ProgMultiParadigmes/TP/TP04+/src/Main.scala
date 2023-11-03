@@ -1,5 +1,8 @@
 class Chessboard(side_ : Int) {
   private val board : Array[Array[String]] = Array.fill[String](side_, side_) {"."}
+  private val firstQueenPositions: Array[(Int, Int)] = Array.fill(side_ * side_) {
+    (0, 0)
+  }
   private def placedIn(piece_ : String, x_ : Int, y_ : Int): Unit = {
     if (x_ < 0) {
       if (y_ < 0) {
@@ -96,33 +99,27 @@ class Chessboard(side_ : Int) {
     }
     finalResult
   }
-  private def problemeNReines(placeInArray : Int): Int = {
+  private def problemeNReines(placeInArray : (Int, Int), indexInArray : Int): Unit = {
     var firstTime: Int = 0
-    var result : Int = 0
-    println("placeInArray : " + placeInArray)
-    val iStartAt : Int = placeInArray / side_
-    val jStartAt : Int = placeInArray % side_
-    println("iStartAt : " + iStartAt)
-    println("jStartAt : " + jStartAt)
+    val iStartAt : Int = placeInArray._1
+    val jStartAt : Int = placeInArray._2
     for(i <- iStartAt until side_) {
       for(j <- jStartAt until side_) {
         if((!board(i)(j).equals("Q")) && placeableQueen(i, j).equals(true)) {
           placedIn("Q", i, j)
           if(firstTime == 0) {
-            result = i * side_ + j
+            firstQueenPositions.update(indexInArray, (i, j))
             firstTime += 1
           }
         }
       }
     }
-    result
+    firstTime = 0
   }
   def problemeNReinesHandler(): Unit = {
     var display : String = ""
-    var lastResult : Int = 0
     for (i <- 0 until (side_ * side_)) {
-      println("i : " + i)
-      lastResult = problemeNReines(lastResult)
+      problemeNReines(firstQueenPositions(i), i)
       display = "        y = 0\n"
       display += "          |\n"
       display += "          v\n"
@@ -144,8 +141,6 @@ class Chessboard(side_ : Int) {
 
 object Main {
   def main(args: Array[String]): Unit = {
-    println("Il est préférable pour la compréhension de l'affichage " +
-      "d'indiquer des valeurs de position de pions tel que : valeur = [0, side_[.")
     val chessboard = new Chessboard(8)
     chessboard.problemeNReinesHandler()
   }

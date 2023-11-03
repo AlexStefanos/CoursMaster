@@ -1,0 +1,9 @@
+TP04ter réponses aux questions :
+
+4) Non, l n'est pas modifiée car .map fait des modifications sur une nouvelle instance de l.
+
+21) Sur une string, .reverse renvoie cette string avec tous les charactères suivant l'ordre inverse de celui de départ. Par exemple, le caractère à la position 0 prend la place du caractère à la position n (pareil pour 1 et n-1, etc).
+
+22) Sur une collection ordonnée, .reverse suit le même principe que pour une string sauf que la modification se fait en fonction de l'indice des valeurs de la collection et non en fonction de l'indice des caractères de la chaîne de caractères. Cependant, si c'est une collection non ordonnée, .reverse n'est pas définie pour l'objet.
+
+25) Oui, cette phrase est un palindrome.

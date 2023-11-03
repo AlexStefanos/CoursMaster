@@ -1,0 +1,3 @@
+TP04+ : Le problème des Reines
+
+Je n'ai pas réussir à le faire complètement fonctionner à temps mais le but de mon algorithme est de réaliser le premier positionnement possible du problèmes des Reines et de récupérer les "coordonnées" du placement de la première Reine dans un tableau de Tuple2. Puis, on résoud le problème avec la première Reine positionné dans une deuxième case, puis une troisième fois, etc. L'idée de l'algorithme est de récupérer les coordonnées de la position de la première Reine afin de faire chaque possibilité de placement. De plus, le parcours du tableau permet d'éviter les répétitions de résolutions.

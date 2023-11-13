@@ -1,17 +1,17 @@
-import scala.reflect.ClassTag
+package tp05
 
 object Ansi{
   def black : String = "\u001B[40m"
-  def red: String = "\u001B[31m"
-  def green: String = "\u001B[32m"
-  def yellow: String = "\u001B[33m"
-  def blue: String = "\u001B[44m"
-  def cyan: String = "\u001B[36m"
-  def white: String = "\u001B[37m"
+  def red : String = "\u001B[31m"
+  def green : String = "\u001B[32m"
+  def yellow : String = "\u001B[33m"
+  def blue : String = "\u001B[44m"
+  def cyan : String = "\u001B[36m"
+  def white : String = "\u001B[37m"
   def reset : String = "\u001B[0m"
 }
 
-class Echiquier[P <: Piece:ClassTag](cote_ : Int = 8) {
+class Echiquier[P <: Piece](cote_ : Int = 8) {
   private var plateau : Array[Array[Option[P]]] = Array.ofDim[Option[P]](cote_, cote_)
   def placerEn(piece_ : Option[P], x_ : Int, y_ : Int): Unit = this.plateau(x_).update(y_, piece_)
   def update(coupleXY_ : (Int, Int), piece_ : P): Unit = this.update(coupleXY_, Some(piece_))
@@ -31,7 +31,7 @@ class Echiquier[P <: Piece:ClassTag](cote_ : Int = 8) {
     display += (" " * 6 * cote_) + " "
     display += Ansi.reset + "\n"
     for(i <- 0 until cote_) {
-      display += s"$i " + Ansi.blue + " ";
+      display += s"$i " + Ansi.blue + " "
       for(j <- 0 until cote_) {
         if(this.plateau(i)(j).isEmpty) {
           display += Ansi.black + Ansi.white + (" " * 5)
@@ -91,18 +91,4 @@ object Pion {
 
 object Rien {
   def apply() = None
-}
-
-object Main {
-  def main(args: Array[String]): Unit = {
-    val echiquier = new Echiquier[PieceCol]()
-    echiquier((0, 6)) = Cavalier()
-    echiquier((3, 5)) = Dame()
-    echiquier((6, 3)) = Fou()
-    echiquier((5, 2)) = Pion()
-    echiquier((5, 2)) = Rien()
-    print(echiquier)
-    println(echiquier(5, 2))
-    println(echiquier(3, 5))
-  }
 }

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DptDecouvert:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DptDecouvert_jar</output-path>
+    <root id="archive" name="DptDecouvert.jar">
+      <element id="module-output" name="TP02" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/tp02/openjms-0.7.7-beta-1/lib/jms-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/tp02/openjms-0.7.7-beta-1/lib/jndi-1.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/tp02/openjms-0.7.7-beta-1/lib/openjms-0.7.7-beta-1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

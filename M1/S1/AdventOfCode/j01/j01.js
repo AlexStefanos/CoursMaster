@@ -17,7 +17,7 @@ function weatherMachine() {
 
 function trebuchet() {
     const fs = require("fs")
-    fs.readFile("j01.txt", (err, data) => {
+    fs.readFile("input.txt", (err, data) => {
         if(err) throw err;
         var str = data.toString()
         var count = 0

@@ -33,7 +33,12 @@ class Perceptron(couches_ : Array[Int]) {
       }
     }
   }
-  def apply(in_ : Array[Double]) :
+  def apply(in_ : Array[Double]) : Array[Double] = {
+    var result : Array[Double] = in_.clone()
+    for(c <- )
+
+    return result
+  }
 }
 
 object Main {

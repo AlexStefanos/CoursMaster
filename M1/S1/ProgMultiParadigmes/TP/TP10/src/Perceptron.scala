@@ -28,22 +28,32 @@ class Perceptron(couches_ : Array[Int]) {
     for(c <- poids.indices) {
       for(n <- poids(c).indices) {
         for(p <- poids(c)(n).indices) {
-          poids(c)(n)(p) = 1 - 2 * Math.random()
+          poids(c)(n)(p) = 1.0 - 2.0 * Math.random()
         }
       }
     }
   }
   def apply(in_ : Array[Double]) : Array[Double] = {
-    var result : Array[Double] = in_.clone()
-    for(c <- )
-
-    return result
+    var lastC = 0
+    inputI(0) = in_
+    poidsHasard()
+    for(c <- poids.indices) {
+      for(i <- inputI(c).indices) {
+        outputI(c)(i) = Perceptron.f(inputI(c)(i))
+      }
+      for(i <- inputI(c + 1).indices) {
+        inputI(c + 1)(i) = Perceptron.prod(outputI(c), poids(c)(i))
+        outputI(c + 1)(i) = Perceptron.f(inputI(c + 1)(i))
+      }
+      lastC = c
+    }
+    outputI(lastC)
   }
 }
 
 object Main {
   def main(args: Array[String]): Unit = {
     val monPerceptron = Perceptron(2, 3, 4, 1)
-    val reponse = monPerceptron(Array(1.0, 2.0, 4.0))
+    val reponse = monPerceptron(Array(1.0, 2.0))
   }
 }

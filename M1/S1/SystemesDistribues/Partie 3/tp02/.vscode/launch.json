@@ -6,10 +6,45 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "tp02_fe550d38"
+        },
+        {
+            "type": "java",
+            "name": "AppServer",
+            "request": "launch",
+            "mainClass": "AppServer",
+            "projectName": "tp02_fe550d38",
+            "args": [
+                "localhost",
+                "22222",
+                "Message"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "ScribbleFrame",
+            "request": "launch",
+            "mainClass": "ScribbleFrame",
+            "projectName": "tp02_fe550d38",
+            "args": [
+                "localhost",
+                "22222",
+                "Message"
+            ]
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "args": ["localhost", "22222", "Message"]
+            "args": [
+                "localhost",
+                "22222",
+                "Message"
+            ]
         },
         {
             "type": "java",
@@ -17,28 +52,47 @@
             "request": "launch",
             "mainClass": "Client",
             "projectName": "tp02_fe550d38",
-            "args": ["localhost", "22222", "Message"]
+            "args": [
+                "localhost",
+                "22222",
+                "Message"
+            ]
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "Scribble.App",
-            "projectName": "tp02_fe550d38"
+            "projectName": "tp02_fe550d38",
+            "args": [
+                "localhost",
+                "22222",
+                "Message"
+            ]
         },
         {
             "type": "java",
             "name": "ScribbleFrame",
             "request": "launch",
             "mainClass": "Scribble.ScribbleFrame",
-            "projectName": "tp02_fe550d38"
+            "projectName": "tp02_fe550d38",
+            "args": [
+                "localhost",
+                "22222",
+                "Message"
+            ]
         },
         {
             "type": "java",
             "name": "Server",
             "request": "launch",
             "mainClass": "Server",
-            "projectName": "tp02_fe550d38"
+            "projectName": "tp02_fe550d38",
+            "args": [
+                "localhost",
+                "22222",
+                "Message"
+            ]
         }
     ]
 }

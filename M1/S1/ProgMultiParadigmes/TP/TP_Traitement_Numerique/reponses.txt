@@ -1,0 +1,12 @@
+PARTIE 2 :
+
+Question 12 : 
+On a Ntotal = (W1 + b1) + (W2 + B2)
+Avec 
+W1 :  (784, 10)
+b1 :  (10,)
+W2 :  (10, 3)
+b2 :  (3,)
+Ntotal = (784*10+10) + (10*3+3) = 7883
+Si nos images faisaient 256x256, on aurait pas N=28*28 comme actuellement mais N=256*256 = 65 536:
+Ntotal serait donc Ntotal = (256*10+10) + (10*3+3) = 655 403

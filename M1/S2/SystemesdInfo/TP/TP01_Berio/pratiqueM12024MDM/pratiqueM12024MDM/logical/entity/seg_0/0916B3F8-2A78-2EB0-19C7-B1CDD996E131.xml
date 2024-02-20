@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0916B3F8-2A78-2EB0-19C7-B1CDD996E131" name="temps">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:00:00 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="jour" id="46EBE626-91C2-C243-17F8-9A02A4E359EC">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:00:08 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mois" id="5FAB4666-8665-9E0B-0DB7-24EDF647847B">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:00:27 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="19FDC9EC-1D47-DCC9-63D6-DF33CE99780B">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:00:47 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idtemps" id="D87FFEF0-3290-2A90-9AD1-479625CF3F37">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:01:41 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="semaine" id="6F19D39B-E849-89E8-7C2B-800F9938BCD7">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:14:11 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="034963E4-EE29-5135-3EA7-12EB1A0D5E9F" name="temps PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:01:52 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D87FFEF0-3290-2A90-9AD1-479625CF3F37</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

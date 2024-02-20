@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="pratiqueM12024MDM" id="C89767EE-79C6-2610-0139-0A97D94DA81B" version="3.5">
+<createdBy>berio</createdBy>
+<createdTime>2018-10-08 08:41:18 UTC</createdTime>
+<ownerDesignName>TD12018</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C89767EE-79C6-2610-0139-0A97D94DA81B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="6903CF7A-837B-3726-B835-590C68FDDA9C">
+<designStoragePath>D:\TD1DDL</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

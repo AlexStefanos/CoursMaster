@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BEA194EF-9E97-E7B7-1FAA-1F0E2DB03678" name="EDCproduit">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>A7F19E4A-2DA9-86A0-C397-A2DD4914D403</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pid" id="91937B40-39B1-3183-DF26-E0796F12C086">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>A0B9BCF2-464F-28C5-ACD7-25EA9381EBB1</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EDCcategorie cid" id="8A1AFB78-D0F6-6E29-4B64-6227BCE30B9B">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>3ACF0492-EDBD-6B22-116C-D25E4CFE2DE6</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<referedAttribute>EA86DC08-6080-8EF1-6B72-D280CAA077CD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prix conseille" id="35465D49-1C7A-EE90-4B3E-2DC70113F9CF">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>30624063-6AEE-4A08-A463-849C22D7596A</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datedc" id="A5D28DD4-BBA0-76DF-D22D-7DDFC759CF30">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>F8FE9D24-3E68-1359-76D6-D6EC07EE20D5</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datefc" id="41FB2B2C-C13B-F464-BEB9-F9BFAB9C184B">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>2BA4F3A3-7DFC-0F4D-8814-15594126E231</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="426C5CB8-874D-7306-9580-4724F0BBC2CE" name="EDCproduit PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>9EAEB640-B715-6D81-6228-766C01EC39B5</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>91937B40-39B1-3183-DF26-E0796F12C086</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

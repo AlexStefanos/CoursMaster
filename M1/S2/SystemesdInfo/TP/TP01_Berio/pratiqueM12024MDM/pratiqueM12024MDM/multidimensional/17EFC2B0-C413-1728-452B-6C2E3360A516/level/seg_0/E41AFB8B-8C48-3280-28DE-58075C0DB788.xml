@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="jour" directorySegmentName="seg_0" id="E41AFB8B-8C48-3280-28DE-58075C0DB788">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:06:39 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>JOUR</nameInOracleAW>
+<levelEntity>0916B3F8-2A78-2EB0-19C7-B1CDD996E131</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>D87FFEF0-3290-2A90-9AD1-479625CF3F37</attribute>
+</levelKey>
+<descriptiveAttributes>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="jour" id="C45A7276-ECD1-8453-073C-408C3739F4CF">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:07:42 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<attribute>46EBE626-91C2-C243-17F8-9A02A4E359EC</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="mois" id="3D291F8C-F460-B93B-5BDC-7A1E0F3BD0E7">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:08:03 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<attribute>5FAB4666-8665-9E0B-0DB7-24EDF647847B</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="annee" id="450B0AC3-FF1A-8C34-E5C1-313AB2B031D6">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:08:12 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<attribute>19FDC9EC-1D47-DCC9-63D6-DF33CE99780B</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+</descriptiveAttributes>
+</Level>

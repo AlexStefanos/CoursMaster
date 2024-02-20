@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Dimension class="oracle.dbtools.crest.model.design.multidimensional.Dimension" name="client" directorySegmentName="seg_0" id="40225E76-FCD9-901F-65DE-B09E7957276F">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:52:03 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>CLIENT</nameInOracleAW>
+</Dimension>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="annee" directorySegmentName="seg_0" id="631011AC-1DCA-00BA-9BE8-4339DCD08D1A">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:17:40 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<nameInOracleAW>ANNEE</nameInOracleAW>
+<levelEntity>EA56AB52-0175-F593-241D-DFA24C0E19BC</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>25626D6F-3253-1ECB-FACA-8DBEF64E5835</attribute>
+</levelKey>
+</Level>

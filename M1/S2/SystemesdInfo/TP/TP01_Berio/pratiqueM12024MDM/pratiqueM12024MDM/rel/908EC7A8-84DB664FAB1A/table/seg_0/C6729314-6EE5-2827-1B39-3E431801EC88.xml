@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6729314-6EE5-2827-1B39-3E431801EC88" name="EDCville">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>985930D6-64AB-DBDD-827C-ED42560670AE</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="84FDD60F-FB98-0B3F-E1A6-10C4B05EBDE8">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>49230697-107A-CEE1-3818-A2C468066E16</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="8F5F2ACF-1097-F6D1-04E4-E59C7087B3C6">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>18A7D6EE-4B82-1020-A80B-2DAECF2ADBC9</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CAB432AB-8FAB-4339-9308-B4EDBD1B727C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="département" id="47C12C22-9AAC-F1F0-E9AD-961901D7EA70">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>F1B5B2BB-7927-60B4-9D12-69350AAD521A</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="région" id="E65D3710-2293-1168-BD2A-5FA20969B231">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>66B7C509-5F8F-25CB-ED43-55CA392FA24C</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="état" id="EDE2E15E-604D-1302-5B7C-D7C8ECE39E79">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>DE9B00A7-E2F9-2A58-BFC0-FE4F129642ED</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="601030F4-E0DC-D1A2-FFA8-10A470985838" name="EDCville_PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>5AC93B57-74F2-4074-CA14-679AB85F402F</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84FDD60F-FB98-0B3F-E1A6-10C4B05EBDE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

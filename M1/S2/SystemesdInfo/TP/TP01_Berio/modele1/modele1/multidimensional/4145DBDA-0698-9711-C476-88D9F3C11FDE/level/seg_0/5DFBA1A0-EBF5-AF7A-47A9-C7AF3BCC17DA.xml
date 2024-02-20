@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="client" directorySegmentName="seg_0" id="5DFBA1A0-EBF5-AF7A-47A9-C7AF3BCC17DA">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:06:10 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<nameInOracleAW>CLIENT</nameInOracleAW>
+<levelEntity>180A5F77-6B94-E725-7BD7-6557682E4116</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>FAE1B3F9-78BC-EE04-8065-B974F8B2006C</attribute>
+</levelKey>
+</Level>

@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Cube class="oracle.dbtools.crest.model.design.multidimensional.Cube" name="Cube_2" directorySegmentName="seg_0" id="7531354F-9519-F9D2-7146-78EEBEE9DBA6">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:15:01 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>CUBE_2</nameInOracleAW>
+<compressedcomposites>false</compressedcomposites>
+<factEntity>F9EF6767-AC48-C294-A3AA-F0FE1FDC8674</factEntity>
+<partitioned>true</partitioned>
+<useGlobalComposites>false</useGlobalComposites>
+<virtual>true</virtual>
+<dimensions>
+<dimension>CA45EA79-2E35-83AD-3198-B41ACB66B70F</dimension>
+<dimension>40225E76-FCD9-901F-65DE-B09E7957276F</dimension>
+<dimension>58DAA75A-09A0-D54B-5BA1-25CC260A73A5</dimension>
+<dimension>32485107-7C09-10B5-2E28-DBF3C2F578BA</dimension>
+</dimensions>
+<measures itemClass="oracle.dbtools.crest.model.design.multidimensional.Measure">
+<measure name="qtvendue" id="17935BB9-C346-138F-0200-33757D5F5404">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:15:43 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>QTVENDUE</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Fully-Additive</additivity>
+<aggregationFunctionID>1</aggregationFunctionID>
+<cube>7531354F-9519-F9D2-7146-78EEBEE9DBA6</cube>
+<isformula>false</isformula>
+<iscustomFormula>false</iscustomFormula>
+<measureFact>D63367D2-AD3C-821F-167D-900E5748D294</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" name="SUM" id="1">
+<measureAlias>Measure_1</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+<measure name="maxqrvendue" id="0DA5CDB8-3482-C4D4-1BD9-A42118C54599">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:18:56 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>MAXQRVENDUE</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Non-Additive</additivity>
+<aggregationFunctionID>1</aggregationFunctionID>
+<cube>7531354F-9519-F9D2-7146-78EEBEE9DBA6</cube>
+<isformula>false</isformula>
+<iscustomFormula>false</iscustomFormula>
+<measureFact>D63367D2-AD3C-821F-167D-900E5748D294</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" name="MAX" id="1">
+<measureAlias>Measure_2</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+<measure name="nbventes" id="C94C05E0-79E8-99C9-9A8F-5D90E85B6602">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:21:42 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>NBVENTES</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Fully-Additive</additivity>
+<aggregationFunctionID>1</aggregationFunctionID>
+<cube>7531354F-9519-F9D2-7146-78EEBEE9DBA6</cube>
+<isformula>false</isformula>
+<iscustomFormula>false</iscustomFormula>
+<measureFact>DEDCA132-83FD-5DE1-86E5-E32C58221248</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" name="COUNT" id="1">
+<measureAlias>Measure_3</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+<measure name="nbcommandes" id="96EB457D-4970-95EA-4F97-5183E10FA078">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:24:26 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>NBCOMMANDES</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Fully-Additive</additivity>
+<aggregationFunctionID>1</aggregationFunctionID>
+<cube>7531354F-9519-F9D2-7146-78EEBEE9DBA6</cube>
+<isformula>false</isformula>
+<iscustomFormula>false</iscustomFormula>
+<measureFact>20934367-3C1E-96DD-1C9A-D662943E52E5</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" name="COUNT" id="1">
+<measureAlias>Measure_4</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+<measure name="moyenneqtvendue" id="80D7A2D2-EE0F-20A6-5FC5-E8407B63CC0F">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:25:50 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>MOYENNEQTVENDUE</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Non-Additive</additivity>
+<aggregationFunctionID>1</aggregationFunctionID>
+<cube>7531354F-9519-F9D2-7146-78EEBEE9DBA6</cube>
+<isformula>true</isformula>
+<iscustomFormula>false</iscustomFormula>
+<formula>qtvendue/nbventes</formula>
+<measureFact>D63367D2-AD3C-821F-167D-900E5748D294</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" id="1">
+<measureAlias>Measure_5</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+<measure name="CA" id="FC9D825C-68DE-E2FE-790B-2FEC3AE466D7">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:38:42 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>CA</nameInOracleAW>
+<actasFactDimension>false</actasFactDimension>
+<additivity>Fully-Additive</additivity>
+<aggregationFunctionID>1</aggregationFunctionID>
+<cube>7531354F-9519-F9D2-7146-78EEBEE9DBA6</cube>
+<isformula>false</isformula>
+<iscustomFormula>false</iscustomFormula>
+<measureFact>F1440EA3-BDB2-E499-1441-325D4EE9FD16</measureFact>
+<olAPoffset>0</olAPoffset>
+<olAPoperator>Lag</olAPoperator>
+<olAPPeriodToDateoperation>AVERAGE</olAPPeriodToDateoperation>
+<olAPStart>0</olAPStart>
+<olAPStep>1</olAPStep>
+<olAPStop>1</olAPStop>
+<oracleAWFormulaType>NO</oracleAWFormulaType>
+<rankDirectionCode>HL</rankDirectionCode>
+<rankDirectionName>Highest To Lowest</rankDirectionName>
+<aggregationFunctions>
+<function class="oracle.dbtools.crest.model.design.multidimensional.Measure$AggregateFunction" name="SUM" id="1">
+<measureAlias>Measure_6</measureAlias>
+</function>
+</aggregationFunctions>
+</measure>
+</measures>
+<factContainers>
+<container>F9EF6767-AC48-C294-A3AA-F0FE1FDC8674</container>
+<container>9143943A-29C4-09E1-8972-08AB139BDC32</container>
+<container>53B0840F-400E-5453-6488-693683D70D41</container>
+</factContainers>
+</Cube>

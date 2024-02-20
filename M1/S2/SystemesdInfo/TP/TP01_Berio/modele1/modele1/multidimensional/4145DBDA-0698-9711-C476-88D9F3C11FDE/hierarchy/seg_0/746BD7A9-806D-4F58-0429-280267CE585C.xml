@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Hierarchy class="oracle.dbtools.crest.model.design.multidimensional.Hierarchy" name="Hierarchy_1" directorySegmentName="seg_0" id="746BD7A9-806D-4F58-0429-280267CE585C">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:04:58 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<nameInOracleAW>HIERARCHY_1</nameInOracleAW>
+<defaultHierarchy>true</defaultHierarchy>
+<linkToDimension>354C642B-D658-2AD1-4A54-DD540AFC0A40</linkToDimension>
+<usedLevels>
+<usedLevel>1DA323AD-7F2E-3421-4213-95B64A896016</usedLevel>
+</usedLevels>
+</Hierarchy>

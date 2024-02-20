@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E244D011-D5F0-5F7E-50DE-C95B13791324" name="EDCvendeur">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>549A151E-8C63-89C7-01A4-818E8867434E</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vid" id="2BADEC5A-A5C0-E3AE-1AB7-B8DCFC81E107">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>9D650ECB-F11A-D92D-5A01-53EF64335348</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="9B710624-FADB-EE34-DB54-091A398D9CB0">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>B0C99153-B419-F4F8-E92B-2D681AE0B4AB</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="année" id="3518C789-133B-BD15-153E-4435F8522166">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>D39B945B-3D44-6E85-C493-0BF450353238</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B3562C0-2030-A016-FC3B-D31A2BE2918C" name="EDCvendeur_PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>59501453-2F81-6161-C7E6-0A683F9538F9</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BADEC5A-A5C0-E3AE-1AB7-B8DCFC81E107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

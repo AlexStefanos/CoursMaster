@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA56AB52-0175-F593-241D-DFA24C0E19BC" name="temps">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:11:55 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mois" id="0D68FF80-57A1-3129-99CA-EE035F6E4E14">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:12:23 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="25626D6F-3253-1ECB-FACA-8DBEF64E5835">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:13:18 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CF800F2C-5ACD-980D-304F-A5A3D89424C8" name="temps PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:13:02 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D68FF80-57A1-3129-99CA-EE035F6E4E14</attributeRef>
+<attributeRef>25626D6F-3253-1ECB-FACA-8DBEF64E5835</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

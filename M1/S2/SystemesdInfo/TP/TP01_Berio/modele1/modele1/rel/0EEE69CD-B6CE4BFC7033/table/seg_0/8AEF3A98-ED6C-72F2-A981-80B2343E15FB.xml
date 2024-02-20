@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8AEF3A98-ED6C-72F2-A981-80B2343E15FB" name="vente">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>DA9510A5-3A4F-D058-9174-0BB7130F1C20</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="36DE5F45-1159-23C4-66F7-E1BB8B49DD32">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>A3F6FEF7-BE42-ECD6-2B52-2BD8B28F40B0</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="produit" id="CAD652CE-950A-C565-4C0F-8A710F9925DD">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>FF9A0F00-277E-A0A7-7F91-E4C2DF475582</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantite" id="C44B3D2A-D2D6-2FA5-5CBB-1487B1AD7A7F">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>BBA2ED6A-4F47-8FAC-E586-0C58E01A2228</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prix" id="265D4204-BEEE-BEBE-6D88-3F7B787775ED">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>B0392FA6-70C7-DA24-D1A5-E0FE4953F3BC</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Commande_idcommande" id="43F4641B-6740-DA6A-FFBE-C7872207E5C6">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>AACEB7AE-39F4-F223-94FE-88C1372F752D</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42F00099-30BF-98C9-3151-0BD78E81918E" referredColumn="45711E11-5E04-0739-310B-372E51BF3A60"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7520B65-ED52-DC21-E28A-3E36171244A6" name="vente_PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>5F38714B-9C72-3BE7-AF20-1DC238ACE77D</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36DE5F45-1159-23C4-66F7-E1BB8B49DD32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03265E2F-50A2-F328-5181-FEBC3A922AA8" name="vente_Commande_FK">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>346FB670-F619-9076-BF41-DBF6AB6B151C</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43F4641B-6740-DA6A-FFBE-C7872207E5C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

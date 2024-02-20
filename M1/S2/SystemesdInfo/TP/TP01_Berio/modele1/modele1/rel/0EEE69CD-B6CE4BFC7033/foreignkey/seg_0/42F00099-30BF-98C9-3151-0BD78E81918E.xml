@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="42F00099-30BF-98C9-3151-0BD78E81918E" containerWithKeyObject="8AEF3A98-ED6C-72F2-A981-80B2343E15FB" localFKIndex="03265E2F-50A2-F328-5181-FEBC3A922AA8" name="vente_Commande_FK">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:36:09 UTC</createdTime>
+<generatorID>346FB670-F619-9076-BF41-DBF6AB6B151C</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<referredTableLongName>Commande</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A3CE79EA-4FE5-5C49-BF9C-104FBA5D9C44</referredTableID>
+<keyObject>7DCB62BF-C429-34B8-FD84-F1DFB52518F0</keyObject>
+<referredKeyID>7DCB62BF-C429-34B8-FD84-F1DFB52518F0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idcommande</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

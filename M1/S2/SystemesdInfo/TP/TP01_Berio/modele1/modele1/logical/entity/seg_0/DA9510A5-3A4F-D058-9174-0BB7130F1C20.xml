@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA9510A5-3A4F-D058-9174-0BB7130F1C20" name="vente">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:26:16 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="produit" id="FF9A0F00-277E-A0A7-7F91-E4C2DF475582">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:26:45 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5F38714B-9C72-3BE7-AF20-1DC238ACE77D" name="vente PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 12:26:40 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FF9A0F00-277E-A0A7-7F91-E4C2DF475582</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

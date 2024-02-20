@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64BC6323-B13D-1221-DAFE-EDEC97303479" name="EDCpromotion">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>0371374C-CA87-91DE-C0C5-2A4A33EDC239</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idpromo" id="CBF6D62E-356C-33CF-B86A-00399219297D">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>C0A4EF64-45CB-22E2-D9B0-58E077BFF5C3</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="32659222-216D-CBE1-3EB1-B375B0BB9960">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>DEFADC2A-370D-A14A-496A-24CD90ED5B5F</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="remise" id="A02255CE-EA61-EF72-BFB9-EFC1BFB40CE1">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>D6FE83FB-6A30-0B91-3613-1651A2420A52</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dated" id="386BF8EB-CE22-5FDE-C896-907BEA0F44CF">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>49D3FF88-8E5F-1D40-9A24-58F1678EA6B5</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datef" id="B0D1E9B4-A3E6-3CDB-8906-04E9095B2FEB">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>223A397A-7E3F-8DB2-EE30-0D50129D3E79</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61B77C7E-7186-31D5-48F2-62A885B8CF79" name="EDCpromotion_PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>35E2AC9D-8C06-AF7A-659E-0938AA7C82EA</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBF6D62E-356C-33CF-B86A-00399219297D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

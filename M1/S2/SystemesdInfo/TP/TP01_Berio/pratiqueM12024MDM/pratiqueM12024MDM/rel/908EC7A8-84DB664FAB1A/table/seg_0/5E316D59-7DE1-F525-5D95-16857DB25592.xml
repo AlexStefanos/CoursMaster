@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E316D59-7DE1-F525-5D95-16857DB25592" name="EDCpromoproduit">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EDCpromotion_idpromo" id="62523EAB-3AEE-E12B-9C4B-DEE33E7315A6">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B4E6661-48D3-A6EE-AF3D-12368508CDAB" referredColumn="CBF6D62E-356C-33CF-B86A-00399219297D"/>
+</associations>
+</Column>
+<Column name="EDCproduit_pid" id="698C87E2-D3A6-193A-2BFA-F42DB0AEBBDD">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35EF380C-403C-EC8D-6534-F664F361B155" referredColumn="A0B9BCF2-464F-28C5-ACD7-25EA9381EBB1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9CCCF36D-65EC-2D00-7AA6-567BBAFDF400" name="EDCpromoproduit_PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62523EAB-3AEE-E12B-9C4B-DEE33E7315A6"/>
+<colUsage columnID="698C87E2-D3A6-193A-2BFA-F42DB0AEBBDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="017637D9-4AF8-6067-D966-BAE0681723C5" name="EDCpromoproduit_EDCpromotion_FK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>34A8FD2C-DE78-39DB-A34E-19F12CE081E6</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62523EAB-3AEE-E12B-9C4B-DEE33E7315A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFD88E32-B10C-A5B4-E9CF-3A650FE79575" name="EDCpromoproduit_EDCproduit_FK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>34A8FD2C-DE78-39DB-A34E-19F12CE081E6</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="698C87E2-D3A6-193A-2BFA-F42DB0AEBBDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9DFCFA0C-CCD4-27AC-31FC-5E9B7B163394" name="tdf">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:22:38 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="quantitevendue" id="8C19B5F1-D168-A322-4172-3738FB7B6C2B">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:23:05 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mois" id="52E67A2B-E7E8-8706-2380-18AA48F60D47">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:23:57 UTC</createdTime>
+<generatorID>89FCA060-24CB-D795-B0DE-0F5D9A9F95A2</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<referedAttribute>0D68FF80-57A1-3129-99CA-EE035F6E4E14</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="annee" id="D2CE8829-1760-D557-9582-EA5189E887BA">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:23:57 UTC</createdTime>
+<generatorID>89FCA060-24CB-D795-B0DE-0F5D9A9F95A2</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<referedAttribute>25626D6F-3253-1ECB-FACA-8DBEF64E5835</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="produit" id="3B399178-9A3A-9C3E-B8D1-F6EE5E88CE1F">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:26:07 UTC</createdTime>
+<generatorID>8C53535F-7C2D-7CAE-CE74-B12C070D5B35</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<referedAttribute>FF9A0F00-277E-A0A7-7F91-E4C2DF475582</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clientid" id="8900B6AE-F073-31A8-F515-AD385AFF0553">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:26:43 UTC</createdTime>
+<generatorID>02332A66-37EE-75E7-DDAA-94E09B633484</generatorID>
+<ownerDesignName>modele1</ownerDesignName>
+<engineerTo>
+<item key="0EEE69CD-9738-2D84-7AF8-B6CE4BFC7033" value="true"/>
+</engineerTo>
+<referedAttribute>FAE1B3F9-78BC-EE04-8065-B974F8B2006C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

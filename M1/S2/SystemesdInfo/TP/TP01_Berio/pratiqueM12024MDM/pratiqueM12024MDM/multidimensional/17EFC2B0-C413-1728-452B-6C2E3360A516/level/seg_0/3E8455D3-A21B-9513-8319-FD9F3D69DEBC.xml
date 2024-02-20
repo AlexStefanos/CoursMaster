@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="departement" directorySegmentName="seg_0" id="3E8455D3-A21B-9513-8319-FD9F3D69DEBC">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 13:24:19 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>DEPARTEMENT</nameInOracleAW>
+<levelEntity>ED1A530C-1D7E-67E9-84E3-A67B5E27D58A</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>F82DF7C7-08C8-9E7E-49AE-01474271E50D</attribute>
+</levelKey>
+</Level>

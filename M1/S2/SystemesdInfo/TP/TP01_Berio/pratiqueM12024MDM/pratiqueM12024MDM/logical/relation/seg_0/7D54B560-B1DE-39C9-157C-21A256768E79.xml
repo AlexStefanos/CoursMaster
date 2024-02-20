@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EDCventes_EDCpromotion_FK" directorySegmentName="seg_0" id="7D54B560-B1DE-39C9-157C-21A256768E79">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:08:39 UTC</createdTime>
+<generatorID>1DA0D7CC-9278-F913-4127-D244E310E47D</generatorID>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<sourcePk>8E858B66-A42B-FC77-8F8E-A1976F8D9808</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>93624764-E65A-163E-B476-466630C136C0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9143943A-29C4-09E1-8972-08AB139BDC32</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

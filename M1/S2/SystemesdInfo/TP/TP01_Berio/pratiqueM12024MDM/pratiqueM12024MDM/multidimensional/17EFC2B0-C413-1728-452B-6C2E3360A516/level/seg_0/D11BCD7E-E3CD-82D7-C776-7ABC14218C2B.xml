@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="ville" directorySegmentName="seg_0" id="D11BCD7E-E3CD-82D7-C776-7ABC14218C2B">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:54:23 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>VILLE</nameInOracleAW>
+<levelEntity>C59A00CC-7A3F-B950-73B9-6D54BA750EA5</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>F8EB55C0-ED91-6D86-E62B-71F72FD12247</attribute>
+</levelKey>
+<descriptiveAttributes>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="nomville" id="50365979-DF04-A3A1-8FE4-3AFF33890253">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:54:55 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<attribute>0AF9B7BC-A634-4C0D-D6C8-299A482ED6E5</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="departement" id="4AEB2347-6C29-292A-13D8-7DCBCDF08558">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:55:30 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<attribute>B6D90EF0-7B79-A0E7-7BE3-28AF4EA8B214</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="etat" id="EFFB78FB-5451-A339-C8B9-698B20FAB772">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:55:43 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<attribute>404A5B84-C04F-5D59-6881-9350454A0B59</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+</descriptiveAttributes>
+</Level>

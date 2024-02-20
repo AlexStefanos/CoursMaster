@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="TD1DDL_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="98B5AA09-2C1D-C96B-4352-63D4DB126EFD">
+<createdBy>berio</createdBy>
+<createdTime>2018-10-08 08:43:05 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>TD1DDL_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="9E699EE6-2769-3AF8-9B8C-798BFB1DFAA8">
+<createdBy>berio</createdBy>
+<createdTime>2018-10-08 08:43:05 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>TD1DDL_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="CAB432AB-8FAB-4339-9308-B4EDBD1B727C">
+<createdBy>berio</createdBy>
+<createdTime>2018-10-08 08:43:05 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>10</dataTypeSize>
+<fileName>TD1DDL_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RollupLink class="oracle.dbtools.crest.model.design.multidimensional.RollupLink" name="RollupLink_6" directorySegmentName="seg_0" id="098F77C4-8085-C4B0-FA6D-F0DAA6509C3D">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:17:33 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<nameInOracleAW>ROLLUPLINK_6</nameInOracleAW>
+<childLevel>62148476-83F7-84FA-F9B9-37103F2B3413</childLevel>
+<defaultAggregationOperator>SUM</defaultAggregationOperator>
+<parentLevel>D440DDDE-ECA1-1118-0120-2BD6A42C7F3C</parentLevel>
+<rolePlaying>false</rolePlaying>
+<sparseDimension>false</sparseDimension>
+<link class="oracle.dbtools.crest.model.design.multidimensional.Link" name="Link_6" id="844E970D-5EFF-B9B3-28A8-906819961D3D">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:17:33 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<nameInOracleAW>LINK_6</nameInOracleAW>
+<rollupLink>098F77C4-8085-C4B0-FA6D-F0DAA6509C3D</rollupLink>
+<sourceMDObject>62148476-83F7-84FA-F9B9-37103F2B3413</sourceMDObject>
+<targetMDObject>D440DDDE-ECA1-1118-0120-2BD6A42C7F3C</targetMDObject>
+</link>
+</RollupLink>

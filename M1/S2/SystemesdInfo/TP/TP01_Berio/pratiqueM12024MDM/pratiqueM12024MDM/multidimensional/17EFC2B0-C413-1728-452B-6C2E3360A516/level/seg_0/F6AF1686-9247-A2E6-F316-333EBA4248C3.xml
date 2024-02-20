@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="produit" directorySegmentName="seg_0" id="F6AF1686-9247-A2E6-F316-333EBA4248C3">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:44:11 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<nameInOracleAW>PRODUIT</nameInOracleAW>
+<levelEntity>BEA194EF-9E97-E7B7-1FAA-1F0E2DB03678</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>91937B40-39B1-3183-DF26-E0796F12C086</attribute>
+</levelKey>
+<descriptiveAttributes>
+<descrAttribute class="oracle.dbtools.crest.model.design.multidimensional.SlowChangingAttribute" name="prixconseille" id="78BE8251-E11B-77A6-715F-8B5A2E6FC6C9">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:47:14 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<attribute>35465D49-1C7A-EE90-4B3E-2DC70113F9CF</attribute>
+<classification>USER</classification>
+<indexed>false</indexed>
+<type>NONE</type>
+</descrAttribute>
+</descriptiveAttributes>
+</Level>

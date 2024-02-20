@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Level class="oracle.dbtools.crest.model.design.multidimensional.Level" name="mois" directorySegmentName="seg_0" id="D440DDDE-ECA1-1118-0120-2BD6A42C7F3C">
+<createdBy>berio</createdBy>
+<createdTime>2024-01-31 13:10:11 UTC</createdTime>
+<ownerDesignName>modele1</ownerDesignName>
+<nameInOracleAW>MOIS</nameInOracleAW>
+<levelEntity>EA56AB52-0175-F593-241D-DFA24C0E19BC</levelEntity>
+<rootIdentification>ParentIsBlankSelfOrMissing</rootIdentification>
+<valueBasedHierarchy>false</valueBasedHierarchy>
+<oraAWAttributes class="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes">
+</oraAWAttributes>
+<levelKey>
+<attribute>25626D6F-3253-1ECB-FACA-8DBEF64E5835</attribute>
+<attribute>0D68FF80-57A1-3129-99CA-EE035F6E4E14</attribute>
+</levelKey>
+</Level>

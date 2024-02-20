@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BAE1490D-3A67-FEAC-8D23-3DD8FF7EC473" containerWithKeyObject="D447A2B2-09F2-439C-1D21-50D926461F88" localFKIndex="DB64EF17-0965-4D12-1924-A5291B90FF5A" name="EDCcommande_EDCvendeur_FK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>F7CE2F55-EC62-C859-F2C4-97825F1B6F8B</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<referredTableLongName>EDCvendeur</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E244D011-D5F0-5F7E-50DE-C95B13791324</referredTableID>
+<keyObject>2B3562C0-2030-A016-FC3B-D31A2BE2918C</keyObject>
+<referredKeyID>2B3562C0-2030-A016-FC3B-D31A2BE2918C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>vid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D447A2B2-09F2-439C-1D21-50D926461F88" name="EDCcommande">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>28EA1B8F-4665-8C7E-3A66-6968A14AD0B1</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idticketcaisse" id="A4865BB3-166A-E1C0-8880-2621ABCED5C5">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>006D44A3-ADAD-3C5D-2730-0961859368FC</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDCclient_id" id="EF81668C-BC5C-65DD-2EDC-DEFCA310871A">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>460DBF58-D1E1-D7E4-039A-DCA94CD7AD06</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B67607B-80C4-748A-8840-D15E55CC0A46" referredColumn="721ED30E-4C39-2A29-C2C7-266816CAE82F"/>
+</associations>
+</Column>
+<Column name="EDCvendeur_vid" id="620FBD04-2EDC-5043-4772-C704DB0BC1C6">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>C8BBA06C-A347-1436-E18A-64E723B1DDE9</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>98B5AA09-2C1D-C96B-4352-63D4DB126EFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAE1490D-3A67-FEAC-8D23-3DD8FF7EC473" referredColumn="2BADEC5A-A5C0-E3AE-1AB7-B8DCFC81E107"/>
+</associations>
+</Column>
+<Column name="datec" id="90B4B915-2B1A-991A-A097-F42122A404A0">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>76797C60-A11D-8D05-C360-FAAE4D896206</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9FCF028-F6D6-1356-CAD6-FC00D9422656" name="EDCcommande_PK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>4F12F819-FB2B-E3CF-0991-8F897993E79B</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4865BB3-166A-E1C0-8880-2621ABCED5C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FC285FC-2234-64EF-AFA0-E153C660EBBC" name="EDCcommande_EDCclient_FK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>1BBED833-4447-5535-5C99-4333F079D6E9</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF81668C-BC5C-65DD-2EDC-DEFCA310871A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB64EF17-0965-4D12-1924-A5291B90FF5A" name="EDCcommande_EDCvendeur_FK">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-06 21:53:20 UTC</createdTime>
+<generatorID>F7CE2F55-EC62-C859-F2C4-97825F1B6F8B</generatorID>
+<ownerDesignName>pratiqueM12024</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="620FBD04-2EDC-5043-4772-C704DB0BC1C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

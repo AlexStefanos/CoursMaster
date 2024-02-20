@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="53B0840F-400E-5453-6488-693683D70D41" name="VIEW_1">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:35:36 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[select "prix unitaire" * quantité as ca
+from EDCVentes]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewType>EntityView</viewType>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="ca" id="F1440EA3-BDB2-E499-1441-325D4EE9FD16">
+<createdBy>berio</createdBy>
+<createdTime>2024-02-07 12:37:25 UTC</createdTime>
+<ownerDesignName>pratiqueM12024MDM</ownerDesignName>
+<engineerTo>
+<item key="908EC7A8-79C9-4037-F10B-84DB664FAB1A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ca</alias>
+<dataType>NUMBER</dataType>
+<expression>EDCventes.&quot;prix unitaire&quot; * EDCventes.quantité</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9143943A-29C4-09E1-8972-08AB139BDC32">
+<container>true</container>
+<tableName>EDCventes</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="902C8798-4F2E-3A04-F4D6-CE4E7F88627C">
+<columnName>prix unitaire</columnName>
+<tableName>EDCventes</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D63367D2-AD3C-821F-167D-900E5748D294">
+<columnName>quantité</columnName>
+<tableName>EDCventes</tableName>
+</UsedObject>
+</usedObjects>
+</EntityView>
